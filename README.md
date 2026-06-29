@@ -4,9 +4,12 @@ A fun, game-like web app for learning math **from kindergarten to college**, wit
 
 No build step, no accounts, no internet required (after first load). Just open `index.html`.
 
+## 🌐 Live site
+**https://dylanhaymes.github.io/numble/** — hosted on GitHub Pages (HTTPS, CDN, always on). Repo: https://github.com/dylanhaymes/numble. To update it: edit files → `git -C "<this folder>" commit -am "msg" && git push` → Pages rebuilds in ~1 min.
+
 ---
 
-## ▶️ How to run it
+## ▶️ How to run it (locally)
 
 **Easiest:** double-click `index.html`. It opens in your browser and just works.
 
