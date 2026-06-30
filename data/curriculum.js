@@ -41,7 +41,12 @@ window.NUMBLE_CURRICULUM = [
                   "Let's point at each fish one at a time as we say a number.",
                   "Touch the first fish and say 'one', then keep going to the next.",
                   "Start: 'one' on the first fish, 'two' on the next... what comes after two?"
-                ]
+                ],
+                "whyWrong": {
+                  "2": "Looks like one fish got skipped — point to each one as you count: 1, 2, 3. There are 3.",
+                  "4": "That's one too many — count slowly, touching each fish once: 1, 2, 3. There are 3.",
+                  "5": "That counts more than are there — there are only 3 fish: 1, 2, 3."
+                }
               },
               {
                 "id": "counting-cove-u1-l1-p2",
@@ -59,7 +64,12 @@ window.NUMBLE_CURRICULUM = [
                   "Each crab gets exactly one number as you count.",
                   "Try touching each crab and counting up: one, two, three...",
                   "You've got one, two, three, four — now count the very last crab."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "A couple crabs got skipped — touch each one once: 1, 2, 3, 4, 5. There are 5.",
+                  "4": "One crab got missed — count them all: 1, 2, 3, 4, 5. There are 5.",
+                  "6": "That's one too many — count carefully: 1, 2, 3, 4, 5. There are 5."
+                }
               },
               {
                 "id": "counting-cove-u1-l1-p3",
@@ -93,7 +103,12 @@ window.NUMBLE_CURRICULUM = [
                   "Let's count each octopus slowly.",
                   "Point at each one and say the next number.",
                   "One, two, three... one more to go!"
-                ]
+                ],
+                "whyWrong": {
+                  "2": "Some octopuses got skipped — point to each: 1, 2, 3, 4. There are 4.",
+                  "3": "One octopus got missed — count them all: 1, 2, 3, 4. There are 4.",
+                  "5": "That's one too many — count each one once: 1, 2, 3, 4. There are 4."
+                }
               },
               {
                 "id": "counting-cove-u1-l1-p5",
@@ -127,9 +142,26 @@ window.NUMBLE_CURRICULUM = [
                   "Count each shell, one tap at a time.",
                   "Don't skip any — every shell gets one number.",
                   "You counted six... what number comes right after six?"
-                ]
+                ],
+                "whyWrong": {
+                  "6": "One shell got skipped — touch each shell once: 1, 2, 3, 4, 5, 6, 7. There are 7.",
+                  "8": "That's one too many — count slowly: 1, 2, 3, 4, 5, 6, 7. There are 7.",
+                  "9": "That counts more than are there — there are only 7 shells: 1 through 7."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To count, point to each critter one at a time and say the next number out loud: 1, 2, 3. The last number you say is how many there are!",
+              "example": {
+                "prompt": "Count the seahorses: 🐴🐴🐴🐴. How many?",
+                "steps": [
+                  "Point to the first one and say 1, then the next and say 2.",
+                  "Keep going: point and say 3, then point and say 4.",
+                  "The last number you said was 4, so that's how many."
+                ],
+                "answer": "4"
+              }
+            }
           },
           {
             "id": "counting-cove-u1-l2",
@@ -165,7 +197,12 @@ window.NUMBLE_CURRICULUM = [
                   "One bubble matches up with one fish.",
                   "If you count the fish, that's how many bubbles you need.",
                   "Count the fish: one, two... what's the last number?"
-                ]
+                ],
+                "whyWrong": {
+                  "1": "That's just one bubble — but each of the 3 fish needs its own, so 1, 2, 3 means 3 bubbles.",
+                  "2": "One fish is left without a bubble — give every fish one: 1, 2, 3 bubbles.",
+                  "4": "That's one bubble too many — there are only 3 fish, so 3 bubbles."
+                }
               },
               {
                 "id": "counting-cove-u1-l2-p3",
@@ -199,7 +236,12 @@ window.NUMBLE_CURRICULUM = [
                   "Compare the number of seats to the number of seals.",
                   "If both numbers are the same, everyone gets a seat.",
                   "5 seats and 5 seals — are those numbers the same?"
-                ]
+                ],
+                "whyWrong": {
+                  "No, too many seats": "Count both: 5 seats and 5 seals. Since the numbers match, every seal gets exactly one seat — they match.",
+                  "No, too many seals": "Count both: 5 seals and 5 seats. The numbers are the same, so each seal gets one seat — they match.",
+                  "There are no seats": "There are 5 seats — count them: 1, 2, 3, 4, 5. They match the 5 seals one-to-one."
+                }
               },
               {
                 "id": "counting-cove-u1-l2-p5",
@@ -217,7 +259,12 @@ window.NUMBLE_CURRICULUM = [
                   "Touch each dot as you count it.",
                   "Give every dot exactly one number.",
                   "One, two, three, four, five... one more dot!"
-                ]
+                ],
+                "whyWrong": {
+                  "5": "That skips a dot — touch each dot once: 1, 2, 3, 4, 5, 6. There are 6.",
+                  "7": "That counts one dot twice — touch each only once: 1, 2, 3, 4, 5, 6. There are 6.",
+                  "8": "That's two too many — count each dot once: 1 through 6. There are 6."
+                }
               },
               {
                 "id": "counting-cove-u1-l2-p6",
@@ -235,7 +282,19 @@ window.NUMBLE_CURRICULUM = [
                   "You counted seven shells... what comes after seven?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Every object gets exactly ONE number when you count — touch it once, say one number, then move on. That way you never count the same thing twice or skip one.",
+              "example": {
+                "prompt": "Each fish needs one bubble. Fish: 🐠🐠🐠🐠🐠. How many bubbles?",
+                "steps": [
+                  "Give the first fish one bubble and count 1.",
+                  "Give each next fish one bubble, counting 2, 3, 4.",
+                  "Give the last fish one bubble: 5. One bubble per fish, so 5 bubbles."
+                ],
+                "answer": "5"
+              }
+            }
           },
           {
             "id": "counting-cove-u1-l3",
@@ -259,7 +318,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think about counting out loud: 7, 8, 9, ...",
                   "What do we say right after nine?",
                   "It's the number that looks like a 1 and a 0 together."
-                ]
+                ],
+                "whyWrong": {
+                  "8": "8 comes before 9, not after — count up: 8, 9, then 10 comes next.",
+                  "11": "That skips a number — right after 9 comes 10, then 11.",
+                  "19": "That jumps way ahead — the very next number after 9 is just 10."
+                }
               },
               {
                 "id": "counting-cove-u1-l3-p2",
@@ -293,7 +357,12 @@ window.NUMBLE_CURRICULUM = [
                   "'Before' means the number that comes first.",
                   "Count up to 16 and notice the number just before it.",
                   "...14, 15, 16 — which one is right before 16?"
-                ]
+                ],
+                "whyWrong": {
+                  "14": "14 is two spots before 16 — the number right before 16 is 15.",
+                  "17": "17 comes right after 16, not before — just before 16 is 15.",
+                  "60": "That's a much bigger number — count near 16: 14, 15, 16. Just before 16 is 15."
+                }
               },
               {
                 "id": "counting-cove-u1-l3-p4",
@@ -327,7 +396,12 @@ window.NUMBLE_CURRICULUM = [
                   "Counting up means the numbers get bigger each step.",
                   "Look for the list that starts small and grows in order.",
                   "Which list goes one, two, three, four with no jumps or swaps?"
-                ]
+                ],
+                "whyWrong": {
+                  "1, 2, 4, 3": "The 4 and 3 are swapped — counting up, 3 comes before 4: 1, 2, 3, 4.",
+                  "2, 1, 3, 4": "This starts with 2 then 1 — counting up should begin 1, 2, 3, 4.",
+                  "4, 3, 2, 1": "That's counting backwards (down) — counting up goes 1, 2, 3, 4."
+                }
               },
               {
                 "id": "counting-cove-u1-l3-p6",
@@ -345,9 +419,25 @@ window.NUMBLE_CURRICULUM = [
                   "Start at the number you already counted: 10.",
                   "Finding one more means counting up by one.",
                   "What comes right after 10?"
-                ]
+                ],
+                "whyWrong": {
+                  "9": "That's one less, not one more — ten and one more is 11.",
+                  "10": "That's just the ten you started with — adding 1 more makes 11.",
+                  "20": "That's too many — ten plus one more is 11, not 20."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "After ten, numbers keep going: 11, 12, 13... all the way to 20. To find the next number, just say the count out loud and stop on the one that comes after.",
+              "example": {
+                "prompt": "Keep counting: 15, 16, 17, ___. What comes next?",
+                "steps": [
+                  "Start at 15 and count forward out loud: 15, 16, 17.",
+                  "The next number after 17 is one more, which is 18."
+                ],
+                "answer": "18"
+              }
+            }
           }
         ]
       },
@@ -378,7 +468,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count how many are in each group first.",
                   "'More' means the bigger number.",
                   "Group A has 3 and Group B has 1 — which number is bigger?"
-                ]
+                ],
+                "whyWrong": {
+                  "Group B": "Group B has only 1 fish — Group A has 3, and 3 is more than 1, so Group A has more.",
+                  "They are equal": "Count both: A has 3 and B has 1. Different numbers, so they're not equal — A has more.",
+                  "Neither": "One group really does have more — A has 3 and B has 1, so Group A has more."
+                }
               },
               {
                 "id": "counting-cove-u2-l1-p2",
@@ -396,7 +491,12 @@ window.NUMBLE_CURRICULUM = [
                   "Bigger numbers mean more things.",
                   "Imagine 5 toys next to 2 toys — which is the bigger pile?",
                   "When you count up, does 5 come before or after 2?"
-                ]
+                ],
+                "whyWrong": {
+                  "2": "2 is the smaller number — 5 is bigger, so 5 is more.",
+                  "They are the same": "5 and 2 are different numbers, not the same — 5 is more than 2.",
+                  "Neither": "One is bigger — 5 is more than 2."
+                }
               },
               {
                 "id": "counting-cove-u2-l1-p3",
@@ -426,7 +526,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count the crabs, then count the snails.",
                   "The group with the bigger number has more.",
                   "Crabs = 2 and snails = 4 — which is bigger?"
-                ]
+                ],
+                "whyWrong": {
+                  "The crabs": "There are only 2 crabs but 4 snails — 4 is more than 2, so the snails have more.",
+                  "They are equal": "Count both: 2 crabs and 4 snails. Different numbers, so the snails have more.",
+                  "Neither": "One group has more — 4 snails beats 2 crabs."
+                }
               },
               {
                 "id": "counting-cove-u2-l1-p5",
@@ -444,7 +549,12 @@ window.NUMBLE_CURRICULUM = [
                   "Largest means the biggest of all.",
                   "Picture each number as a pile of toys — which pile is tallest?",
                   "Counting up, 8 comes after all the others here."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "1 is actually the smallest — the largest in the group is 8.",
+                  "3": "3 is small here — look for the biggest: 8 is the largest.",
+                  "6": "6 is big but not the biggest — 8 is larger than 6."
+                }
               },
               {
                 "id": "counting-cove-u2-l1-p6",
@@ -462,7 +572,19 @@ window.NUMBLE_CURRICULUM = [
                   "Which is bigger: 6 or 9?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To find which group has MORE, count each group, then pick the bigger number. More means a larger amount.",
+              "example": {
+                "prompt": "Group A: 🦀🦀🦀🦀🦀🦀. Group B: 🦀🦀. Which group has more?",
+                "steps": [
+                  "Count Group A: 1, 2, 3, 4, 5, 6 — that's 6.",
+                  "Count Group B: 1, 2 — that's 2.",
+                  "6 is bigger than 2, so Group A has more."
+                ],
+                "answer": "Group A"
+              }
+            }
           },
           {
             "id": "counting-cove-u2-l2",
@@ -486,7 +608,12 @@ window.NUMBLE_CURRICULUM = [
                   "'Fewer' means less — the smaller pile.",
                   "Picture 3 toys and 7 toys — which is the smaller group?",
                   "Which number comes first when you count up, 3 or 7?"
-                ]
+                ],
+                "whyWrong": {
+                  "7": "7 is the bigger number — fewer means the smaller one, which is 3.",
+                  "They are equal": "3 and 7 are different numbers, not equal — 3 is fewer.",
+                  "Neither": "One is fewer — 3 is smaller than 7, so 3 is fewer."
+                }
               },
               {
                 "id": "counting-cove-u2-l2-p2",
@@ -504,7 +631,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count both groups first.",
                   "'Fewer' is the smaller number.",
                   "Group A has 5, Group B has 2 — which is smaller?"
-                ]
+                ],
+                "whyWrong": {
+                  "Group A": "Group A has 5, which is more, not fewer — Group B has only 2, so B has fewer.",
+                  "They are equal": "Count both: A has 5 and B has 2. Different numbers, so B has fewer.",
+                  "Neither": "One group has fewer — B has 2 and A has 5, so B has fewer."
+                }
               },
               {
                 "id": "counting-cove-u2-l2-p3",
@@ -534,7 +666,12 @@ window.NUMBLE_CURRICULUM = [
                   "Smallest means the tiniest of all.",
                   "Imagine each number as a pile — which pile is shortest?",
                   "Counting up, 2 comes before all the others here."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "4 is small but not the smallest — 2 is even smaller.",
+                  "6": "6 is in the middle — the smallest number in the group is 2.",
+                  "9": "9 is actually the biggest number here — the smallest is 2."
+                }
               },
               {
                 "id": "counting-cove-u2-l2-p5",
@@ -552,7 +689,12 @@ window.NUMBLE_CURRICULUM = [
                   "Compare 8 and 5.",
                   "Fewer means the smaller number.",
                   "Which number is smaller, 8 or 5?"
-                ]
+                ],
+                "whyWrong": {
+                  "Sandy": "Sandy has 8, which is more, not fewer — Reef has 5, so Reef has fewer.",
+                  "They have the same": "8 and 5 are different, not the same — Reef's 5 is fewer.",
+                  "Nobody": "Someone has fewer — Reef's 5 is less than Sandy's 8, so Reef has fewer."
+                }
               },
               {
                 "id": "counting-cove-u2-l2-p6",
@@ -570,7 +712,18 @@ window.NUMBLE_CURRICULUM = [
                   "Which number do you reach first counting up?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "'Fewer' means less — the smaller amount. Count both groups, then pick the smaller number.",
+              "example": {
+                "prompt": "Which is fewer: 7 starfish or 3 starfish?",
+                "steps": [
+                  "Compare the two numbers, 7 and 3.",
+                  "3 is the smaller number, so 3 is fewer."
+                ],
+                "answer": "3"
+              }
+            }
           },
           {
             "id": "counting-cove-u2-l3",
@@ -594,7 +747,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count each group.",
                   "Equal means both groups have the same number.",
                   "Group A has 3 and Group B has 3 — same or different?"
-                ]
+                ],
+                "whyWrong": {
+                  "No, A has more": "Count both: A has 3 and B has 3. Same number, so they ARE equal, not more.",
+                  "No, B has more": "Count both: B has 3 and A has 3. The numbers match, so they're equal.",
+                  "There are no fish": "There are fish — 3 in each group — and since 3 equals 3, they're equal."
+                }
               },
               {
                 "id": "counting-cove-u2-l3-p2",
@@ -624,7 +782,12 @@ window.NUMBLE_CURRICULUM = [
                   "Equal pairs have two numbers that match.",
                   "Look for the pair where both numbers are the same.",
                   "Which pair has the very same number twice?"
-                ]
+                ],
+                "whyWrong": {
+                  "4 and 6": "4 and 6 are different numbers, so they're not equal — equal means a matching pair like 7 and 7.",
+                  "2 and 3": "2 and 3 are different, so not equal — look for the same number twice, like 7 and 7.",
+                  "9 and 1": "9 and 1 are very different, so not equal — the matching pair is 7 and 7."
+                }
               },
               {
                 "id": "counting-cove-u2-l3-p4",
@@ -658,7 +821,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count the crabs, then count the rocks.",
                   "Equal would mean the same number of each.",
                   "Crabs = 4, rocks = 3 — are those the same?"
-                ]
+                ],
+                "whyWrong": {
+                  "Yes, equal": "Count both: 4 crabs but only 3 rocks. Different numbers, so they're not equal — there are more crabs.",
+                  "No, more rocks": "There are actually more crabs — 4 crabs but only 3 rocks.",
+                  "There are no rocks": "There are 3 rocks — count them. But 4 crabs is more than 3 rocks, so more crabs."
+                }
               },
               {
                 "id": "counting-cove-u2-l3-p6",
@@ -676,9 +844,26 @@ window.NUMBLE_CURRICULUM = [
                   "We just learned a special word for matching groups.",
                   "It's not 'more' and not 'fewer'.",
                   "Which word means both groups are exactly the same?"
-                ]
+                ],
+                "whyWrong": {
+                  "More": "'More' means a bigger amount, not the same — the word for 'the same amount' is equal.",
+                  "Fewer": "'Fewer' means a smaller amount, not the same — 'the same amount' is equal.",
+                  "Bigger": "'Bigger' means more, not the same — the word for 'the same amount' is equal."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "When two groups have the SAME number, they are equal. Count both — if the numbers match, they're equal.",
+              "example": {
+                "prompt": "Group A: 🐚🐚🐚🐚. Group B: 🐚🐚🐚🐚. Are they equal?",
+                "steps": [
+                  "Count Group A: 1, 2, 3, 4 — that's 4.",
+                  "Count Group B: 1, 2, 3, 4 — that's 4.",
+                  "Both are 4, and 4 equals 4, so yes they are equal."
+                ],
+                "answer": "Yes, equal"
+              }
+            }
           }
         ]
       },
@@ -709,7 +894,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think about a shape that rolls smoothly.",
                   "It has no straight sides and no pointy corners.",
                   "What do we call the round shape, like a ball or the sun?"
-                ]
+                ],
+                "whyWrong": {
+                  "Square": "A square has 4 straight sides and corners — the round, cornerless shape is a circle.",
+                  "Triangle": "A triangle has 3 straight sides and pointy corners — the round, cornerless shape is a circle.",
+                  "Rectangle": "A rectangle has 4 straight sides and corners — the round, cornerless shape is a circle."
+                }
               },
               {
                 "id": "counting-cove-u3-l1-p2",
@@ -727,7 +917,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look at the points (corners) of a triangle.",
                   "Try counting each straight side.",
                   "'Tri' means three — so how many sides?"
-                ]
+                ],
+                "whyWrong": {
+                  "2": "Two sides can't close into a shape — trace a triangle and you'll count 3 sides.",
+                  "4": "4 sides makes a square or rectangle — a triangle has 3 sides.",
+                  "5": "That's too many — a triangle has just 3 sides and 3 corners."
+                }
               },
               {
                 "id": "counting-cove-u3-l1-p3",
@@ -757,7 +952,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think of a shape that is stretched out long.",
                   "It has 4 corners, but it's not a perfect square.",
                   "A door or a phone is shaped like which one?"
-                ]
+                ],
+                "whyWrong": {
+                  "Circle": "A circle is round with no sides — the 4-sided shape that's long like a door is a rectangle.",
+                  "Triangle": "A triangle has only 3 sides — the 4-sided shape that's long like a door is a rectangle.",
+                  "Square": "A square has 4 equal sides, so it's not longer one way — the long door-shape is a rectangle."
+                }
               },
               {
                 "id": "counting-cove-u3-l1-p5",
@@ -775,7 +975,12 @@ window.NUMBLE_CURRICULUM = [
                   "Which shape has no corners to bump along?",
                   "Round shapes roll; pointy ones get stuck.",
                   "What round shape is smooth all the way around?"
-                ]
+                ],
+                "whyWrong": {
+                  "Square": "A square has flat sides and corners, so it wouldn't roll — wheels are round circles.",
+                  "Triangle": "A triangle has pointy corners and would tip, not roll — wheels are round circles.",
+                  "Rectangle": "A rectangle has flat sides and corners, so it can't roll smoothly — wheels are round circles."
+                }
               },
               {
                 "id": "counting-cove-u3-l1-p6",
@@ -793,9 +998,26 @@ window.NUMBLE_CURRICULUM = [
                   "Count the sides of each shape.",
                   "A triangle has 3 sides, a square has more.",
                   "Which one has 4 sides — the most of these three?"
-                ]
+                ],
+                "whyWrong": {
+                  "Circle": "A circle has 0 straight sides — the square has the most with 4 sides.",
+                  "Triangle": "A triangle has 3 sides — the square has more, with 4 sides.",
+                  "They all match": "They don't match: a circle has 0, a triangle has 3, and a square has 4 — the square has the most."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Shapes have names by their sides and corners: a circle is round with no corners, a triangle has 3 sides, a square has 4 equal sides, and a rectangle has 4 sides but is longer than it is tall.",
+              "example": {
+                "prompt": "How many sides does a square have?",
+                "steps": [
+                  "Look at the square and trace around its edges.",
+                  "Count each straight side: 1, 2, 3, 4.",
+                  "A square has 4 sides, all the same length."
+                ],
+                "answer": "4"
+              }
+            }
           },
           {
             "id": "counting-cove-u3-l2",
@@ -819,7 +1041,12 @@ window.NUMBLE_CURRICULUM = [
                   "Say the colors out loud: red, blue, red, blue...",
                   "The two colors keep taking turns.",
                   "The last one was red, so what color is its turn-partner?"
-                ]
+                ],
+                "whyWrong": {
+                  "🔴": "The last shown was red, and the pattern alternates red, blue — so after red comes blue, not another red.",
+                  "🟢": "Green isn't part of this pattern — it only uses red and blue, and blue comes next.",
+                  "🟡": "Yellow isn't part of this pattern — it only uses red and blue, and blue comes next."
+                }
               },
               {
                 "id": "counting-cove-u3-l2-p2",
@@ -837,7 +1064,12 @@ window.NUMBLE_CURRICULUM = [
                   "Read the pattern: fish, shell, fish, shell...",
                   "The two pictures keep alternating.",
                   "A fish just came, so what takes its turn next?"
-                ]
+                ],
+                "whyWrong": {
+                  "🐠": "The last shown was a fish, and the pattern alternates fish, shell — so a shell comes next, not another fish.",
+                  "🦀": "The crab isn't in this pattern — it only uses fish and shell, and a shell comes next.",
+                  "🐙": "The octopus isn't in this pattern — it only uses fish and shell, and a shell comes next."
+                }
               },
               {
                 "id": "counting-cove-u3-l2-p3",
@@ -855,7 +1087,12 @@ window.NUMBLE_CURRICULUM = [
                   "Say it out loud: star, moon, star, moon...",
                   "The pattern keeps switching between two pictures.",
                   "A moon just came, so whose turn is it now?"
-                ]
+                ],
+                "whyWrong": {
+                  "🌙": "The last shown was a moon, and the pattern alternates star, moon — so a star comes next, not another moon.",
+                  "☀️": "The sun isn't in this pattern — it only uses star and moon, and a star comes next.",
+                  "☁️": "The cloud isn't in this pattern — it only uses star and moon, and a star comes next."
+                }
               },
               {
                 "id": "counting-cove-u3-l2-p4",
@@ -885,7 +1122,12 @@ window.NUMBLE_CURRICULUM = [
                   "Read the pattern around the blank: crab, octopus, crab...",
                   "The two pictures take turns.",
                   "After a crab, which picture always comes?"
-                ]
+                ],
+                "whyWrong": {
+                  "🦀": "The pattern is crab, octopus repeating — after a crab comes an octopus, so the gap is the octopus.",
+                  "🐠": "The fish isn't in this pattern — it only uses crab and octopus, and the gap is the octopus.",
+                  "🐚": "The shell isn't in this pattern — it only uses crab and octopus, and the gap is the octopus."
+                }
               },
               {
                 "id": "counting-cove-u3-l2-p6",
@@ -903,9 +1145,26 @@ window.NUMBLE_CURRICULUM = [
                   "This pattern has three parts that repeat: two triangles then a circle.",
                   "Find where the group starts over each time.",
                   "You just saw two triangles in a row — what always follows them?"
-                ]
+                ],
+                "whyWrong": {
+                  "🔺": "The repeating part is triangle, triangle, circle — two triangles already showed, so a circle comes next.",
+                  "🟢": "Green isn't in this pattern — it uses triangles and a circle, and a circle comes next.",
+                  "⬜": "The white square isn't in this pattern — it uses triangles and a circle, and a circle comes next."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A pattern is a part that repeats over and over. Find the repeating chunk, then say it again to know what comes next.",
+              "example": {
+                "prompt": "What comes next? 🟡🟢🟡🟢🟡___",
+                "steps": [
+                  "Find the repeating part: yellow, green, yellow, green.",
+                  "The pattern repeats yellow then green. The last shown was yellow.",
+                  "After yellow comes green, so green is next."
+                ],
+                "answer": "🟢"
+              }
+            }
           },
           {
             "id": "counting-cove-u3-l3",
@@ -929,7 +1188,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count out loud and listen for the gap.",
                   "Each number goes up by one.",
                   "After 2 comes... before 4?"
-                ]
+                ],
+                "whyWrong": {
+                  "0": "0 comes before 1, not in the middle — between 2 and 4 is 3.",
+                  "2": "2 is already there before the blank — count up: 1, 2, then 3 fills the gap.",
+                  "6": "6 is too big for this spot — between 2 and 4 comes 3."
+                }
               },
               {
                 "id": "counting-cove-u3-l3-p2",
@@ -947,7 +1211,12 @@ window.NUMBLE_CURRICULUM = [
                   "Smallest to biggest means starting with the tiniest number.",
                   "Look for the list that grows step by step.",
                   "Which list starts at 1 and climbs up in order?"
-                ]
+                ],
+                "whyWrong": {
+                  "3, 1, 2": "This starts with the biggest — smallest to biggest should begin with 1: 1, 2, 3.",
+                  "2, 3, 1": "This puts 1 last, but 1 is smallest — smallest to biggest is 1, 2, 3.",
+                  "3, 2, 1": "That's biggest to smallest — smallest to biggest goes the other way: 1, 2, 3."
+                }
               },
               {
                 "id": "counting-cove-u3-l3-p3",
@@ -981,7 +1250,12 @@ window.NUMBLE_CURRICULUM = [
                   "Smallest goes first in the line.",
                   "Compare 5, 2, and 8 — which is tiniest?",
                   "Counting up, which of these do you reach first?"
-                ]
+                ],
+                "whyWrong": {
+                  "5": "5 isn't the smallest — compare 5, 2, 8, and 2 is the smallest, so it comes first.",
+                  "8": "8 is actually the biggest, so it comes last — the smallest, 2, comes first.",
+                  "They tie": "They're all different numbers, so no tie — 2 is the smallest and comes first."
+                }
               },
               {
                 "id": "counting-cove-u3-l3-p5",
@@ -999,7 +1273,12 @@ window.NUMBLE_CURRICULUM = [
                   "Counting backwards means the numbers get smaller.",
                   "Each step goes down by one.",
                   "After 3, what is one less?"
-                ]
+                ],
+                "whyWrong": {
+                  "1": "That skips a number — counting down from 3 the next is 2, then 1.",
+                  "4": "4 already came before 3 — counting down, after 3 comes 2.",
+                  "6": "Counting backwards goes down, not up — after 3 comes 2, not 6."
+                }
               },
               {
                 "id": "counting-cove-u3-l3-p6",
@@ -1017,7 +1296,19 @@ window.NUMBLE_CURRICULUM = [
                   "Which of these do you reach first when counting up?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Numbers line up in order, smallest to biggest, like 1, 2, 3. To find a missing number, count up and see which one fits the empty spot.",
+              "example": {
+                "prompt": "Which number is missing? 6, 7, ___, 9",
+                "steps": [
+                  "Count up starting at 6: 6, 7...",
+                  "The next number after 7 is 8, and 8 comes right before 9.",
+                  "So the missing number is 8."
+                ],
+                "answer": "8"
+              }
+            }
           }
         ]
       }
@@ -1057,7 +1348,12 @@ window.NUMBLE_CURRICULUM = [
                   "We have a pile of 3 shells and a pile of 2 shells. How many is that together?",
                   "Start at the bigger pile and count up. Say '3' then count the extra shells one at a time.",
                   "Begin at 3, then count: 4... now one more shell to go!"
-                ]
+                ],
+                "whyWrong": {
+                  "3": "That's just the first pile. Don't forget to add the 2 more shells: 3 + 2 = 5.",
+                  "4": "So close! You counted on just one from 3 instead of two. Add both extra shells: 3, then 4, 5.",
+                  "6": "That's one too many. Count on exactly 2 from 3: 4, 5 lands on 5, not 6."
+                }
               },
               {
                 "id": "addition-atoll-u1-l1-p2",
@@ -1091,7 +1387,12 @@ window.NUMBLE_CURRICULUM = [
                   "You already have 6, so you only need to count the 2 extra.",
                   "Keep 6 in your head and hop up two times.",
                   "From 6, the next number is 7, then one more hop."
-                ]
+                ],
+                "whyWrong": {
+                  "6": "That's where you started! You still need to count on 2 more: 7, 8.",
+                  "7": "That's only one hop past 6. Count on 2: seven, then eight makes 8.",
+                  "9": "One hop too far. From 6, count on just 2: 7, 8 lands on 8."
+                }
               },
               {
                 "id": "addition-atoll-u1-l1-p4",
@@ -1125,7 +1426,12 @@ window.NUMBLE_CURRICULUM = [
                   "What number do you reach when you count 3 past 7?",
                   "Counting on from 7, take exactly three steps.",
                   "From 7: 8, 9... and one more lands you on a round number."
-                ]
+                ],
+                "whyWrong": {
+                  "8": "That's only one hop. Count all 3: 8, 9, 10 to reach 10.",
+                  "9": "Just one short. Count on 3 from 7: 8, 9, 10 lands on 10.",
+                  "11": "One too many. From 7, count on exactly 3: 8, 9, 10 is the answer."
+                }
               },
               {
                 "id": "addition-atoll-u1-l1-p6",
@@ -1143,7 +1449,19 @@ window.NUMBLE_CURRICULUM = [
                   "From 8: 9, 10, 11... two more steps!"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Adding is just counting on! Hold the bigger number in your head, then count up by the other number. Start big, hop the rest.",
+              "example": {
+                "prompt": "6 + 3 = ?",
+                "steps": [
+                  "Start at the bigger number, 6, and hold it in your head.",
+                  "Count up 3 hops: 7, 8, 9.",
+                  "You landed on 9, so that's your answer."
+                ],
+                "answer": "9"
+              }
+            }
           },
           {
             "id": "addition-atoll-u1-l2",
@@ -1167,7 +1485,12 @@ window.NUMBLE_CURRICULUM = [
                   "We started with 5 stars and 2 floated off. Count the ones that stayed.",
                   "Take away the 2 and count what's left on the sand.",
                   "Cross off 2 of the 5 stars, then count the rest."
-                ]
+                ],
+                "whyWrong": {
+                  "2": "You took away one too many. 5 stars, 2 drift off, count what stays: 3 remain.",
+                  "4": "You only took away one. Two stars float off, so count back twice: 4, 3.",
+                  "7": "Looks like you added instead of taking away. 'Take away' means count back: 5 - 2 = 3."
+                }
               },
               {
                 "id": "addition-atoll-u1-l2-p2",
@@ -1201,7 +1524,12 @@ window.NUMBLE_CURRICULUM = [
                   "Start with all 10 and remove 6.",
                   "Think: 6 plus what number makes 10?",
                   "Count back from 10: 9, 8, 7... keep going three more."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "You counted back one too many. From 10, hop back 6: lands on 4, not 3.",
+                  "5": "One short on the take-away. Count back 6 from 10: 9, 8, 7, 6, 5, 4.",
+                  "6": "That's the number you took away, not what's left. 10 - 6 = 4."
+                }
               },
               {
                 "id": "addition-atoll-u1-l2-p4",
@@ -1235,7 +1563,12 @@ window.NUMBLE_CURRICULUM = [
                   "Start at 12 and take away 5.",
                   "Counting back 5 from 12 crosses over 10.",
                   "From 12: 11, 10, 9... two more steps back."
-                ]
+                ],
+                "whyWrong": {
+                  "5": "That's the number you took away, not what remains. 12 - 5 = 7.",
+                  "6": "Counted back one too far. From 12, hop back 5: 11, 10, 9, 8, 7.",
+                  "8": "One short. Take away exactly 5 from 12: that lands on 7."
+                }
               },
               {
                 "id": "addition-atoll-u1-l2-p6",
@@ -1253,7 +1586,19 @@ window.NUMBLE_CURRICULUM = [
                   "From 15: 14, 13, 12... keep going to take away all 7."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Subtracting means some float away, and you count what's left. Start at the big number and count BACKWARD by how many you take away.",
+              "example": {
+                "prompt": "7 - 3 = ?",
+                "steps": [
+                  "Start at 7, the number you have.",
+                  "Count back 3 hops: 6, 5, 4.",
+                  "You landed on 4, so 4 are left."
+                ],
+                "answer": "4"
+              }
+            }
           },
           {
             "id": "addition-atoll-u1-l3",
@@ -1289,7 +1634,12 @@ window.NUMBLE_CURRICULUM = [
                   "Subtracting is the opposite of adding. What did you add to get 12?",
                   "The 5 you added is being taken back away.",
                   "Take 5 away from 12 and you land back on the other number."
-                ]
+                ],
+                "whyWrong": {
+                  "5": "That's the number you took away, not what's left. 12 - 5 leaves the other part, 7.",
+                  "6": "That subtracts a different part. Since 7 + 5 = 12, taking 5 off leaves the 7.",
+                  "8": "Close, but the family is 7, 5, 12. Take the 5 back off the 12 to land on 7."
+                }
               },
               {
                 "id": "addition-atoll-u1-l3-p3",
@@ -1335,7 +1685,12 @@ window.NUMBLE_CURRICULUM = [
                   "In a fact family, the two small numbers add up to the big one.",
                   "Which two numbers are the parts, and which is the whole?",
                   "Try adding 5 and 8 and see if it equals the biggest number, 13."
-                ]
+                ],
+                "whyWrong": {
+                  "5 + 8 = 12": "Almost! 5 and 8 join to make 13, not 12. Count on: 8, 9... up to 13.",
+                  "13 + 5 = 8": "The whole, 13, can't be a part. The two small parts 5 and 8 add to the biggest number.",
+                  "8 - 13 = 5": "You can't take 13 away from 8. The two parts ADD up to the whole: 5 + 8 = 13."
+                }
               },
               {
                 "id": "addition-atoll-u1-l3-p6",
@@ -1353,7 +1708,19 @@ window.NUMBLE_CURRICULUM = [
                   "Count up from 6 to 14 and count the hops."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Adding and subtracting are tide-buddies that undo each other! If you know 3 + 4 = 7, then 7 - 4 = 3. Addition can flip order, but subtraction can't.",
+              "example": {
+                "prompt": "If 6 + 5 = 11, what is 11 - 5?",
+                "steps": [
+                  "Remember the add fact: 6 + 5 = 11, so 6, 5, and 11 are a family.",
+                  "Subtraction undoes addition, so take the 5 back off the 11.",
+                  "That leaves the other part, 6."
+                ],
+                "answer": "6"
+              }
+            }
           }
         ]
       },
@@ -1399,7 +1766,12 @@ window.NUMBLE_CURRICULUM = [
                   "Add each pair and look for the one that hits exactly 10.",
                   "Each wrong pair lands just under 10. Add carefully to spot the winner.",
                   "Try the pairs one by one and check which total equals 10."
-                ]
+                ],
+                "whyWrong": {
+                  "3 + 8": "That makes 11, one too many. The pair that hits exactly 10 is 3 + 7.",
+                  "4 + 5": "That only makes 9, one short of 10. Try 3 + 7 to reach a full ten.",
+                  "2 + 7": "That makes 9, just short. The ten-buddy of 3 is 7, so 3 + 7 = 10."
+                }
               },
               {
                 "id": "addition-atoll-u2-l1-p3",
@@ -1445,7 +1817,12 @@ window.NUMBLE_CURRICULUM = [
                   "9 is super close to 10 already.",
                   "How many steps from 9 up to 10?",
                   "It's only a single hop from 9."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "Adding 0 keeps it at 9. 9 needs exactly 1 more to reach 10.",
+                  "2": "That overshoots to 11. 9 only needs 1 more to make a full 10.",
+                  "10": "That makes 19, way past 10. Just 1 more buddy turns 9 into 10."
+                }
               },
               {
                 "id": "addition-atoll-u2-l1-p6",
@@ -1463,7 +1840,19 @@ window.NUMBLE_CURRICULUM = [
                   "From 7: 8, 9... one more hop to 10."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Every 10 hides secret partner pairs that add up to it. Find a number's ten-buddy by asking 'how many more to reach 10?' Memorize these and adding gets easy!",
+              "example": {
+                "prompt": "6 + ___ = 10",
+                "steps": [
+                  "Start at 6 and count up to 10: 7, 8, 9, 10.",
+                  "That was 4 hops to get there.",
+                  "So 6's ten-buddy is 4."
+                ],
+                "answer": "4"
+              }
+            }
           },
           {
             "id": "addition-atoll-u2-l2",
@@ -1487,7 +1876,12 @@ window.NUMBLE_CURRICULUM = [
                   "After 9 becomes 10, how much of the 5 is left over?",
                   "You used 1 from the 5, so 4 remains. Add it to 10.",
                   "10 + 4 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "12": "That dropped too much. 10 plus the leftover 4 is 14, not 12.",
+                  "13": "One short. After making 10, add the WHOLE leftover 4: 10 + 4 = 14.",
+                  "15": "One too many. You took 1 from the 5 to make 10, so only 4 is left: 10 + 4 = 14."
+                }
               },
               {
                 "id": "addition-atoll-u2-l2-p2",
@@ -1537,7 +1931,12 @@ window.NUMBLE_CURRICULUM = [
                   "Turn 9 into 10 by borrowing 1 from the 7.",
                   "After borrowing 1, the 7 becomes 6.",
                   "Now add 10 + 6."
-                ]
+                ],
+                "whyWrong": {
+                  "14": "That's too low. 10 plus the leftover 6 gives 16, not 14.",
+                  "15": "One short. 9 + 1 = 10, then add the leftover 6: 10 + 6 = 16.",
+                  "17": "One too many. After making 10, only 6 is left from the 7: 10 + 6 = 16."
+                }
               },
               {
                 "id": "addition-atoll-u2-l2-p5",
@@ -1571,9 +1970,26 @@ window.NUMBLE_CURRICULUM = [
                   "Turn 8 into 10 by borrowing 2 from the 7.",
                   "After borrowing 2, the 7 becomes 5.",
                   "Now add 10 + 5."
-                ]
+                ],
+                "whyWrong": {
+                  "13": "That's too low. 10 plus the leftover 5 makes 15, not 13.",
+                  "14": "One short. 8 + 2 = 10, then add the leftover 5: 10 + 5 = 15.",
+                  "16": "One too many. After making 10, only 5 is left from the 7: 10 + 5 = 15."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "When a sum is tricky, build a 10 first, then add the rest. Take just enough from the second number to fill the first up to 10, then add what's left over.",
+              "example": {
+                "prompt": "9 + 4 = ?",
+                "steps": [
+                  "9 needs 1 more to make 10, so borrow 1 from the 4: 9 + 1 = 10.",
+                  "That leaves 3 from the 4.",
+                  "Add the leftover: 10 + 3 = 13."
+                ],
+                "answer": "13"
+              }
+            }
           },
           {
             "id": "addition-atoll-u2-l3",
@@ -1629,7 +2045,12 @@ window.NUMBLE_CURRICULUM = [
                   "The waves destroyed some castles. Did the number go up or down?",
                   "Knocking down means take away.",
                   "Count back 3 from 8."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "You took one too many away. 8 castles minus 3 knocked down leaves 5.",
+                  "6": "That's one short on the take-away. 8 - 3 = 5 castles still standing.",
+                  "11": "Looks like you added instead. The waves KNOCKED DOWN 3, so subtract: 8 - 3 = 5."
+                }
               },
               {
                 "id": "addition-atoll-u2-l3-p4",
@@ -1663,7 +2084,12 @@ window.NUMBLE_CURRICULUM = [
                   "Birds left the dock. More or fewer now?",
                   "Flying away means take away.",
                   "Count back 6 from 14, or think: 6 + what = 14?"
-                ]
+                ],
+                "whyWrong": {
+                  "7": "One too many flew off. 14 birds minus 6 leaves 8 staying.",
+                  "9": "One short. Take away all 6 that flew: 14 - 6 = 8 stay.",
+                  "20": "Looks like you added. Birds FLEW AWAY, so subtract: 14 - 6 = 8."
+                }
               },
               {
                 "id": "addition-atoll-u2-l3-p6",
@@ -1681,7 +2107,19 @@ window.NUMBLE_CURRICULUM = [
                   "7 - 6 = ?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Story problems hide the math in words. Read carefully: words like 'more', 'found', or 'add' mean add; words like 'left', 'away', or 'gave' mean subtract.",
+              "example": {
+                "prompt": "Tia had 8 shells, then found 5 more. How many now?",
+                "steps": [
+                  "Spot the numbers: 8 shells and 5 more.",
+                  "'Found more' means we ADD.",
+                  "8 + 5 = 13 shells."
+                ],
+                "answer": "13"
+              }
+            }
           }
         ]
       },
@@ -1711,7 +2149,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look at the LEFT digit of 34. That one counts the tens.",
                   "34 is 30 plus 4. How many tens are in 30?",
                   "The first digit, 3, tells you the tens."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "That's the ones digit. The tens digit comes first: the 3 in 34 means 3 tens.",
+                  "30": "That's the value of the tens, but we count the bundles: 3 tens.",
+                  "34": "That's the whole number. The question asks just the tens: 34 has 3 tens."
+                }
               },
               {
                 "id": "addition-atoll-u3-l1-p2",
@@ -1762,7 +2205,12 @@ window.NUMBLE_CURRICULUM = [
                   "6 tens means six bundles of ten.",
                   "No ones means the ones place is a 0.",
                   "Six tens written out is 6 then 0."
-                ]
+                ],
+                "whyWrong": {
+                  "6": "That's just 6 ones, no tens. 6 TENS with 0 ones makes 60.",
+                  "16": "That's 1 ten and 6 ones. You want 6 tens and 0 ones, which is 60.",
+                  "66": "That's 6 tens AND 6 ones. We need 0 ones, so it's just 60."
+                }
               },
               {
                 "id": "addition-atoll-u3-l1-p5",
@@ -1793,7 +2241,19 @@ window.NUMBLE_CURRICULUM = [
                   "70 + 5 = ?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Big numbers are bundles of ten plus loose ones. In a two-digit number, the FIRST digit counts the tens and the SECOND digit counts the ones. So 42 is 4 tens and 2 ones.",
+              "example": {
+                "prompt": "What number is made of 5 tens and 3 ones?",
+                "steps": [
+                  "5 tens means 50.",
+                  "Add the 3 loose ones: 50 + 3.",
+                  "That gives 53."
+                ],
+                "answer": "53"
+              }
+            }
           },
           {
             "id": "addition-atoll-u3-l2",
@@ -1833,7 +2293,12 @@ window.NUMBLE_CURRICULUM = [
                   "Each step jumps up by 5.",
                   "What is 15 plus 5?",
                   "Numbers counting by 5 end in 5 or 0."
-                ]
+                ],
+                "whyWrong": {
+                  "16": "That added just 1, not 5. Counting by 5s, 15 + 5 = 20.",
+                  "18": "That added 3, not 5. Each hop adds 5: 15 + 5 = 20.",
+                  "25": "That's one hop too far. After 15 comes 20, then 25."
+                }
               },
               {
                 "id": "addition-atoll-u3-l2-p3",
@@ -1867,7 +2332,12 @@ window.NUMBLE_CURRICULUM = [
                   "These numbers count by 5s.",
                   "What comes 5 after 10?",
                   "10 + 5 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "11": "That only added 1. Counting by 5s, 10 + 5 = 15.",
+                  "12": "That's a by-2s number. Here we hop by 5s, so between 10 and 20 is 15.",
+                  "13": "That added 3, not 5. The 5s hop from 10 lands on 15."
+                }
               },
               {
                 "id": "addition-atoll-u3-l2-p5",
@@ -1901,9 +2371,26 @@ window.NUMBLE_CURRICULUM = [
                   "Count by 5 once for each bag, and there are 4 bags.",
                   "Say: 5, 10, 15... one more bag.",
                   "After the fourth hop of 5 you land on the answer."
-                ]
+                ],
+                "whyWrong": {
+                  "9": "Looks like you added 4 + 5. Each bag has 5 shells, so skip count: 5, 10, 15, 20.",
+                  "15": "That's only 3 bags counted. There are 4 bags of 5: 5, 10, 15, 20.",
+                  "25": "That's 5 bags. Pip has only 4: 5, 10, 15, 20 makes 20."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Skip counting hops in equal groups instead of by ones. By 2s you add 2 each hop, by 5s you add 5, by 10s you add 10. It's a fast way to count things in bundles!",
+              "example": {
+                "prompt": "Skip count by 5s: 5, 10, 15, ___",
+                "steps": [
+                  "Each hop adds 5.",
+                  "Start from the last number, 15, and add 5.",
+                  "15 + 5 = 20."
+                ],
+                "answer": "20"
+              }
+            }
           },
           {
             "id": "addition-atoll-u3-l3",
@@ -1939,7 +2426,12 @@ window.NUMBLE_CURRICULUM = [
                   "An odd number always has one leftover when you pair it up.",
                   "Check the last digit of each number.",
                   "Odd numbers end in 1, 3, 5, 7, or 9."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "4 splits into two equal 2s, so it's even. The odd one ends in an odd digit, like 7.",
+                  "6": "6 splits into two equal 3s, so it's even. Odd numbers end in 1, 3, 5, 7, or 9.",
+                  "10": "10 ends in 0, so it's even. Look for one ending in 1, 3, 5, 7, or 9."
+                }
               },
               {
                 "id": "addition-atoll-u3-l3-p3",
@@ -1990,7 +2482,12 @@ window.NUMBLE_CURRICULUM = [
                   "Add the tens together, then add the ones together.",
                   "Tens: 20 + 10 = 30. Ones: 3 + 4 = 7.",
                   "Now join 30 and 7."
-                ]
+                ],
+                "whyWrong": {
+                  "36": "Just short on the ones. Tens 20 + 10 = 30, ones 3 + 4 = 7, so 37.",
+                  "38": "One too many. Add the ones carefully: 3 + 4 = 7, giving 30 + 7 = 37.",
+                  "47": "You added the tens wrong: 20 + 10 = 30, not 40. So 30 + 7 = 37."
+                }
               },
               {
                 "id": "addition-atoll-u3-l3-p6",
@@ -2009,7 +2506,19 @@ window.NUMBLE_CURRICULUM = [
                   "Now add 50 + 14, where the 14 has a hidden extra ten."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Even numbers split into two equal groups and end in 0, 2, 4, 6, or 8; odd numbers don't and end in 1, 3, 5, 7, or 9. For big sums, add the tens, then add the ones.",
+              "example": {
+                "prompt": "32 + 15 = ?",
+                "steps": [
+                  "Add the tens: 30 + 10 = 40.",
+                  "Add the ones: 2 + 5 = 7.",
+                  "Put them together: 40 + 7 = 47."
+                ],
+                "answer": "47"
+              }
+            }
           }
         ]
       }
@@ -2049,7 +2558,12 @@ window.NUMBLE_CURRICULUM = [
                   "Each little group has 2 apples, and there are 3 groups. How many in all?",
                   "You can add the groups: 2 + 2 + 2. Multiplication is repeated adding!",
                   "Start adding: 2 + 2 = 4, now add one more 2..."
-                ]
+                ],
+                "whyWrong": {
+                  "5": "Looks like you added 3 + 2 instead of making groups. 3 x 2 means 3 groups of 2: 2 + 2 + 2 = 6.",
+                  "8": "That's one group too many. There are exactly 3 groups of 2: 2 + 2 + 2 = 6, not 4 groups.",
+                  "9": "That would be 3 groups of 3. Here each group has only 2: 2 + 2 + 2 = 6."
+                }
               },
               {
                 "id": "times-table-temple-u1-l1-p2",
@@ -2067,7 +2581,12 @@ window.NUMBLE_CURRICULUM = [
                   "There are 2 groups, and each group holds 3 puppies.",
                   "Try adding the two groups together: 3 + 3.",
                   "3 + 3 lands on a friendly number... start counting from 3."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "Looks like you added 2 + 3 instead of making groups. 2 groups of 3 means 3 + 3 = 6.",
+                  "5": "Close, but count again: 2 groups of 3 is 3 + 3 = 6, not 5.",
+                  "7": "That's one too many. Two groups of 3 give 3 + 3 = 6."
+                }
               },
               {
                 "id": "times-table-temple-u1-l1-p3",
@@ -2101,7 +2620,12 @@ window.NUMBLE_CURRICULUM = [
                   "The first number tells you HOW MANY groups; the second tells you what's IN each group.",
                   "3 x 4 is 'three fours', so write 4 down three times and add.",
                   "Count the fours: you need exactly three of them added together."
-                ]
+                ],
+                "whyWrong": {
+                  "3 + 4": "That's adding the two numbers, not making groups. 3 x 4 means three groups of 4: 4 + 4 + 4.",
+                  "3 + 3": "This is only adding 3s, but 3 x 4 means three groups of 4, so you add 4 three times: 4 + 4 + 4.",
+                  "4 + 4": "That's only two groups of 4. The 3 in 3 x 4 tells you to use three groups: 4 + 4 + 4."
+                }
               },
               {
                 "id": "times-table-temple-u1-l1-p5",
@@ -2131,7 +2655,19 @@ window.NUMBLE_CURRICULUM = [
                   "Compare 5 + 5 with what 2 x 5 asks for... do they match?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Multiplication is just a speedy way to add equal groups. When you see 3 x 2, it means 3 groups of 2 added up. Say it as 'groups of' and you'll always know what to do!",
+              "example": {
+                "prompt": "How many stars are in 3 groups of 4? ⭐",
+                "steps": [
+                  "Read it as 3 groups of 4, so write 4 + 4 + 4.",
+                  "Add the groups: 4 + 4 = 8, then 8 + 4 = 12.",
+                  "That matches 3 x 4 = 12."
+                ],
+                "answer": "12"
+              }
+            }
           },
           {
             "id": "times-table-temple-u1-l2",
@@ -2155,7 +2691,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look at the pattern: how much does each number jump?",
                   "Every step adds 5. Add 5 to the last number, 15.",
                   "15 + 5 = ? Count up: 16, 17, 18, 19, 20."
-                ]
+                ],
+                "whyWrong": {
+                  "16": "That's hopping by 1, not by 5. After 15, add a full hop of 5: 15 + 5 = 20.",
+                  "18": "That's adding 3, not 5. Each hop here is 5, so 15 + 5 = 20.",
+                  "25": "You hopped twice past 15. Just one more hop of 5 lands you on 20."
+                }
               },
               {
                 "id": "times-table-temple-u1-l2-p2",
@@ -2189,7 +2730,12 @@ window.NUMBLE_CURRICULUM = [
                   "Every even number is a stop on the by-2s stairs.",
                   "Add 2 to 8.",
                   "8 + 2 lands you on a round number ending in 0."
-                ]
+                ],
+                "whyWrong": {
+                  "9": "That's counting by 1, not by 2. After 8, add a full hop of 2: 8 + 2 = 10.",
+                  "11": "That's an odd number, but counting by 2s stays even. 8 + 2 = 10.",
+                  "12": "You hopped twice past 8. One hop of 2 lands you on 10, not 12."
+                }
               },
               {
                 "id": "times-table-temple-u1-l2-p4",
@@ -2223,7 +2769,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count each hop you take to get to 15.",
                   "Say it out loud: 5 (one), 10 (two), 15 (three).",
                   "How many numbers did you land on to reach 15?"
-                ]
+                ],
+                "whyWrong": {
+                  "2": "That's how many hops to reach 10, not 15. Count 5, 10, 15, that's 3 hops.",
+                  "4": "That's one hop too many. 5, 10, 15 is exactly 3 hops of 5.",
+                  "5": "5 is the size of each hop, not the number of hops. It takes 3 hops to reach 15."
+                }
               },
               {
                 "id": "times-table-temple-u1-l2-p6",
@@ -2237,7 +2788,19 @@ window.NUMBLE_CURRICULUM = [
                   "Test the last jump: does 12 + 4 equal 16?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Skip-counting is like hopping up stairs, where every hop is the same size. Hop by 2s, 5s, or 10s and you're building your times tables fast!",
+              "example": {
+                "prompt": "Skip-count by 5s: 5, 10, 15, 20, __. What comes next?",
+                "steps": [
+                  "Each hop adds 5, so I add 5 to the last number.",
+                  "20 + 5 = 25.",
+                  "That landing spot is 5 x 5 = 25."
+                ],
+                "answer": "25"
+              }
+            }
           },
           {
             "id": "times-table-temple-u1-l3",
@@ -2261,7 +2824,12 @@ window.NUMBLE_CURRICULUM = [
                   "Rows go across. There are 3 of them, each holding 4 dots.",
                   "Multiply rows by dots-per-row: 3 x 4.",
                   "Add 4 three times: 4 + 4 = 8, then 8 + 4..."
-                ]
+                ],
+                "whyWrong": {
+                  "7": "Looks like you added 3 + 4 instead of multiplying the array. 3 rows of 4 is 4 + 4 + 4 = 12.",
+                  "10": "Close, but count each row fully: 3 rows of 4 is 4 + 4 + 4 = 12, not 10.",
+                  "16": "That would be a 4 x 4 array. Here it's 3 rows of 4: 4 + 4 + 4 = 12."
+                }
               },
               {
                 "id": "times-table-temple-u1-l3-p2",
@@ -2295,7 +2863,12 @@ window.NUMBLE_CURRICULUM = [
                   "An array's total is rows times the number in each row.",
                   "Multiply the number of rows by the number of columns.",
                   "5 rows and 2 columns becomes 5 x 2."
-                ]
+                ],
+                "whyWrong": {
+                  "5 + 2": "Arrays multiply, not add. 5 rows and 2 columns means 5 x 2.",
+                  "5 x 5": "The second number is the columns, which is 2, not 5. It's 5 x 2.",
+                  "2 + 2": "That only counts two rows by adding. An array of 5 rows and 2 columns is 5 x 2."
+                }
               },
               {
                 "id": "times-table-temple-u1-l3-p4",
@@ -2329,7 +2902,12 @@ window.NUMBLE_CURRICULUM = [
                   "4 x 5 means 4 rows, each with 5 dots.",
                   "Skip-count by 5 four times.",
                   "5, 10, 15, then one more hop of 5."
-                ]
+                ],
+                "whyWrong": {
+                  "9": "That's adding 4 + 5 instead of multiplying. A 4 x 5 array is 5 + 5 + 5 + 5 = 20.",
+                  "16": "That would be a 4 x 4 array. Here each row has 5: 5 + 5 + 5 + 5 = 20.",
+                  "25": "That would be a 5 x 5 array. This one has 4 rows of 5: 5 + 5 + 5 + 5 = 20."
+                }
               },
               {
                 "id": "times-table-temple-u1-l3-p6",
@@ -2343,7 +2921,19 @@ window.NUMBLE_CURRICULUM = [
                   "3 + 3 = 6, then 6 + 3 = ?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "An array is a neat grid with rows and columns. Count the rows, count how many are in each row, and multiply: rows x how-many-in-each = total.",
+              "example": {
+                "prompt": "An array has 2 rows with 5 dots in each row. How many dots? (2 x 5)",
+                "steps": [
+                  "There are 2 rows, each with 5 dots, so write 5 + 5.",
+                  "Add them: 5 + 5 = 10.",
+                  "That matches 2 x 5 = 10."
+                ],
+                "answer": "10"
+              }
+            }
           }
         ]
       },
@@ -2405,7 +2995,12 @@ window.NUMBLE_CURRICULUM = [
                   "There's a neat trick when you multiply by 10.",
                   "Write the number, then put a 0 at the end.",
                   "8 becomes 8 with a 0 after it..."
-                ]
+                ],
+                "whyWrong": {
+                  "18": "Looks like you added 8 + 10 instead of multiplying. 8 x 10 means add a 0 to 8: 80.",
+                  "88": "You stuck the 8 next to 10 instead of multiplying. To do x10, add a 0 to 8: 80.",
+                  "800": "That's adding two zeros, which is x100. Multiplying by 10 adds just one 0: 8 x 10 = 80."
+                }
               },
               {
                 "id": "times-table-temple-u2-l1-p4",
@@ -2439,7 +3034,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count by 5s and stop after four hops.",
                   "5, 10, 15...",
                   "After 15, one more 5 gets you to 20."
-                ]
+                ],
+                "whyWrong": {
+                  "9": "Looks like you added 4 + 5 instead of multiplying. Skip-count by 5 four times: 5, 10, 15, 20.",
+                  "16": "That would be 4 x 4. Here it's 4 x 5: 5, 10, 15, 20 = 20.",
+                  "25": "That's one hop of 5 too many. Four hops give 5, 10, 15, 20 = 20."
+                }
               },
               {
                 "id": "times-table-temple-u2-l1-p6",
@@ -2453,7 +3053,19 @@ window.NUMBLE_CURRICULUM = [
                   "5 with a 0 behind it reads as fifty."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "The 2s, 5s, and 10s are the friendliest facts. For 2s just double the number, for 5s skip-count by 5, and for 10s just stick a 0 on the end!",
+              "example": {
+                "prompt": "What is 6 x 10?",
+                "steps": [
+                  "Multiplying by 10 means add a 0 to the other number.",
+                  "6 with a 0 added becomes 60.",
+                  "So 6 x 10 = 60."
+                ],
+                "answer": "60"
+              }
+            }
           },
           {
             "id": "times-table-temple-u2-l2",
@@ -2493,7 +3105,12 @@ window.NUMBLE_CURRICULUM = [
                   "Times 4 is the same as doubling twice.",
                   "First double 7 to get 14, then double again.",
                   "14 + 14 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "24": "That's 6 x 4, one group of 4 short. 7 x 4 is 24 + 4 = 28.",
+                  "27": "That's not a 4s fact at all. 7 x 4 is double-double of 7: 14, then 28.",
+                  "32": "That's 8 x 4, one group of 4 too many. 7 x 4 = 28."
+                }
               },
               {
                 "id": "times-table-temple-u2-l2-p3",
@@ -2527,7 +3144,12 @@ window.NUMBLE_CURRICULUM = [
                   "Eight groups of 3.",
                   "You can do 8 x 3 as (8 x 2) + 8 = 16 + 8.",
                   "16 + 8 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "21": "That's 7 x 3, one group of 3 short. 8 x 3 is 21 + 3 = 24.",
+                  "27": "That's 9 x 3, one group of 3 too many. 8 x 3 = 24.",
+                  "32": "That's 8 x 4, not 8 x 3. Adding 3 eight times gives 24."
+                }
               },
               {
                 "id": "times-table-temple-u2-l2-p5",
@@ -2558,7 +3180,19 @@ window.NUMBLE_CURRICULUM = [
                   "18 + 18 = ?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Time to level up with the 3s, 4s, and 6s. If you forget one, just add another group, or use a trick like doubling twice for the 4s.",
+              "example": {
+                "prompt": "What is 6 x 4?",
+                "steps": [
+                  "Double 6 once: 6 x 2 = 12.",
+                  "Double it again: 12 x 2 = 24.",
+                  "So 6 x 4 = 24."
+                ],
+                "answer": "24"
+              }
+            }
           },
           {
             "id": "times-table-temple-u2-l3",
@@ -2599,7 +3233,12 @@ window.NUMBLE_CURRICULUM = [
                   "Eight groups of 7.",
                   "Try 7 x 7 = 49, then add one more 7.",
                   "49 + 7 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "48": "That's 8 x 6, one group of 8 short. 8 x 7 is 48 + 8 = 56.",
+                  "54": "That's 9 x 6, not 8 x 7. For 8 x 7, think (8 x 8) - 8 = 64 - 8 = 56.",
+                  "63": "That's 9 x 7, one group of 7 too many. 8 x 7 = 56."
+                }
               },
               {
                 "id": "times-table-temple-u2-l3-p3",
@@ -2634,7 +3273,12 @@ window.NUMBLE_CURRICULUM = [
                   "Eight groups of 8.",
                   "Start from 8 x 7 = 56 and add one more 8.",
                   "56 + 8 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "56": "That's 8 x 7, one group of 8 short. 8 x 8 is 56 + 8 = 64.",
+                  "60": "Close, but 8 x 8 isn't a round number here. Picture an 8-by-8 board: that's 64.",
+                  "72": "That's 8 x 9, one group of 8 too many. 8 x 8 = 64."
+                }
               },
               {
                 "id": "times-table-temple-u2-l3-p5",
@@ -2665,7 +3309,19 @@ window.NUMBLE_CURRICULUM = [
                   "90 + 9 = ?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "These are the boss facts of the temple! For tricky ones near a friendly fact, lean on it: 9 x 6 is just 10 x 6 minus one 6. Smart tricks make 7s, 8s, and 12s easy.",
+              "example": {
+                "prompt": "What is 9 x 7?",
+                "steps": [
+                  "Start with the easy 10 times: 10 x 7 = 70.",
+                  "Take away one group of 7: 70 - 7 = 63.",
+                  "So 9 x 7 = 63."
+                ],
+                "answer": "63"
+              }
+            }
           }
         ]
       },
@@ -2711,7 +3367,12 @@ window.NUMBLE_CURRICULUM = [
                   "How many 5s fit inside 20?",
                   "Ask: 5 times WHAT equals 20?",
                   "Skip-count by 5: 5, 10, 15, 20... that's how many hops?"
-                ]
+                ],
+                "whyWrong": {
+                  "3": "Check by multiplying: 5 x 3 = 15, not 20. You need 5 x 4 = 20, so 20 / 5 = 4.",
+                  "5": "That's the divisor, not the answer. 5 x 4 = 20, so 20 / 5 = 4.",
+                  "15": "Looks like you subtracted 20 - 5. Division shares into groups: 20 / 5 = 4 because 5 x 4 = 20."
+                }
               },
               {
                 "id": "times-table-temple-u3-l1-p3",
@@ -2745,7 +3406,12 @@ window.NUMBLE_CURRICULUM = [
                   "How many 3s are inside 15?",
                   "Ask: 3 times WHAT equals 15?",
                   "Skip-count by 3: 3, 6, 9, 12, 15... count the hops."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "Check by multiplying: 3 x 3 = 9, not 15. You need 3 x 5 = 15, so 15 / 3 = 5.",
+                  "6": "Close, but 3 x 6 = 18, too big. 3 x 5 = 15, so 15 / 3 = 5.",
+                  "12": "Looks like you subtracted 15 - 3. Division shares into groups: 15 / 3 = 5 because 3 x 5 = 15."
+                }
               },
               {
                 "id": "times-table-temple-u3-l1-p5",
@@ -2775,7 +3441,19 @@ window.NUMBLE_CURRICULUM = [
                   "6 x 5 = 30, so check if the answer is 5."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Division is sharing into equal groups, the opposite of multiplying. To find 12 / 3, ask 'what times 3 makes 12?' That answer is your share.",
+              "example": {
+                "prompt": "15 cookies shared equally among 5 friends. How many each? 🍪",
+                "steps": [
+                  "Ask: what number times 5 makes 15?",
+                  "5 x 3 = 15, so each friend gets 3.",
+                  "So 15 / 5 = 3."
+                ],
+                "answer": "3"
+              }
+            }
           },
           {
             "id": "times-table-temple-u3-l2",
@@ -2799,7 +3477,12 @@ window.NUMBLE_CURRICULUM = [
                   "Division undoes multiplication in the same family.",
                   "You know 6 x 7 = 42, so 42 / 7 returns the missing factor.",
                   "Which number times 7 made 42? That's your answer."
-                ]
+                ],
+                "whyWrong": {
+                  "5": "That's a bit short. Since 6 x 7 = 42, dividing 42 / 7 brings back 6, not 5.",
+                  "7": "7 is the number you divided by, not the answer. 6 x 7 = 42, so 42 / 7 = 6.",
+                  "8": "That's a bit too high. The fact family says 6 x 7 = 42, so 42 / 7 = 6."
+                }
               },
               {
                 "id": "times-table-temple-u3-l2-p2",
@@ -2845,7 +3528,12 @@ window.NUMBLE_CURRICULUM = [
                   "A fact family uses the SAME three numbers in every fact.",
                   "Look for the fact that has a number other than 4, 6, or 24.",
                   "Which option mentions a 3 and an 8 instead?"
-                ]
+                ],
+                "whyWrong": {
+                  "4 x 6 = 24": "This one only uses 4, 6, and 24, so it IS in the family. The odd one out brings in a new number.",
+                  "6 x 4 = 24": "This one only uses 4, 6, and 24, so it IS in the family. The odd one out brings in a new number.",
+                  "24 / 6 = 4": "This one only uses 4, 6, and 24, so it IS in the family. The odd one out brings in a new number."
+                }
               },
               {
                 "id": "times-table-temple-u3-l2-p5",
@@ -2879,9 +3567,26 @@ window.NUMBLE_CURRICULUM = [
                   "Division reverses the multiplication you already know.",
                   "9 x 4 = 36, so dividing by 4 gives back the other factor.",
                   "Which factor was multiplied by 4 to make 36?"
-                ]
+                ],
+                "whyWrong": {
+                  "4": "4 is the number you divided by, not the answer. Since 9 x 4 = 36, then 36 / 4 = 9.",
+                  "8": "That's close to a different fact. The family says 9 x 4 = 36, so 36 / 4 = 9.",
+                  "12": "That mixes in a new number. Using 9 x 4 = 36, dividing 36 / 4 gives back 9."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Multiplication and division are family! The same three numbers make four facts, and the order can flip: 3 x 4 equals 4 x 3. So if you know one, you know them all.",
+              "example": {
+                "prompt": "If 7 x 8 = 56, what is 56 / 8?",
+                "steps": [
+                  "These belong to the same fact family with 7, 8, and 56.",
+                  "Since 7 x 8 = 56, dividing 56 / 8 undoes it.",
+                  "That brings back the other factor, 7."
+                ],
+                "answer": "7"
+              }
+            }
           },
           {
             "id": "times-table-temple-u3-l3",
@@ -2922,7 +3627,12 @@ window.NUMBLE_CURRICULUM = [
                   "Sharing equally means division.",
                   "Split 100 into 10 equal chests: 100 / 10.",
                   "How many 10s are inside 100?"
-                ]
+                ],
+                "whyWrong": {
+                  "1": "That shares only 10 gems, not 100. 100 / 10 = 10, so each chest gets 10.",
+                  "100": "That's all the gems in one chest, not shared. Split among 10 chests: 100 / 10 = 10 each.",
+                  "1000": "Looks like you multiplied 100 x 10. To share, divide: 100 / 10 = 10 per chest."
+                }
               },
               {
                 "id": "times-table-temple-u3-l3-p3",
@@ -2956,7 +3666,12 @@ window.NUMBLE_CURRICULUM = [
                   "Rows and equal columns mean multiply.",
                   "Multiply 8 rows by 5 torches each: 8 x 5.",
                   "Skip-count by 5 eight times, or do 8 x 5 = 40."
-                ]
+                ],
+                "whyWrong": {
+                  "13": "Looks like you added 8 + 5 instead of multiplying the array. 8 rows of 5 is 8 x 5 = 40.",
+                  "35": "That's 7 x 5, one row short. 8 rows of 5 is 8 x 5 = 40.",
+                  "45": "That's 9 x 5, one row too many. 8 rows of 5 is 8 x 5 = 40."
+                }
               },
               {
                 "id": "times-table-temple-u3-l3-p5",
@@ -2990,9 +3705,26 @@ window.NUMBLE_CURRICULUM = [
                   "Each potion costs the SAME, so multiply.",
                   "Multiply potions by price: 3 x 20.",
                   "3 x 20 is 3 x 2 = 6, then add a 0 for the tens..."
-                ]
+                ],
+                "whyWrong": {
+                  "23": "Looks like you added 3 + 20 instead of multiplying. 3 potions at 20 coins is 3 x 20 = 60.",
+                  "40": "That's only 2 potions worth. 3 potions at 20 coins each is 3 x 20 = 60.",
+                  "50": "That's between facts. Each potion costs 20, so 3 x 20 = 60 coins."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "The final challenge! Quests use multiplying for equal groups, dividing to share fairly, and multiplying by 10 or 100 (just add zeros). Read carefully and pick the right operation.",
+              "example": {
+                "prompt": "A temple has 5 shelves. Each shelf holds 8 scrolls. How many scrolls in all?",
+                "steps": [
+                  "Equal groups means multiply: 5 shelves x 8 scrolls.",
+                  "5 x 8 = 40.",
+                  "So there are 40 scrolls."
+                ],
+                "answer": "40"
+              }
+            }
           }
         ]
       }
@@ -3032,7 +3764,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think about how many equal slices there are in total, and how many you actually grabbed.",
                   "The bottom number is the total equal pieces; the top number is how many you have.",
                   "Total slices = 4 (that's the bottom), and you took 1 (that's the top). Put them together!"
-                ]
+                ],
+                "whyWrong": {
+                  "4/1": "You flipped it — the total pieces (4) goes on the bottom and the 1 slice you took goes on top: 1/4.",
+                  "1/2": "1/2 would be 1 slice out of 2 equal slices, but the pizza has 4 slices, so 1 out of 4 is 1/4.",
+                  "4/4": "4/4 means all 4 slices, but you only grabbed 1 slice, so it's 1/4."
+                }
               },
               {
                 "id": "fraction-forest-u1-l1-p2",
@@ -3050,7 +3787,12 @@ window.NUMBLE_CURRICULUM = [
                   "One number is on top and one is on the bottom — which job does each do?",
                   "The bottom number (the denominator) counts the total equal pieces.",
                   "Look at the bottom of 3/5. What number is sitting down there?"
-                ]
+                ],
+                "whyWrong": {
+                  "2": "That's the difference 5 - 3, but the total pieces is simply the denominator: 5.",
+                  "3": "3 is the top number (numerator) — that's how many pieces we're talking about, not how many the whole is split into. The bottom 5 tells the total pieces.",
+                  "8": "Looks like you added 3 + 5, but the number of total pieces is just the bottom number by itself: 5."
+                }
               },
               {
                 "id": "fraction-forest-u1-l1-p3",
@@ -3098,7 +3840,12 @@ window.NUMBLE_CURRICULUM = [
                   "Half means the whole is split into how many equal pieces?",
                   "For 1/2, you need 2 equal parts and 1 of them shaded.",
                   "Look for the choice with 2 equal parts and only 1 shaded."
-                ]
+                ],
+                "whyWrong": {
+                  "A square split into 2 equal parts with both shaded": "Both parts shaded is the whole thing (2/2 = 1), not half. For 1/2 you shade just 1 of the 2 equal parts.",
+                  "A square split into 4 equal parts with 1 shaded": "1 out of 4 equal parts is 1/4, not 1/2. Half needs the whole split into just 2 equal parts.",
+                  "A square split into 3 equal parts with 1 shaded": "1 out of 3 equal parts is 1/3, not 1/2. For a half, split into 2 equal parts and shade one."
+                }
               },
               {
                 "id": "fraction-forest-u1-l1-p6",
@@ -3116,7 +3863,19 @@ window.NUMBLE_CURRICULUM = [
                   "There are 5 left out of 8 — write the top over the bottom."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A fraction names equal pieces of a whole. The bottom number (denominator) says how many equal pieces the whole is split into; the top number (numerator) says how many of those pieces you're talking about. Top = how many you have, bottom = how many in all.",
+              "example": {
+                "prompt": "A waffle is cut into 4 equal pieces and you take 3 of them. What fraction did you take?",
+                "steps": [
+                  "Count the total equal pieces — that's the bottom number: 4.",
+                  "Count how many pieces you took — that's the top number: 3.",
+                  "Stack them as top over bottom: 3/4."
+                ],
+                "answer": "3/4"
+              }
+            }
           },
           {
             "id": "fraction-forest-u1-l2",
@@ -3140,7 +3899,12 @@ window.NUMBLE_CURRICULUM = [
                   "If 0 to 1 is cut into 4 equal jumps, how far is 2 jumps?",
                   "2 out of 4 jumps is half of the way from 0 to 1.",
                   "Halfway between 0 and 1 — what familiar fraction is that?"
-                ]
+                ],
+                "whyWrong": {
+                  "Right at 1": "That would be 4/4 (all 4 jumps). 2/4 is only 2 of the 4 jumps, so it lands halfway.",
+                  "Just past 0": "That's closer to 1/4. 2 jumps out of 4 is more than that — it reaches the middle.",
+                  "Past 1": "You only have 2 of the 4 jumps, so you can't pass 1. 2/4 stops right at the halfway mark."
+                }
               },
               {
                 "id": "fraction-forest-u1-l2-p2",
@@ -3186,7 +3950,12 @@ window.NUMBLE_CURRICULUM = [
                   "What fraction means you've gone ALL the equal jumps?",
                   "If the numerator and denominator are equal, the fraction equals 1.",
                   "Look for the choice where the top number matches the bottom number."
-                ]
+                ],
+                "whyWrong": {
+                  "1/4": "1/4 is just 1 of the 4 jumps, only part of the way. You reach the whole (1) when the top equals the bottom: 4/4.",
+                  "3/4": "3/4 is 3 of the 4 jumps — close, but not all the way. The whole 1 is at 4/4.",
+                  "1/2": "1/2 is only halfway to 1. You land exactly on 1 when top equals bottom, like 4/4."
+                }
               },
               {
                 "id": "fraction-forest-u1-l2-p5",
@@ -3204,7 +3973,12 @@ window.NUMBLE_CURRICULUM = [
                   "Both have the same bottom number, so just compare the jumps.",
                   "More jumps from 0 means farther to the right.",
                   "Compare 6 jumps vs 2 jumps — which is bigger?"
-                ]
+                ],
+                "whyWrong": {
+                  "2/8": "2 jumps is fewer than 6 jumps, so 2/8 is closer to 0, not farther. 6/8 is farther from 0.",
+                  "They're the same": "6/8 and 2/8 aren't the same spot — 6 jumps lands much farther along than 2 jumps.",
+                  "1/8": "1/8 is just 1 jump from 0 — the closest of all. 6/8 is the farthest here."
+                }
               },
               {
                 "id": "fraction-forest-u1-l2-p6",
@@ -3224,7 +3998,19 @@ window.NUMBLE_CURRICULUM = [
                   "1 jump + 2 more jumps = 3 jumps, so 3 over 6."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A number line works for fractions too! Chop the space between 0 and 1 into equal jumps that match the denominator, then count jumps for the numerator. The denominator tells you the jump size; the numerator tells you how many jumps from 0.",
+              "example": {
+                "prompt": "On a number line from 0 to 1 split into 4 equal parts, where does a point on the 3rd tick after 0 land?",
+                "steps": [
+                  "The line is split into 4 equal jumps, so each jump is 1/4 — that's the denominator.",
+                  "Count 3 ticks (jumps) from 0 — that's the numerator: 3.",
+                  "The point sits at 3 jumps out of 4, which is 3/4."
+                ],
+                "answer": "3/4"
+              }
+            }
           },
           {
             "id": "fraction-forest-u1-l3",
@@ -3248,7 +4034,12 @@ window.NUMBLE_CURRICULUM = [
                   "Try multiplying the top AND bottom of 1/2 by the same number.",
                   "1/2 with top and bottom doubled gives a new equal fraction.",
                   "1 times 2 = 2 on top, and 2 times 2 = 4 on the bottom. What's that?"
-                ]
+                ],
+                "whyWrong": {
+                  "1/3": "1/3 isn't the same as 1/2 — thirds are a different size. To match 1/2, multiply top and bottom by 2 to get 2/4.",
+                  "2/3": "2/3 is bigger than 1/2 (more than half). The twin of 1/2 here is 2/4, made by doubling top and bottom.",
+                  "3/4": "3/4 is more than half. To stay equal to 1/2, double both parts of 1/2 to get 2/4."
+                }
               },
               {
                 "id": "fraction-forest-u1-l3-p2",
@@ -3294,7 +4085,12 @@ window.NUMBLE_CURRICULUM = [
                   "What times 3 gives you 12?",
                   "Multiply the top by the same number you used on the bottom.",
                   "3 times 4 = 12, so 2 times 4 = 8 on top."
-                ]
+                ],
+                "whyWrong": {
+                  "6/12": "6/12 isn't 2/3 — that's actually 1/2. For 2/3 with bottom 12, multiply top and bottom by 4 to get 8/12.",
+                  "4/12": "Looks like you only multiplied the top by 2, but the bottom went from 3 to 12 (times 4), so the top must be 2 times 4 = 8.",
+                  "2/12": "You kept the top as 2 but only changed the bottom. Multiply the top by 4 too: 2 times 4 = 8, giving 8/12."
+                }
               },
               {
                 "id": "fraction-forest-u1-l3-p5",
@@ -3328,9 +4124,26 @@ window.NUMBLE_CURRICULUM = [
                   "Try simplifying each fraction and see which one isn't 1/2.",
                   "For a fraction to equal 1/2, the bottom must be double the top.",
                   "Check: is 5 double 3? Compare that to the others."
-                ]
+                ],
+                "whyWrong": {
+                  "5/10": "5/10 divides by 5 to become 1/2, so it IS equivalent to 1/2 — that means it's not the odd one out.",
+                  "4/8": "4/8 divides by 4 to become 1/2, so it IS equal to 1/2 — not the one we're looking for.",
+                  "6/12": "6/12 divides by 6 to become 1/2, so it IS equal to 1/2 — not the odd one out."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Equivalent fractions are twins — they look different but are worth the same amount. If you multiply (or divide) the top AND bottom by the same number, the value stays the same. Memory hook: whatever you do to the bottom, do to the top.",
+              "example": {
+                "prompt": "Write a fraction equivalent to 2/5 with a denominator of 15.",
+                "steps": [
+                  "See how the bottom changes: 5 times 3 = 15, so the multiplier is 3.",
+                  "Do the same to the top: 2 times 3 = 6.",
+                  "The equivalent fraction is 6/15."
+                ],
+                "answer": "6/15"
+              }
+            }
           }
         ]
       },
@@ -3360,7 +4173,12 @@ window.NUMBLE_CURRICULUM = [
                   "The bottoms are the same, so the pieces are the same size.",
                   "When denominators match, just compare the top numbers.",
                   "Is 5 more than 3? Then 5/8 is bigger."
-                ]
+                ],
+                "whyWrong": {
+                  "3/8": "With same-size pieces (eighths), more pieces wins. 3 pieces is fewer than 5, so 3/8 is the smaller one.",
+                  "They're equal": "3/8 and 5/8 aren't equal — they have the same bottom but different tops, so 5/8 has more pieces.",
+                  "Can't tell": "We can tell! Same bottoms means just compare the tops: 5 is more than 3, so 5/8 is greater."
+                }
               },
               {
                 "id": "fraction-forest-u2-l1-p2",
@@ -3378,7 +4196,12 @@ window.NUMBLE_CURRICULUM = [
                   "Imagine sharing a pizza with 3 people vs 5 people — which gives bigger slices?",
                   "Same top number, so smaller bottom means bigger pieces.",
                   "3 is a smaller bottom than 5, so 1/3 is the bigger piece."
-                ]
+                ],
+                "whyWrong": {
+                  "1/5": "When the tops match, a bigger bottom makes SMALLER pieces. Fifths are smaller than thirds, so 1/5 is less than 1/3.",
+                  "They're equal": "They aren't equal — splitting into 3 parts gives bigger pieces than splitting into 5, so 1/3 is greater.",
+                  "Can't tell": "We can tell! Same top, so fewer pieces (thirds) means bigger pieces: 1/3 wins."
+                }
               },
               {
                 "id": "fraction-forest-u2-l1-p3",
@@ -3408,7 +4231,12 @@ window.NUMBLE_CURRICULUM = [
                   "The denominators are the same, so look at the tops.",
                   "The '>' symbol means the left side is bigger.",
                   "4 is more than 3, so the left fraction is greater — which way does the symbol point?"
-                ]
+                ],
+                "whyWrong": {
+                  "<": "That points the wrong way. Same bottoms, and 4 pieces is more than 3, so 4/6 is greater: use >.",
+                  "=": "They aren't equal — 4/6 has more pieces than 3/6, so the correct symbol is >.",
+                  "none": "One symbol does work: since 4 beats 3 with the same bottom, 4/6 > 3/6."
+                }
               },
               {
                 "id": "fraction-forest-u2-l1-p5",
@@ -3426,7 +4254,12 @@ window.NUMBLE_CURRICULUM = [
                   "Rewrite both fractions with a denominator of 12.",
                   "2/3 becomes ?/12 and 3/4 becomes ?/12 — then compare tops.",
                   "2/3 = 8/12 and 3/4 = 9/12. Which top is bigger?"
-                ]
+                ],
+                "whyWrong": {
+                  "2/3": "Make common bottoms: 2/3 = 8/12 and 3/4 = 9/12. Since 8 is less than 9, 2/3 is the smaller one.",
+                  "They're equal": "They aren't equal — as twelfths, 2/3 = 8/12 and 3/4 = 9/12, so 3/4 is a bit bigger.",
+                  "Can't tell": "We can tell with a common denominator: 2/3 = 8/12 and 3/4 = 9/12, so 3/4 is greater."
+                }
               },
               {
                 "id": "fraction-forest-u2-l1-p6",
@@ -3445,7 +4278,19 @@ window.NUMBLE_CURRICULUM = [
                   "Order the tops 1, 2, 3 and write the matching fractions smallest first."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To compare fractions: if the bottoms match, more pieces wins. If the tops match, fewer pieces means BIGGER pieces, so the smaller bottom wins. When neither matches, make a common denominator (or compare to a benchmark like 1/2).",
+              "example": {
+                "prompt": "Which is greater: 3/4 or 5/8?",
+                "steps": [
+                  "The bottoms differ, so find a common denominator: 8 works for both.",
+                  "Rewrite 3/4 with bottom 8: multiply top and bottom by 2 to get 6/8.",
+                  "Now compare 6/8 and 5/8 — same bottoms, and 6 beats 5, so 3/4 is greater."
+                ],
+                "answer": "3/4"
+              }
+            }
           },
           {
             "id": "fraction-forest-u2-l2",
@@ -3503,7 +4348,12 @@ window.NUMBLE_CURRICULUM = [
                   "Keep the bottom the same — only the tops get added.",
                   "Watch out: the denominator does NOT change to 12.",
                   "1 + 4 = 5 over 6."
-                ]
+                ],
+                "whyWrong": {
+                  "5/12": "You added the bottoms (6 + 6), but the pieces are already sixths — keep the bottom 6 and just add the tops: 5/6.",
+                  "3/6": "That looks like 4 - 1 on top, but this is addition: 1 + 4 = 5, so the answer is 5/6.",
+                  "5/0": "The bottom never becomes 0 — you keep the shared bottom (6) and only add the tops: 5/6."
+                }
               },
               {
                 "id": "fraction-forest-u2-l2-p4",
@@ -3551,7 +4401,19 @@ window.NUMBLE_CURRICULUM = [
                   "Divide 4/10 top and bottom by 2 to get 2/5."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "When the bottoms already match, the pieces are the same size — so just add or subtract the tops and keep the bottom the same. Never add the bottoms! Memory hook: same-size slices, so only the count changes.",
+              "example": {
+                "prompt": "4/9 + 2/9 = ?",
+                "steps": [
+                  "Check the bottoms — both are 9, so they match.",
+                  "Add only the tops: 4 + 2 = 6.",
+                  "Keep the bottom the same: the answer is 6/9 (which simplifies to 2/3)."
+                ],
+                "answer": "6/9"
+              }
+            }
           },
           {
             "id": "fraction-forest-u2-l3",
@@ -3575,7 +4437,12 @@ window.NUMBLE_CURRICULUM = [
                   "How many times does 2 fit into 5, and what's left over?",
                   "Divide the top by the bottom: the quotient is the whole, the remainder is the new top.",
                   "5 divided by 2 = 2 remainder 1, so 2 wholes and 1/2."
-                ]
+                ],
+                "whyWrong": {
+                  "1 1/2": "That's only 3/2 (1 times 2, plus 1). For 5/2, 5 divided by 2 is 2 remainder 1, so it's 2 1/2.",
+                  "2 1/5": "The leftover goes over the original bottom (2), not 5. 5/2 = 2 1/2, not 2 1/5.",
+                  "5 1/2": "The whole number comes from dividing, not the top itself. 5 divided by 2 is 2 (not 5), giving 2 1/2."
+                }
               },
               {
                 "id": "fraction-forest-u2-l3-p2",
@@ -3621,7 +4488,12 @@ window.NUMBLE_CURRICULUM = [
                   "Turn the 2 wholes into thirds first.",
                   "Multiply the whole by the bottom, then add the top: keep the bottom.",
                   "2 times 3 = 6, plus 2 = 8, over 3."
-                ]
+                ],
+                "whyWrong": {
+                  "6/3": "6/3 equals 2 (2 times 3 = 6), which is 2 wholes — but 2 2/3 has an extra 2/3. You need 6 + 2 = 8, so 8/3.",
+                  "4/3": "That's only 1 1/3. For 2 2/3, multiply 2 times 3 = 6, then add 2 to get 8/3.",
+                  "2/3": "2/3 is less than one whole, but 2 2/3 is more than two wholes. Do 2 times 3 + 2 = 8, giving 8/3."
+                }
               },
               {
                 "id": "fraction-forest-u2-l3-p5",
@@ -3655,9 +4527,26 @@ window.NUMBLE_CURRICULUM = [
                   "Turn 7/2 into a mixed number so they're easy to compare.",
                   "7/2 equals 3 and a half — now compare to 3 and a quarter.",
                   "3 1/2 vs 3 1/4: same wholes, so compare 1/2 and 1/4."
-                ]
+                ],
+                "whyWrong": {
+                  "3 1/4": "3 1/4 is 3 and a quarter, but 7/2 = 3 1/2 (a half), which is more. So 7/2 is the larger one.",
+                  "They're equal": "They aren't equal — 7/2 is 3 1/2, and 3 1/2 is bigger than 3 1/4.",
+                  "Can't tell": "We can tell! Convert 7/2 to 3 1/2, then compare to 3 1/4 — 3 1/2 is greater."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A mixed number (like 1 1/2) is a whole plus a fraction; an improper fraction (like 3/2) says the same thing with a top bigger than the bottom. To go improper-to-mixed, divide; to go mixed-to-improper, multiply the whole by the bottom and add the top.",
+              "example": {
+                "prompt": "Write the mixed number 2 1/3 as an improper fraction.",
+                "steps": [
+                  "Multiply the whole number by the bottom: 2 times 3 = 6.",
+                  "Add the top: 6 + 1 = 7 — that's your new top.",
+                  "Keep the same bottom: the improper fraction is 7/3."
+                ],
+                "answer": "7/3"
+              }
+            }
           }
         ]
       },
@@ -3703,7 +4592,12 @@ window.NUMBLE_CURRICULUM = [
                   "You need a number that BOTH 3 and 4 divide into evenly.",
                   "Try multiplying the two denominators together as one option.",
                   "3 times 4 = 12, and both 3 and 4 go into 12."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "4 doesn't divide evenly into 3, so 3 can't be the common bottom. The smallest one that works for both is 12.",
+                  "4": "3 doesn't divide evenly into 4, so 4 can't be the common bottom. The smallest one both share is 12.",
+                  "7": "7 is 3 + 4, but a common denominator must be a number both 3 and 4 divide into. 3 and 4 don't divide 7 — but they both divide 12."
+                }
               },
               {
                 "id": "fraction-forest-u3-l1-p3",
@@ -3755,7 +4649,12 @@ window.NUMBLE_CURRICULUM = [
                   "Rewrite 2/3 with a denominator of 6.",
                   "2/3 equals 4/6, so add 4/6 + 1/6.",
                   "4 + 1 = 5 on top, keep the 6."
-                ]
+                ],
+                "whyWrong": {
+                  "3/9": "Looks like you added tops and bottoms straight across. Instead rewrite 2/3 as 4/6, then 4/6 + 1/6 = 5/6.",
+                  "3/6": "That's 2/3 - 1/6. For adding, 2/3 = 4/6, so 4/6 + 1/6 = 5/6.",
+                  "5/9": "You added the bottoms (3 + 6 = 9), but you should match them first: 2/3 = 4/6, then 4/6 + 1/6 = 5/6."
+                }
               },
               {
                 "id": "fraction-forest-u3-l1-p6",
@@ -3773,7 +4672,19 @@ window.NUMBLE_CURRICULUM = [
                   "3/6 + 2/6 = 5/6."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "When the bottoms are different, the pieces are different sizes — so make them match first with a common denominator. Rewrite each fraction as an equivalent one with that bottom, then add or subtract the tops as usual.",
+              "example": {
+                "prompt": "1/2 + 1/3 = ?",
+                "steps": [
+                  "Find a common denominator for 2 and 3: 6 works for both.",
+                  "Rewrite each: 1/2 = 3/6 and 1/3 = 2/6.",
+                  "Add the tops, keep the bottom: 3/6 + 2/6 = 5/6."
+                ],
+                "answer": "5/6"
+              }
+            }
           },
           {
             "id": "fraction-forest-u3-l2",
@@ -3813,7 +4724,12 @@ window.NUMBLE_CURRICULUM = [
                   "Multiply the top by the whole number, keep the bottom.",
                   "Don't multiply the bottom — only the top changes.",
                   "2 times 4 = 8, over 5."
-                ]
+                ],
+                "whyWrong": {
+                  "8/20": "You multiplied both the top AND the bottom by 4. Only multiply the top: 2 times 4 = 8, keep the bottom 5, giving 8/5.",
+                  "6/5": "Looks like you added 2 + 4 on top. Instead multiply: 2 times 4 = 8, so the answer is 8/5.",
+                  "2/20": "You multiplied only the bottom by 4 and left the top. It's the other way: multiply the top, keep the bottom: 8/5."
+                }
               },
               {
                 "id": "fraction-forest-u3-l2-p3",
@@ -3861,7 +4777,12 @@ window.NUMBLE_CURRICULUM = [
                   "Multiply 3 by the fraction 2/3.",
                   "2 times 3 = 6 on top, keep the 3: that's 6/3.",
                   "6/3 means 6 divided by 3 — what whole number is that?"
-                ]
+                ],
+                "whyWrong": {
+                  "6/3 of a liter only": "6/3 is correct as a step, but it simplifies — 6 divided by 3 = 2, so 3 cups hold 2 whole liters.",
+                  "5/3 liter": "That looks like 3 + 2 on top, but you multiply: 3 times 2 = 6, giving 6/3 = 2 liters.",
+                  "2/9 liter": "Looks like you multiplied the bottom (3 times 3) instead of the top. Multiply the top: 3 times 2 = 6, keep the bottom: 6/3 = 2 liters."
+                }
               },
               {
                 "id": "fraction-forest-u3-l2-p6",
@@ -3881,7 +4802,19 @@ window.NUMBLE_CURRICULUM = [
                   "6 divided by 3 = 2."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Multiplying a fraction by a whole number is just repeated adding. 3 x 1/4 means 1/4 + 1/4 + 1/4. The shortcut: multiply the top by the whole number and keep the bottom the same.",
+              "example": {
+                "prompt": "3 x 2/5 = ?",
+                "steps": [
+                  "Multiply the top by the whole number: 2 times 3 = 6.",
+                  "Keep the bottom the same: 5.",
+                  "The answer is 6/5 (which is also 1 1/5)."
+                ],
+                "answer": "6/5"
+              }
+            }
           },
           {
             "id": "fraction-forest-u3-l3",
@@ -3921,7 +4854,12 @@ window.NUMBLE_CURRICULUM = [
                   "Rewrite both with a denominator of 24.",
                   "5/6 = 20/24 and 7/8 = 21/24.",
                   "Compare 20/24 and 21/24 — which top is bigger?"
-                ]
+                ],
+                "whyWrong": {
+                  "5/6": "As twenty-fourths, 5/6 = 20/24 and 7/8 = 21/24. Since 20 is less than 21, 5/6 is the smaller one.",
+                  "They're equal": "They aren't equal — 5/6 = 20/24 and 7/8 = 21/24, so 7/8 is just a hair bigger.",
+                  "Can't tell": "We can tell with a common denominator: 5/6 = 20/24 and 7/8 = 21/24, so 7/8 is greater."
+                }
               },
               {
                 "id": "fraction-forest-u3-l3-p3",
@@ -3989,9 +4927,26 @@ window.NUMBLE_CURRICULUM = [
                   "Turn 11/8 into a mixed number to see where it sits.",
                   "11 divided by 8 = 1 remainder 3, so 1 3/8.",
                   "1 3/8 is more than 1 but less than 2 — which choice says that?"
-                ]
+                ],
+                "whyWrong": {
+                  "Between 0 and 1": "That would be a fraction less than 8/8. But 11/8 is more than 8/8 (one whole), so it lands past 1, at 1 3/8.",
+                  "Exactly at 1": "Exactly 1 is at 8/8. 11/8 has 3 more eighths than that, so it sits past 1 at 1 3/8.",
+                  "Exactly at 2": "2 would be 16/8. 11/8 is less than 16/8, so it lands between 1 and 2, at 1 3/8."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "This is the grand mix — comparing, adding with unlike bottoms, switching between mixed and improper, and multiplying. Slow down and pick the right tool for each problem: match bottoms before adding, and multiply tops for whole-number multiplying.",
+              "example": {
+                "prompt": "3/4 + 1/6 = ?",
+                "steps": [
+                  "Find a common denominator for 4 and 6: 12 works for both.",
+                  "Rewrite each: 3/4 = 9/12 and 1/6 = 2/12.",
+                  "Add the tops, keep the bottom: 9/12 + 2/12 = 11/12."
+                ],
+                "answer": "11/12"
+              }
+            }
           }
         ]
       }
@@ -4031,7 +4986,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look at the digit just to the right of the dot.",
                   "The places after the dot go: tenths, then hundredths.",
                   "Start at the decimal point and step right one place to land on the tenths."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "There's no 0 in 4.7. The tenths place is the first digit after the dot, and that's the 7.",
+                  "4": "The 4 is in the ones place, to the LEFT of the dot. The tenths place is the first spot to the RIGHT of the dot, which is 7.",
+                  "47": "That's both digits mushed together. We want just one digit, the one in the tenths place: 7."
+                }
               },
               {
                 "id": "decimal-delta-u1-l1-p2",
@@ -4061,7 +5021,12 @@ window.NUMBLE_CURRICULUM = [
                   "A decimal part means there's a dot with digits after it.",
                   "Scan each number for a decimal point.",
                   "Three of these are plain whole numbers, one has a dot, find the dot."
-                ]
+                ],
+                "whyWrong": {
+                  "9": "9 is a single whole number with no dot. The one with a decimal part has a dot in it: 5.6.",
+                  "12": "12 is a whole number with no dot, so it has no decimal part. Look for a number with a dot followed by pieces, like 5.6.",
+                  "100": "100 is a whole number, no dot and no pieces. The number with a decimal part is 5.6."
+                }
               },
               {
                 "id": "decimal-delta-u1-l1-p4",
@@ -4095,7 +5060,12 @@ window.NUMBLE_CURRICULUM = [
                   "Count the places after the dot: first is tenths, second is hundredths.",
                   "You want the second digit past the decimal point.",
                   "Skip past the tenths digit and land on the next one."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "The 0 is the whole-number part before the dot. The hundredths place is the second digit after the dot: 9.",
+                  "5": "The 5 is in the tenths place, the FIRST spot after the dot. Hundredths is the SECOND spot, which is the 9.",
+                  "59": "That's both digits together. We want only the digit in the hundredths place, the second one after the dot: 9."
+                }
               },
               {
                 "id": "decimal-delta-u1-l1-p6",
@@ -4109,7 +5079,19 @@ window.NUMBLE_CURRICULUM = [
                   "Right after the dot comes 0, so check if tenths is where 0 sits."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "That little dot is the decimal point. Everything to the LEFT is whole; everything to the RIGHT is pieces of a whole. The first spot after the dot is tenths, the second is hundredths. Hook: left of the dot = lots, right of the dot = little.",
+              "example": {
+                "prompt": "Which digit is in the hundredths place in 7.36?",
+                "steps": [
+                  "Find the decimal point. Everything after it is the pieces part: 36.",
+                  "The FIRST spot after the dot is tenths, so 3 is in tenths.",
+                  "The SECOND spot after the dot is hundredths, so 6 is in hundredths."
+                ],
+                "answer": "6"
+              }
+            }
           },
           {
             "id": "decimal-delta-u1-l2",
@@ -4133,7 +5115,12 @@ window.NUMBLE_CURRICULUM = [
                   "The 6 is the first digit after the dot.",
                   "The first place after the dot names the value.",
                   "First place after the dot is tenths, so the 6 is worth 6 of those."
-                ]
+                ],
+                "whyWrong": {
+                  "6 ones": "The 6 is after the dot, so it's not a whole. It sits in the first place after the dot, the tenths, so its value is 6 tenths.",
+                  "6 hundredths": "Hundredths is the SECOND place after the dot. The 6 is in the FIRST place, so it's 6 tenths, not hundredths.",
+                  "6 wholes": "Wholes live to the LEFT of the dot. The 6 is to the right in the tenths place, so its value is 6 tenths."
+                }
               },
               {
                 "id": "decimal-delta-u1-l2-p2",
@@ -4167,7 +5154,12 @@ window.NUMBLE_CURRICULUM = [
                   "Moving right past the dot makes places smaller.",
                   "What comes right after tenths?",
                   "Tenths, then... the next place to the right is the answer."
-                ]
+                ],
+                "whyWrong": {
+                  "ones": "Ones is to the LEFT of the dot, and it's bigger than tenths, not smaller. The place ten times smaller than tenths is hundredths.",
+                  "tens": "Tens is a big place to the left of the dot. We want the place ten times SMALLER than tenths, which is hundredths.",
+                  "thousands": "Thousands is huge and to the left of the dot. The place just smaller than tenths is hundredths."
+                }
               },
               {
                 "id": "decimal-delta-u1-l2-p4",
@@ -4201,7 +5193,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find where the 4 sits relative to the dot.",
                   "First place after the dot is tenths.",
                   "The 4 comes right after the decimal point, so name that place."
-                ]
+                ],
+                "whyWrong": {
+                  "4 hundredths": "Hundredths is the SECOND place after the dot. The 4 is the FIRST digit after the dot, so it's 4 tenths.",
+                  "4 ones": "Ones is to the LEFT of the dot. The 4 is to the right in the tenths place, so its value is 4 tenths.",
+                  "4 tens": "Tens is far to the left of the dot. The 4 is right after the dot in the tenths place, so it's 4 tenths."
+                }
               },
               {
                 "id": "decimal-delta-u1-l2-p6",
@@ -4215,7 +5212,19 @@ window.NUMBLE_CURRICULUM = [
                   "Compare 5 tenths to 5 hundredths, are those the same size?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Each place to the right of the dot is ten times smaller: tenths, then hundredths, then thousandths. A digit's VALUE is the digit times its place, so the 6 in 0.06 is worth 6 hundredths, not 6 tenths. Hook: same digit, different place, different worth.",
+              "example": {
+                "prompt": "What is the value of the 4 in 0.045?",
+                "steps": [
+                  "Name the places after the dot: 0 is tenths, 4 is hundredths, 5 is thousandths.",
+                  "The 4 sits in the hundredths place.",
+                  "So its value is 4 hundredths, which is 4/100."
+                ],
+                "answer": "4 hundredths (4/100)"
+              }
+            }
           },
           {
             "id": "decimal-delta-u1-l3",
@@ -4239,7 +5248,12 @@ window.NUMBLE_CURRICULUM = [
                   "The last digit's place name is the unit you say.",
                   "The 3 is in the tenths place.",
                   "Say the digit, then its place: three... tenths."
-                ]
+                ],
+                "whyWrong": {
+                  "three": "That's just the whole number 3, but 0.3 has the 3 after the dot. The 3 is in the tenths place, so it's 'three tenths.'",
+                  "three hundredths": "Hundredths is the second place after the dot. In 0.3 the 3 is in the FIRST place, so it's 'three tenths.'",
+                  "thirty": "0.3 is smaller than one, not thirty. The 3 is in the tenths place, so it reads 'three tenths.'"
+                }
               },
               {
                 "id": "decimal-delta-u1-l3-p2",
@@ -4273,7 +5287,12 @@ window.NUMBLE_CURRICULUM = [
                   "The dot is read as the word 'and'.",
                   "Say the whole part, then 'and', then the decimal part.",
                   "Four ... and ... two of which place? The 2 is in tenths."
-                ]
+                ],
+                "whyWrong": {
+                  "four two": "We don't just say the digits. The dot is read as 'and' and the 2 is in tenths, so it's 'four and two tenths.'",
+                  "forty-two": "4.2 is a bit more than four, not forty-two. Read the dot as 'and': 'four and two tenths.'",
+                  "four and two": "Close! You read the dot as 'and,' but you skipped the place name. The 2 is in tenths, so it's 'four and two tenths.'"
+                }
               },
               {
                 "id": "decimal-delta-u1-l3-p4",
@@ -4306,7 +5325,12 @@ window.NUMBLE_CURRICULUM = [
                   "Hundredths is the second place after the dot.",
                   "The 9 must land in that second spot.",
                   "Fill the tenths place with 0 first, then put 9 in hundredths."
-                ]
+                ],
+                "whyWrong": {
+                  "0.9": "That's nine TENTHS (9 in the first place). Nine HUNDREDTHS needs the 9 in the second place: 0.09.",
+                  "0.90": "That reads as ninety hundredths, or nine tenths. Nine hundredths puts the 9 in the second place: 0.09.",
+                  "9.00": "That's the whole number nine, not nine hundredths. Nine hundredths is much smaller: 0.09."
+                }
               },
               {
                 "id": "decimal-delta-u1-l3-p6",
@@ -4320,7 +5344,19 @@ window.NUMBLE_CURRICULUM = [
                   "Read the digits as a number then add the place name."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To read a decimal, say the whole part, read the dot as the word 'and,' then say the pieces with their place name. So 0.56 is 'fifty-six hundredths' because the last digit lands in the hundredths place. Hook: the LAST digit names the whole decimal part.",
+              "example": {
+                "prompt": "How do you read 6.07?",
+                "steps": [
+                  "Read the whole part: six.",
+                  "Read the dot as 'and.'",
+                  "The pieces are 07, and the last digit is in hundredths, so say 'seven hundredths.'"
+                ],
+                "answer": "six and seven hundredths"
+              }
+            }
           }
         ]
       },
@@ -4350,7 +5386,12 @@ window.NUMBLE_CURRICULUM = [
                   "Compare the tenths digits first.",
                   "Is 7 tenths more or less than 5 tenths?",
                   "The bigger number is on the left, so the open side of the symbol faces it."
-                ]
+                ],
+                "whyWrong": {
+                  "<": "'Less than' points the wrong way here. 7 tenths is more than 5 tenths, so 0.7 is GREATER: 0.7 > 0.5.",
+                  "=": "These aren't equal. 7 tenths and 5 tenths are different, and 0.7 is the bigger one: 0.7 > 0.5.",
+                  "+": "That's not a comparing symbol. To compare, use >, <, or =, and here 0.7 > 0.5."
+                }
               },
               {
                 "id": "decimal-delta-u2-l1-p2",
@@ -4380,7 +5421,12 @@ window.NUMBLE_CURRICULUM = [
                   "Line up the decimals and look at the tenths place first.",
                   "One has 2 tenths, the other has 3 tenths.",
                   "The smaller tenths makes the smaller number, even with more digits."
-                ]
+                ],
+                "whyWrong": {
+                  ">": "It looks like you thought more digits means bigger, but compare tenths first: 2 tenths is less than 3 tenths, so 0.25 < 0.3.",
+                  "=": "These aren't equal. 0.25 is 2 tenths and 0.3 is 3 tenths, so 0.25 is smaller: 0.25 < 0.3.",
+                  "x": "That's a multiply sign, not a comparing symbol. Use <, >, or =, and here 0.25 < 0.3."
+                }
               },
               {
                 "id": "decimal-delta-u2-l1-p4",
@@ -4398,7 +5444,12 @@ window.NUMBLE_CURRICULUM = [
                   "Compare the tenths digit of each number first.",
                   "Which one has the most tenths?",
                   "One has 8 tenths while the others have 7, 6, and 7, so which wins?"
-                ]
+                ],
+                "whyWrong": {
+                  "0.79": "More digits doesn't mean bigger. Compare tenths: 0.79 has 7 tenths, but 0.8 has 8 tenths, so 0.8 wins.",
+                  "0.6": "0.6 has only 6 tenths. The largest here has the most tenths, and 0.8 has 8 tenths.",
+                  "0.75": "0.75 has 7 tenths. Compare tenths to find the biggest: 0.8 has 8 tenths, so 0.8 is largest."
+                }
               },
               {
                 "id": "decimal-delta-u2-l1-p5",
@@ -4429,7 +5480,19 @@ window.NUMBLE_CURRICULUM = [
                   "Compare 9 hundredths to 10 hundredths, which is bigger?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To compare two decimals, line up the dots and check place by place from the LEFT: wholes first, then tenths, then hundredths. The first place where they differ decides the winner. Hook: a longer decimal isn't automatically bigger, so 0.5 beats 0.45.",
+              "example": {
+                "prompt": "Which is greater, 0.6 or 0.58?",
+                "steps": [
+                  "Line up the dots and compare wholes: both are 0, a tie.",
+                  "Compare tenths: 6 tenths vs 5 tenths, and 6 is bigger.",
+                  "Since tenths already differ, 0.6 wins. We never need the hundredths."
+                ],
+                "answer": "0.6 > 0.58"
+              }
+            }
           },
           {
             "id": "decimal-delta-u2-l2",
@@ -4453,7 +5516,12 @@ window.NUMBLE_CURRICULUM = [
                   "These all have just tenths, so compare the tenths digits.",
                   "Find the smallest tenths digit to go first.",
                   "Order the digits 1, 4, 7 from small to big and match the decimals."
-                ]
+                ],
+                "whyWrong": {
+                  "0.7, 0.4, 0.1": "That's largest to smallest. The question asks smallest first, so flip it: 0.1, 0.4, 0.7.",
+                  "0.4, 0.1, 0.7": "The order got jumbled. Compare tenths: 1 < 4 < 7, so smallest to largest is 0.1, 0.4, 0.7.",
+                  "0.1, 0.7, 0.4": "You started right with 0.1 but then swapped the last two. Since 4 < 7, it's 0.1, 0.4, 0.7."
+                }
               },
               {
                 "id": "decimal-delta-u2-l2-p2",
@@ -4471,7 +5539,12 @@ window.NUMBLE_CURRICULUM = [
                   "Largest to smallest means start big and go down.",
                   "Compare the tenths digits.",
                   "Which list starts with the biggest tenths and keeps shrinking?"
-                ]
+                ],
+                "whyWrong": {
+                  "0.2, 0.5, 0.9": "That's smallest to largest. The question wants largest first, so reverse it: 0.9, 0.5, 0.2.",
+                  "0.5, 0.9, 0.2": "The order is mixed up. Largest to smallest means biggest tenths first: 0.9, 0.5, 0.2.",
+                  "0.9, 0.2, 0.5": "You started biggest with 0.9, but then swapped. After 9 comes 5, then 2: 0.9, 0.5, 0.2."
+                }
               },
               {
                 "id": "decimal-delta-u2-l2-p3",
@@ -4511,7 +5584,12 @@ window.NUMBLE_CURRICULUM = [
                   "Start by comparing the whole-number parts.",
                   "One number has a whole part of 0, the others have 1.",
                   "Put the 0-whole number first, then order the two 1-point numbers by tenths."
-                ]
+                ],
+                "whyWrong": {
+                  "1.5, 1.2, 0.9": "That's largest to smallest. The question asks smallest first, so flip it: 0.9, 1.2, 1.5.",
+                  "0.9, 1.5, 1.2": "You correctly put 0.9 first, but then swapped the last two. Since 1.2 < 1.5, it's 0.9, 1.2, 1.5.",
+                  "1.2, 0.9, 1.5": "Compare the wholes first: 0.9 is less than 1, so it goes first, giving 0.9, 1.2, 1.5."
+                }
               },
               {
                 "id": "decimal-delta-u2-l2-p5",
@@ -4529,7 +5607,12 @@ window.NUMBLE_CURRICULUM = [
                   "You need a number bigger than 0.4 but smaller than 0.6.",
                   "What's right in the middle of 4 tenths and 6 tenths?",
                   "Count up one tenth from 0.4 to find the answer."
-                ]
+                ],
+                "whyWrong": {
+                  "0.3": "0.3 is smaller than 0.4, so it sits BEFORE the range, not between. The middle value is 0.5.",
+                  "0.7": "0.7 is bigger than 0.6, so it lands AFTER the range. The one between 0.4 and 0.6 is 0.5.",
+                  "0.9": "0.9 is far past 0.6, so it's well outside the range. The value between 0.4 and 0.6 is 0.5."
+                }
               },
               {
                 "id": "decimal-delta-u2-l2-p6",
@@ -4543,7 +5626,19 @@ window.NUMBLE_CURRICULUM = [
                   "The smaller one comes first, so decide which that is."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To put decimals in order, compare them place by place just like before, then line them up smallest to largest. Adding a zero on the end (0.3 = 0.30) doesn't change a number's spot. Hook: order one place at a time and they fall into a row like ducks.",
+              "example": {
+                "prompt": "Order from smallest to largest: 0.5, 0.2, 0.35",
+                "steps": [
+                  "Compare tenths: 0.2 has 2 tenths (smallest), 0.35 has 3 tenths, 0.5 has 5 tenths.",
+                  "No ties in the tenths, so that ranking is enough.",
+                  "Write them from smallest to largest: 0.2, 0.35, 0.5."
+                ],
+                "answer": "0.2, 0.35, 0.5"
+              }
+            }
           },
           {
             "id": "decimal-delta-u2-l3",
@@ -4567,7 +5662,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look at the tenths digit to decide.",
                   "Is the tenths digit 5 or more?",
                   "Since the tenths digit is 5 or more, round the whole number up."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "The tenths digit is 6, which is 5 or more, so 3 rounds UP, not down. The answer is 4.",
+                  "6": "That's the tenths digit, not the rounded number. Rounding 3.6 to the nearest whole gives 4.",
+                  "3.5": "Rounding to the nearest WHOLE number means no decimal piece. Since 6 rounds the 3 up, the answer is 4."
+                }
               },
               {
                 "id": "decimal-delta-u2-l3-p2",
@@ -4585,7 +5685,12 @@ window.NUMBLE_CURRICULUM = [
                   "Check the tenths digit.",
                   "Is the tenths digit less than 5 or 5 and up?",
                   "Since the tenths digit is less than 5, the whole number stays the same."
-                ]
+                ],
+                "whyWrong": {
+                  "2": "That's the tenths digit, not the rounded number. Rounding 7.2 to the nearest whole gives 7.",
+                  "8": "The tenths digit is 2, which is less than 5, so 7 stays put instead of rounding up. The answer is 7.",
+                  "7.5": "Rounding to the nearest WHOLE number means no decimal piece. Since 2 keeps the 7, the answer is 7."
+                }
               },
               {
                 "id": "decimal-delta-u2-l3-p3",
@@ -4619,7 +5724,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look at the digit just right of the tenths place.",
                   "Check the hundredths digit.",
                   "Since it's less than 5, keep the 8 tenths as it is."
-                ]
+                ],
+                "whyWrong": {
+                  "5.9": "The hundredths digit is 3, which is less than 5, so the tenths stays at 8, not up to 9. The answer is 5.8.",
+                  "6.0": "That would be rounding to the nearest whole. To the nearest TENTH, 3 keeps the 8, giving 5.8.",
+                  "5.0": "That rounded too far. To the nearest tenth, the 8 stays since the next digit 3 is small: 5.8."
+                }
               },
               {
                 "id": "decimal-delta-u2-l3-p5",
@@ -4649,7 +5759,19 @@ window.NUMBLE_CURRICULUM = [
                   "Since the tenths digit is less than 5, the whole-number part stays the same."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To round, find your rounding place, then peek ONLY at the digit just to its right: 5 or more rounds up, 4 or less stays put. Then drop the digits after the rounding place. Hook: 5 and up gives a bump up, 4 and down stays around.",
+              "example": {
+                "prompt": "Round 4.62 to the nearest tenth.",
+                "steps": [
+                  "The tenths place is 6, our rounding spot.",
+                  "Peek one spot right at the hundredths digit, 2.",
+                  "2 is less than 5, so the tenths stays 6 and we drop the rest: 4.6."
+                ],
+                "answer": "4.6"
+              }
+            }
           }
         ]
       },
@@ -4726,7 +5848,12 @@ window.NUMBLE_CURRICULUM = [
                   "Line up the dots and add the tenths first.",
                   "5 tenths plus 7 tenths is more than 10, so you carry.",
                   "12 tenths is 1 whole and 2 tenths; add that extra whole to the ones."
-                ]
+                ],
+                "whyWrong": {
+                  "3.2": "It looks like the carry got missed. 5 tenths + 7 tenths = 12 tenths, which carries 1 whole, so it's 4.2, not 3.2.",
+                  "4.12": "The tenths can't be 12 in the answer; 12 tenths is 1 whole and 2 tenths. After carrying, it's 4.2.",
+                  "3.12": "Two slips here: write 12 tenths as a carry, not '12,' and add the carried 1 to the wholes. The answer is 4.2."
+                }
               },
               {
                 "id": "decimal-delta-u3-l1-p5",
@@ -4756,7 +5883,19 @@ window.NUMBLE_CURRICULUM = [
                   "The tenths add to 10, and 10 tenths is exactly 1 whole."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To add or subtract decimals, line up the decimal points so the places stack, then add or subtract each column. If a column makes 10 or more, carry to the next place just like whole numbers. Hook: dots stacked = places stacked.",
+              "example": {
+                "prompt": "What is 1.6 + 0.7?",
+                "steps": [
+                  "Stack the dots and add tenths: 6 tenths + 7 tenths = 13 tenths.",
+                  "13 tenths is 1 whole and 3 tenths, so write 3 and carry 1.",
+                  "Add the wholes: 1 + 0 + 1 carried = 2, giving 2.3."
+                ],
+                "answer": "2.3"
+              }
+            }
           },
           {
             "id": "decimal-delta-u3-l2",
@@ -4796,7 +5935,12 @@ window.NUMBLE_CURRICULUM = [
                   "First multiply as whole numbers: 5 x 5.",
                   "Count the decimal places in BOTH numbers: one plus one.",
                   "With 2 decimal places, the product lands in the hundredths."
-                ]
+                ],
+                "whyWrong": {
+                  "2.5": "The dot landed too far right. 5 x 5 = 25, but with two decimal places the answer is 0.25, smaller than 1.",
+                  "0.10": "That undercounts the multiply. 5 x 5 = 25, and with two decimal places the answer is 0.25, not 0.10.",
+                  "1.0": "Multiplying two numbers less than 1 gives something even smaller, not bigger. 0.5 x 0.5 = 0.25."
+                }
               },
               {
                 "id": "decimal-delta-u3-l2-p3",
@@ -4830,7 +5974,12 @@ window.NUMBLE_CURRICULUM = [
                   "You can add 1.5 four times.",
                   "Or multiply 15 x 4 then place one decimal.",
                   "With one decimal place, 60 becomes 6.0."
-                ]
+                ],
+                "whyWrong": {
+                  "4.5": "That looks like 1.5 + 3 instead of times. Multiplying, 1.5 four times is 6.0.",
+                  "5.4": "The digits got flipped. 15 x 4 = 60, and with one decimal place that's 6.0, not 5.4.",
+                  "6.5": "Close, but add carefully: 1.5 + 1.5 + 1.5 + 1.5 = 6.0 exactly, not 6.5."
+                }
               },
               {
                 "id": "decimal-delta-u3-l2-p5",
@@ -4860,7 +6009,19 @@ window.NUMBLE_CURRICULUM = [
                   "With 2 decimal places, the product lands in the hundredths."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Multiply or divide the digits like normal whole numbers, then place the dot. For multiplying, count the total decimal places in both factors and give the answer that many. Hook: 0.5 x 0.5 uses two decimal places, so 25 becomes 0.25.",
+              "example": {
+                "prompt": "What is 0.3 x 0.4?",
+                "steps": [
+                  "Ignore the dots and multiply: 3 x 4 = 12.",
+                  "Count decimal places: one in 0.3 and one in 0.4 makes two total.",
+                  "Place the dot so there are two decimal places: 12 becomes 0.12."
+                ],
+                "answer": "0.12"
+              }
+            }
           },
           {
             "id": "decimal-delta-u3-l3",
@@ -4884,7 +6045,12 @@ window.NUMBLE_CURRICULUM = [
                   "A fraction means top divided by bottom.",
                   "Divide 1 by 2.",
                   "Half of one whole is the same as 5 tenths."
-                ]
+                ],
+                "whyWrong": {
+                  "0.2": "That looks like reading the bottom number. 1/2 means 1 divided by 2, which is 0.5.",
+                  "0.12": "That mashed the 1 and 2 together. 1/2 means 1 divided by 2, which equals 0.5.",
+                  "1.2": "That just placed the digits around a dot. 1/2 means 1 divided by 2, which is 0.5."
+                }
               },
               {
                 "id": "decimal-delta-u3-l3-p2",
@@ -4918,7 +6084,12 @@ window.NUMBLE_CURRICULUM = [
                   "Divide 1 by 4, or think of a quarter of a dollar.",
                   "A quarter coin is worth 25 cents out of 100.",
                   "25 cents out of 100 is written as a decimal in the hundredths."
-                ]
+                ],
+                "whyWrong": {
+                  "0.14": "That mashed the 1 and 4 together. 1/4 means 1 divided by 4, which equals 0.25.",
+                  "0.4": "That looks like the digit 4 after the dot. But 1 divided by 4 is 0.25, like a quarter dollar.",
+                  "0.5": "That's 1/2, not 1/4. 1 divided by 4 is 0.25, half as much as 0.5."
+                }
               },
               {
                 "id": "decimal-delta-u3-l3-p4",
@@ -4953,7 +6124,12 @@ window.NUMBLE_CURRICULUM = [
                   "Splitting equally means dividing the total.",
                   "Divide 4.50 by 3.",
                   "45 tenths split 3 ways gives 15 tenths, so think dollars and a half."
-                ]
+                ],
+                "whyWrong": {
+                  "$1.35": "That isn't an even split. 4.50 divided by 3 is 1.50, so each friend pays $1.50.",
+                  "$2.25": "That's the bill split between 2, not 3. Divided by 3, 4.50 / 3 = $1.50 each.",
+                  "$0.45": "The dot slipped. 4.50 divided by 3 is 1.50, not 0.45, so each pays $1.50."
+                }
               },
               {
                 "id": "decimal-delta-u3-l3-p6",
@@ -4967,7 +6143,19 @@ window.NUMBLE_CURRICULUM = [
                   "Three quarters at 25 cents each totals 75 cents."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A fraction and a decimal can name the same amount: divide the top by the bottom to get the decimal, so 1/4 = 0.25. Money is just decimals in dollars and cents. Hook: 1/2 = 0.50, 1/4 = 0.25, like the coins in your pocket.",
+              "example": {
+                "prompt": "Write 3/4 as a decimal.",
+                "steps": [
+                  "A fraction means top divided by bottom, so compute 3 divided by 4.",
+                  "3 divided by 4 equals 0.75.",
+                  "So 3/4 = 0.75, the same as 75 cents."
+                ],
+                "answer": "0.75"
+              }
+            }
           }
         ]
       }
@@ -5008,7 +6196,12 @@ window.NUMBLE_CURRICULUM = [
                   "Which fruit was asked about first? That number goes first.",
                   "A ratio compares two groups by listing their counts in order.",
                   "Start by writing the number of apples, then the number of oranges."
-                ]
+                ],
+                "whyWrong": {
+                  "5 to 3": "That's oranges to apples -- but the question asked apples to oranges, so apples (3) come first: 3 to 5.",
+                  "3 to 8": "It looks like you used the total (3 + 5 = 8) for the second number, but a ratio compares the two groups, not a group to the total: 3 to 5.",
+                  "8 to 3": "That mixes up the total (8) with one group -- a ratio of apples to oranges just compares the two groups: 3 to 5."
+                }
               },
               {
                 "id": "ratio-ridge-u1-l1-p2",
@@ -5043,7 +6236,12 @@ window.NUMBLE_CURRICULUM = [
                   "First figure out how many marbles there are altogether.",
                   "Add red and blue to get the total, then compare blue to that total.",
                   "Total is 6 + 4 = 10, and blue is 4."
-                ]
+                ],
+                "whyWrong": {
+                  "6:10": "You used 6 for the red marbles, but the question asked about blue: there are 4 blue out of 10 total, so 4:10.",
+                  "4:6": "That's blue to red. The question asked blue to TOTAL, and the total is 6 + 4 = 10, so 4:10.",
+                  "10:4": "That's total to blue -- the order is flipped. Blue comes first: 4:10."
+                }
               },
               {
                 "id": "ratio-ridge-u1-l1-p4",
@@ -5090,9 +6288,26 @@ window.NUMBLE_CURRICULUM = [
                   "The word order tells you which number comes first.",
                   "Girls are mentioned first, so their count leads.",
                   "Write the 8 girls before the 12 boys."
-                ]
+                ],
+                "whyWrong": {
+                  "12:8": "That's boys to girls -- but the question asked girls to boys, so girls (8) come first: 8:12.",
+                  "8:20": "It looks like you used the total (12 + 8 = 20) for the second number, but a ratio compares the two groups: 8:12.",
+                  "20:8": "That uses the total (20) instead of comparing the two groups, and the order is flipped too: 8:12."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A ratio compares two amounts. The trick is to write the numbers in the SAME order the question names them. \"Apples to oranges\" means apples first, oranges second.",
+              "example": {
+                "prompt": "There are 2 stars and 7 moons. What is the ratio of stars to moons?",
+                "steps": [
+                  "The question says \"stars to moons,\" so stars come first: 2.",
+                  "Moons come second: 7.",
+                  "Put them in that order to get the ratio."
+                ],
+                "answer": "2 to 7"
+              }
+            }
           },
           {
             "id": "ratio-ridge-u1-l2",
@@ -5116,7 +6331,12 @@ window.NUMBLE_CURRICULUM = [
                   "Try multiplying both numbers of 1:2 by the same value.",
                   "Equivalent ratios scale both parts by the same factor.",
                   "Multiply 1 by 2 and 2 by 2 to see what you get."
-                ]
+                ],
+                "whyWrong": {
+                  "2:1": "You multiplied correctly but flipped the order -- 1:2 doubles to 2:4, not 2:1.",
+                  "1:3": "You only changed the second part. To keep ratios equal you must multiply BOTH parts by the same number: 1:2 x 2 = 2:4.",
+                  "3:4": "These don't come from multiplying 1:2 by one number -- multiply both parts of 1:2 by 2 to get the twin, 2:4."
+                }
               },
               {
                 "id": "ratio-ridge-u1-l2-p2",
@@ -5162,7 +6382,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find the biggest number that divides both 10 and 15.",
                   "The greatest common factor of 10 and 15 is 5.",
                   "10 divided by 5 is 2, and 15 divided by 5 is..."
-                ]
+                ],
+                "whyWrong": {
+                  "5:3": "You divided 10 by 2 but only divided 15 by 5 -- use the SAME factor on both. Dividing each by 5 gives 2:3.",
+                  "10:15": "That's the original ratio, not simplified. Both parts share the factor 5, so divide each by 5 to get 2:3.",
+                  "3:2": "You found the right numbers but flipped them -- 10:15 simplifies to 2:3, keeping 10's part first."
+                }
               },
               {
                 "id": "ratio-ridge-u1-l2-p5",
@@ -5197,9 +6422,26 @@ window.NUMBLE_CURRICULUM = [
                   "First simplify 6:9 to its lowest terms.",
                   "Check each choice to see if it reduces to the same simplest ratio.",
                   "6:9 reduces to 2:3 — which choice does NOT reduce to 2:3?"
-                ]
+                ],
+                "whyWrong": {
+                  "2:3": "6:9 actually DOES simplify to 2:3, so this one IS equivalent. The odd one out is 3:4.",
+                  "12:18": "12:18 divides by 6 to give 2:3, which matches 6:9 -- so it IS equivalent. The odd one out is 3:4.",
+                  "4:6": "4:6 divides by 2 to give 2:3, which matches 6:9 -- so it IS equivalent. The odd one out is 3:4."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Two ratios are equivalent if you can multiply (or divide) BOTH parts by the same number to turn one into the other. Same comparison, different-looking numbers. To simplify, divide both parts by a shared factor.",
+              "example": {
+                "prompt": "Find a ratio equivalent to 2:5 and simplify 8:12.",
+                "steps": [
+                  "Equivalent: multiply both parts of 2:5 by 3, giving 6:15.",
+                  "Simplify 8:12: both 8 and 12 share the factor 4.",
+                  "Divide each part by 4: 8/4 = 2 and 12/4 = 3, giving 2:3."
+                ],
+                "answer": "2:5 = 6:15, and 8:12 = 2:3"
+              }
+            }
           },
           {
             "id": "ratio-ridge-u1-l3",
@@ -5240,7 +6482,12 @@ window.NUMBLE_CURRICULUM = [
                   "How many groups of 3 apples are in 9 apples?",
                   "Multiply the cost by the same factor you used for the apples.",
                   "9 is 3 times 3, so multiply $1.50 by 3."
-                ]
+                ],
+                "whyWrong": {
+                  "$3.00": "It looks like you only doubled the cost, but 9 apples is 3 times 3 apples, so multiply $1.50 by 3 to get $4.50.",
+                  "$6.00": "That's 4 times $1.50, but 9 apples is 3 times 3 apples, not 4 times -- so it's 3 x $1.50 = $4.50.",
+                  "$1.50": "That's the cost of just 3 apples. Nine apples is 3 times as many, so 3 x $1.50 = $4.50."
+                }
               },
               {
                 "id": "ratio-ridge-u1-l3-p3",
@@ -5274,7 +6521,12 @@ window.NUMBLE_CURRICULUM = [
                   "How many times bigger is 6 gallons than 2 gallons?",
                   "Multiply the miles by that same factor.",
                   "6 is 3 times 2, so multiply 50 by 3."
-                ]
+                ],
+                "whyWrong": {
+                  "100 miles": "That's only 2 times 50, but 6 gallons is 3 times 2 gallons, so multiply 50 by 3 to get 150 miles.",
+                  "300 miles": "That's 6 times 50, but the car uses 2 gallons per 50 miles -- 6 gallons is 3 times 2, so 3 x 50 = 150 miles.",
+                  "50 miles": "That's the distance on just 2 gallons. With 6 gallons (3 times as much), it goes 3 x 50 = 150 miles."
+                }
               },
               {
                 "id": "ratio-ridge-u1-l3-p5",
@@ -5309,9 +6561,25 @@ window.NUMBLE_CURRICULUM = [
                   "How many groups of 6 students are in 24?",
                   "Scale the teachers by the same factor as the students.",
                   "24 divided by 6 is 4, so teachers = 1 times 4."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "Close, but 24 / 6 = 4, not 3 -- you need 4 teachers for 24 students.",
+                  "6": "It looks like you used the 6 from \"6 students,\" but you need to scale: 24 is 4 times 6, so 4 teachers.",
+                  "24": "That's the number of students, not teachers. Each teacher covers 6 students, so 24 / 6 = 4 teachers."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A ratio table scales a ratio up or down. Whatever you multiply one column by, multiply the other column by the SAME number to keep the comparison fair.",
+              "example": {
+                "prompt": "If 2 muffins cost $3, how much do 8 muffins cost?",
+                "steps": [
+                  "Compare the muffins: 8 is 4 times 2 (8 / 2 = 4).",
+                  "Multiply the cost by that same 4: 3 x 4 = 12."
+                ],
+                "answer": "$12"
+              }
+            }
           }
         ]
       },
@@ -5359,7 +6627,12 @@ window.NUMBLE_CURRICULUM = [
                   "You want the cost of just ONE orange.",
                   "Divide the total cost by the number of oranges.",
                   "4 divided by 8 equals 0.5."
-                ]
+                ],
+                "whyWrong": {
+                  "$2.00": "It looks like you divided 8 by 4, but price per orange is cost divided by oranges: $4 / 8 = $0.50.",
+                  "$4.00": "That's the total cost for all 8 oranges. Per orange, divide: $4 / 8 = $0.50.",
+                  "$8.00": "That's more than the total cost -- to get the price for ONE orange, divide cost by oranges: $4 / 8 = $0.50."
+                }
               },
               {
                 "id": "ratio-ridge-u2-l1-p3",
@@ -5393,7 +6666,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find the price of ONE soda for each deal.",
                   "Divide each price by its number of sodas, then compare.",
                   "3/6 = $0.50 each, and 4/10 = $0.40 each — which is cheaper?"
-                ]
+                ],
+                "whyWrong": {
+                  "6 for $3": "6 for $3 is $0.50 each, but 10 for $4 is only $0.40 each -- the lower price per soda is the better buy, 10 for $4.",
+                  "They cost the same per soda": "They're not the same: 6 for $3 is $0.50 each while 10 for $4 is $0.40 each, so 10 for $4 wins.",
+                  "Cannot tell": "You can tell by finding the unit price: $3/6 = $0.50 each vs $4/10 = $0.40 each, so 10 for $4 is better."
+                }
               },
               {
                 "id": "ratio-ridge-u2-l1-p5",
@@ -5423,7 +6701,18 @@ window.NUMBLE_CURRICULUM = [
                   "120 divided by 2 equals 60."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A unit rate is the amount for exactly ONE of something. To find it, divide the top amount by the bottom amount. Unit rates make it easy to compare deals -- lowest price per item wins.",
+              "example": {
+                "prompt": "A car travels 150 miles in 3 hours. What is the unit rate in miles per hour?",
+                "steps": [
+                  "A unit rate is \"per one hour,\" so divide miles by hours.",
+                  "150 / 3 = 50."
+                ],
+                "answer": "50 miles per hour"
+              }
+            }
           },
           {
             "id": "ratio-ridge-u2-l2",
@@ -5459,7 +6748,12 @@ window.NUMBLE_CURRICULUM = [
                   "Make sure pens match pens and cost matches cost across the equals sign.",
                   "Each ratio should have the same quantity on top and the same on bottom.",
                   "Put pens on top and dollars on the bottom for both ratios."
-                ]
+                ],
+                "whyWrong": {
+                  "3/2 = c/9": "You flipped the second ratio -- keep pens over cost on BOTH sides: 3/2 = 9/c, not c/9.",
+                  "2/3 = 9/c": "The left side is upside down. Match the right side (pens over cost): it should be 3/2 = 9/c.",
+                  "9/3 = 2/c": "This mixes pens and cost in the wrong spots. Keep pens on top and cost on bottom: 3/2 = 9/c."
+                }
               },
               {
                 "id": "ratio-ridge-u2-l2-p3",
@@ -5489,7 +6783,12 @@ window.NUMBLE_CURRICULUM = [
                   "Simplify each fraction and look for a match with 4/6.",
                   "4/6 reduces to 2/3 — which other ratio reduces to 2/3?",
                   "Try cross-multiplying 4/6 with each option to find equal products."
-                ]
+                ],
+                "whyWrong": {
+                  "4/6 and 5/9": "4/6 = 2/3, but 5/9 doesn't simplify to 2/3 (5 x 6 = 30, not 4 x 9 = 36), so these don't form a proportion.",
+                  "4/6 and 6/8": "6/8 simplifies to 3/4, not 2/3 -- so it doesn't match 4/6. The proportion is 4/6 and 6/9.",
+                  "4/6 and 3/5": "3/5 isn't equal to 4/6's value of 2/3 (cross products 20 vs 18 differ), so these don't form a proportion."
+                }
               },
               {
                 "id": "ratio-ridge-u2-l2-p5",
@@ -5507,7 +6806,12 @@ window.NUMBLE_CURRICULUM = [
                   "What technique turns two equal fractions into one equation?",
                   "Multiply across the diagonal of the proportion.",
                   "Multiply 6 by 5, and 2 by x, then set them equal."
-                ]
+                ],
+                "whyWrong": {
+                  "Add 6 + 5": "Proportions aren't solved by adding -- cross-multiply along the diagonals: 6 x 5 = 2 times x.",
+                  "Subtract 2 from 6": "Subtracting won't isolate x. The first step is to cross-multiply: 6 x 5 = 2 times x.",
+                  "Divide 6 by 2": "Those aren't a matching pair to divide. Cross-multiply the diagonals first: 6 x 5 = 2 times x."
+                }
               },
               {
                 "id": "ratio-ridge-u2-l2-p6",
@@ -5521,7 +6825,19 @@ window.NUMBLE_CURRICULUM = [
                   "Try it with 1/2 = 2/4: does 1*4 equal 2*2?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A proportion is just two equal ratios, like a/b = c/d. When you set one up from a word problem, keep the SAME units in the same spots on both sides. You can check a proportion by cross-multiplying: a*d should equal b*c.",
+              "example": {
+                "prompt": "If 4 pencils cost $3, set up a proportion for the cost (c) of 12 pencils.",
+                "steps": [
+                  "Put pencils on top and cost on the bottom for the known ratio: 4/3.",
+                  "Match the same setup for the unknown: 12 pencils over c, which is 12/c.",
+                  "Set the two equal so the units line up: 4/3 = 12/c."
+                ],
+                "answer": "4/3 = 12/c"
+              }
+            }
           },
           {
             "id": "ratio-ridge-u2-l3",
@@ -5577,7 +6893,12 @@ window.NUMBLE_CURRICULUM = [
                   "Cross-multiply to make an equation.",
                   "14 times y equals 7 times 10.",
                   "14y = 70, so y = 70 / 14."
-                ]
+                ],
+                "whyWrong": {
+                  "2": "Check your division: 14y = 70 gives y = 70/14 = 5, not 2.",
+                  "7": "That's just the numerator on the left, not the solution. Cross-multiply: 14y = 70, so y = 5.",
+                  "20": "It looks like you scaled the wrong way. Cross-multiply: 14y = 70, so y = 5, not 20."
+                }
               },
               {
                 "id": "ratio-ridge-u2-l3-p4",
@@ -5630,9 +6951,26 @@ window.NUMBLE_CURRICULUM = [
                   "Cross-multiply to set up a simple equation.",
                   "12 times x equals 9 times 4.",
                   "12x = 36, so x = 36 / 12."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "Check the division: 12x = 36 gives x = 36/12 = 3, not 4.",
+                  "6": "It looks like you halved 12 instead of solving. Cross-multiply: 12x = 36, so x = 3.",
+                  "9": "That's the numerator on the left, not the answer. Cross-multiply: 12x = 36, so x = 3."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To solve a proportion for a missing number, cross-multiply to make a simple equation, then divide to free the unknown. Cross-multiply, then divide -- that's the whole move.",
+              "example": {
+                "prompt": "Solve for x: x/6 = 10/15.",
+                "steps": [
+                  "Cross-multiply: 15 times x equals 6 times 10, so 15x = 60.",
+                  "Divide both sides by 15: x = 60 / 15.",
+                  "60 / 15 = 4."
+                ],
+                "answer": "x = 4"
+              }
+            }
           }
         ]
       },
@@ -5663,7 +7001,12 @@ window.NUMBLE_CURRICULUM = [
                   "To go from percent to decimal, divide by 100.",
                   "Dividing by 100 moves the decimal point two places left.",
                   "50 with the point moved two places left becomes 0.50."
-                ]
+                ],
+                "whyWrong": {
+                  "5.0": "You moved the decimal the wrong way -- percent means divide by 100, so 50% = 50/100 = 0.5.",
+                  "0.05": "That's 5%, not 50%. Dividing 50 by 100 moves the decimal two places: 50% = 0.5.",
+                  "50.0": "That's still 50, just with a decimal point. To make it a decimal value, divide by 100: 50% = 0.5."
+                }
               },
               {
                 "id": "ratio-ridge-u3-l1-p2",
@@ -5699,7 +7042,12 @@ window.NUMBLE_CURRICULUM = [
                   "To go from decimal to percent, multiply by 100.",
                   "Multiplying by 100 moves the decimal two places right.",
                   "0.7 with the point moved two places right is 70."
-                ]
+                ],
+                "whyWrong": {
+                  "7%": "You moved the decimal the wrong way -- to make a decimal a percent, multiply by 100: 0.7 x 100 = 70%.",
+                  "0.7%": "That just added a % sign without converting. Multiply by 100 first: 0.7 x 100 = 70%.",
+                  "700%": "You multiplied by 1000, not 100. The percent is 0.7 x 100 = 70%."
+                }
               },
               {
                 "id": "ratio-ridge-u3-l1-p4",
@@ -5747,9 +7095,25 @@ window.NUMBLE_CURRICULUM = [
                   "Put every value into the same form, like decimals.",
                   "3/4 = 0.75 and 70% = 0.70 — now compare with the decimals.",
                   "Line them up: 0.8, 0.75, 0.70, 0.65 and pick the highest."
-                ]
+                ],
+                "whyWrong": {
+                  "3/4": "3/4 = 0.75, which is less than 0.8 -- so 0.8 is still the largest.",
+                  "70%": "70% = 0.70, which is smaller than 0.8 -- so 0.8 is the largest.",
+                  "0.65": "0.65 is the smallest of the bunch. Comparing all as decimals, 0.8 is the largest."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Percents, decimals, and fractions are three costumes for the same number. Percent means \"out of 100\": to go from percent to decimal divide by 100, and from decimal to percent multiply by 100.",
+              "example": {
+                "prompt": "Write 3/4 as a decimal and as a percent.",
+                "steps": [
+                  "Divide to get the decimal: 3 / 4 = 0.75.",
+                  "Multiply the decimal by 100 to get the percent: 0.75 x 100 = 75."
+                ],
+                "answer": "0.75 = 75%"
+              }
+            }
           },
           {
             "id": "ratio-ridge-u3-l2",
@@ -5789,7 +7153,12 @@ window.NUMBLE_CURRICULUM = [
                   "25% is the same as one quarter.",
                   "Finding a quarter means dividing by 4.",
                   "40 divided by 4 is..."
-                ]
+                ],
+                "whyWrong": {
+                  "15": "Check your fraction: 25% is 1/4, and 40 / 4 = 10, not 15.",
+                  "25": "That's just the percent number, not the amount. Take 1/4 of 40: 40 / 4 = 10.",
+                  "100": "That's way more than the whole 40 -- a percent of a number can't be bigger than it. 25% of 40 = 40 / 4 = 10."
+                }
               },
               {
                 "id": "ratio-ridge-u3-l2-p3",
@@ -5823,7 +7192,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find 10% first, then double it for 20%.",
                   "10% of 150 is 15 — what's twice that?",
                   "0.2 times 150 equals 30."
-                ]
+                ],
+                "whyWrong": {
+                  "20": "That's 10% of 150, not 20%. Double it: 20% of 150 = 30.",
+                  "75": "That's 50% of 150, not 20%. For 20%, do 0.2 x 150 = 30.",
+                  "300": "You multiplied by 2 instead of 0.2 -- 20% is 0.2, so 0.2 x 150 = 30."
+                }
               },
               {
                 "id": "ratio-ridge-u3-l2-p5",
@@ -5858,9 +7232,25 @@ window.NUMBLE_CURRICULUM = [
                   "Break 15% into 10% plus 5%.",
                   "10% of 200 is 20, and 5% is half of that.",
                   "20 + 10 gives the answer."
-                ]
+                ],
+                "whyWrong": {
+                  "15": "That's just the percent number, not 15% of 200. Compute 0.15 x 200 = 30.",
+                  "20": "That's only 10% of 200. For 15%, add another 5% (10), giving 20 + 10 = 30.",
+                  "35": "Close, but recount: 10% is 20 and 5% is 10, so 15% = 20 + 10 = 30, not 35."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To find a percent OF a number, turn the percent into a decimal (divide by 100) and multiply. A handy shortcut: 10% of a number is just that number with the decimal moved one place left.",
+              "example": {
+                "prompt": "What is 20% of 90?",
+                "steps": [
+                  "Turn 20% into a decimal: 20 / 100 = 0.2.",
+                  "Multiply by the number: 0.2 x 90 = 18."
+                ],
+                "answer": "18"
+              }
+            }
           },
           {
             "id": "ratio-ridge-u3-l3",
@@ -5901,7 +7291,12 @@ window.NUMBLE_CURRICULUM = [
                   "First find the dollar change, then compare it to the ORIGINAL price.",
                   "Percent change = (change) / (original amount) x 100.",
                   "The change is $5 and the original is $20, so 5/20 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "5%": "You used the dollar change ($5) as the percent -- but percent increase is change / original: 5 / 20 = 25%.",
+                  "20%": "It looks like you divided by the new price or guessed -- divide the change by the ORIGINAL: 5 / 20 = 25%.",
+                  "125%": "That's the new price as a percent of the old (25/20). The INCREASE is just the change over original: 5 / 20 = 25%."
+                }
               },
               {
                 "id": "ratio-ridge-u3-l3-p3",
@@ -5919,7 +7314,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find how many dollars the price dropped, then compare to the original.",
                   "Percent decrease = (drop) / (original price) x 100.",
                   "The drop is $10 and the original is $40, so 10/40 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "10%": "You used the dollar drop ($10) as the percent -- but percent decrease is change / original: 10 / 40 = 25%.",
+                  "30%": "It looks like you divided by the new price (30) instead of the original. Use the original: 10 / 40 = 25%.",
+                  "75%": "75% is what's LEFT (30 is 75% of 40). The DECREASE is the drop over original: 10 / 40 = 25%."
+                }
               },
               {
                 "id": "ratio-ridge-u3-l3-p4",
@@ -5955,7 +7355,12 @@ window.NUMBLE_CURRICULUM = [
                   "First find the discount amount, then subtract it from the price.",
                   "20% of $60 is the amount you save — take it off the original.",
                   "Save $12, so $60 - $12 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "$12": "That's the amount taken OFF (20% of $60), not the sale price. Subtract it: 60 - 12 = $48.",
+                  "$40": "You took off too much -- 20% of $60 is $12, not $20. The sale price is 60 - 12 = $48.",
+                  "$72": "You added the discount instead of subtracting -- it's 20% OFF, so 60 - 12 = $48."
+                }
               },
               {
                 "id": "ratio-ridge-u3-l3-p6",
@@ -5974,7 +7379,19 @@ window.NUMBLE_CURRICULUM = [
                   "25% of 80 is 20, so 80 + 20 = ?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Percent change tells you how much something grew or shrank compared to where it started. Find the change (new minus old), then divide by the ORIGINAL amount and turn that into a percent.",
+              "example": {
+                "prompt": "A price goes from $40 to $50. What is the percent increase?",
+                "steps": [
+                  "Find the change: 50 - 40 = 10.",
+                  "Divide by the original price: 10 / 40 = 0.25.",
+                  "Turn it into a percent: 0.25 x 100 = 25%."
+                ],
+                "answer": "25%"
+              }
+            }
           }
         ]
       }
@@ -6014,7 +7431,12 @@ window.NUMBLE_CURRICULUM = [
                   "The word 'below' is doing a lot of work here. What direction is that on the number line?",
                   "A number to the left of zero gets a minus sign in front of it.",
                   "Start with the 3, then add the sign that means 'below zero'..."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "0 is exactly at the freezing line, but the temperature dropped 3 below it, so it's -3.",
+                  "3": "That's 3 degrees ABOVE zero. 'Below zero' needs a minus sign, so it should be -3.",
+                  "30": "Looks like an extra zero slipped in. It's just 3 below zero, written -3, not thirty."
+                }
               },
               {
                 "id": "integer-islands-u1-l1-p2",
@@ -6063,7 +7485,12 @@ window.NUMBLE_CURRICULUM = [
                   "Three of these share something in front. One doesn't.",
                   "Negative numbers always carry a minus sign. Which one is missing it?",
                   "Scan each number for the dash... which one is bare?"
-                ]
+                ],
+                "whyWrong": {
+                  "-1": "-1 has a minus sign, so it IS negative. We're hunting for the one that is NOT negative.",
+                  "-100": "-100 has a minus sign, so it's negative (and very far below zero). Look for the one with no minus.",
+                  "-12": "-12 has a minus sign, so it's negative. The non-negative one is the number with no dash in front."
+                }
               },
               {
                 "id": "integer-islands-u1-l1-p5",
@@ -6100,9 +7527,26 @@ window.NUMBLE_CURRICULUM = [
                   "Left on the number line means smaller. Which feels 'lowest'?",
                   "Among negatives, the bigger the number after the minus, the farther left it goes.",
                   "Compare -2 and -9... which one is deeper below zero?"
-                ]
+                ],
+                "whyWrong": {
+                  "0": "0 sits right in the middle. Negatives like -9 are to its left, so -9 is farther left.",
+                  "4": "4 is a positive number, sitting to the RIGHT of zero. The leftmost number is the deepest negative, -9.",
+                  "-2": "-2 is below zero but not the deepest. -9 is much farther left, so -9 is the leftmost."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A negative number is any number below zero, written with a little minus sign in front, like -3. Think of it as diving under the waterline: temperatures below zero, money you owe, or steps below sea level all get a minus sign.",
+              "example": {
+                "prompt": "A treasure chest rests 4 meters below sea level. Write its height as an integer (sea level = 0).",
+                "steps": [
+                  "Notice 'below sea level' means below zero, so the number will be negative.",
+                  "Take the size of the drop, which is 4 meters.",
+                  "Put a minus sign in front to show it's below zero: -4."
+                ],
+                "answer": "-4"
+              }
+            }
           },
           {
             "id": "integer-islands-u1-l2",
@@ -6126,7 +7570,12 @@ window.NUMBLE_CURRICULUM = [
                   "Picture both on a number line. Which one sits farther left?",
                   "Farther left means smaller, and smaller uses the < symbol.",
                   "-3 is left of 2, so -3 is the smaller one..."
-                ]
+                ],
+                "whyWrong": {
+                  ">": "That would say -3 is bigger than 2, but -3 is below zero and 2 is above it. Negatives are always less than positives, so use <.",
+                  "=": "-3 and 2 are different spots on the number line, so they're not equal. -3 is to the left, making it smaller.",
+                  "none": "One of the symbols does work: -3 is to the left of 2, so -3 < 2."
+                }
               },
               {
                 "id": "integer-islands-u1-l2-p2",
@@ -6144,7 +7593,12 @@ window.NUMBLE_CURRICULUM = [
                   "Both are negative. The one closer to zero is the bigger one.",
                   "-1 is just one step below zero; -8 is way down deep. Which is greater?",
                   "Closer to zero wins, so -1 is greater than -8..."
-                ]
+                ],
+                "whyWrong": {
+                  "<": "This says -1 is smaller, but -1 is closer to zero than -8, so -1 is actually the bigger one. Use >.",
+                  "=": "-1 and -8 are different spots on the line, so they're not equal. -1 is to the right, making it greater.",
+                  "none": "One symbol fits: -1 sits to the right of -8, so -1 > -8."
+                }
               },
               {
                 "id": "integer-islands-u1-l2-p3",
@@ -6174,7 +7628,12 @@ window.NUMBLE_CURRICULUM = [
                   "Smallest means farthest left. Which is the deepest negative?",
                   "Compare the two negatives first: -4 vs -6.",
                   "-6 is deeper below zero than -4, so among all four it's the..."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "0 is bigger than every negative here. The smallest one is -6, which sits farthest left.",
+                  "1": "1 is a positive number, above zero. The smallest is the deepest negative, -6.",
+                  "-4": "-4 is below zero, but -6 is even deeper (farther left), so -6 is the smaller one."
+                }
               },
               {
                 "id": "integer-islands-u1-l2-p5",
@@ -6210,9 +7669,26 @@ window.NUMBLE_CURRICULUM = [
                   "Colder means a lower temperature. Which number is lower?",
                   "-5 is farther below zero than -1. Which feels colder?",
                   "Lower on the number line wins for 'colder', and -5 is lower..."
-                ]
+                ],
+                "whyWrong": {
+                  "Tuesday": "-1 is warmer than -5 because it's closer to zero. The colder day is the lower number, Monday at -5.",
+                  "Same": "The two temperatures differ: -5 and -1 aren't equal. -5 is lower, so Monday was colder.",
+                  "Can't tell": "We can tell! -5 is lower than -1, so Monday was the colder day."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "On the number line, left is smaller and right is bigger. With negatives this can feel backwards: the closer a number is to zero, the bigger it is, so -1 is actually greater than -10. Just picture the line and read left-to-right.",
+              "example": {
+                "prompt": "Which symbol makes this true:  -6 __ -2 ?",
+                "steps": [
+                  "Picture both on the number line: -6 is far left, -2 is closer to zero.",
+                  "-2 sits to the RIGHT of -6, so -2 is the bigger one.",
+                  "That means -6 is smaller, so the symbol is < : -6 < -2."
+                ],
+                "answer": "<"
+              }
+            }
           },
           {
             "id": "integer-islands-u1-l3",
@@ -6280,7 +7756,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find the distance from zero for each, ignoring the signs.",
                   "|-7| is 7 and |3| is 3. Which distance is bigger?",
                   "7 beats 3, so the number that was 7 away from zero wins..."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "|3| = 3, but |-7| = 7. Since 7 is bigger, -7 has the greater absolute value (it's farther from zero).",
+                  "Equal": "They're not equal: |-7| = 7 and |3| = 3. -7 is farther from zero, so its absolute value is greater.",
+                  "Neither": "One does win: |-7| = 7 beats |3| = 3, so -7 has the greater absolute value."
+                }
               },
               {
                 "id": "integer-islands-u1-l3-p5",
@@ -6298,7 +7779,12 @@ window.NUMBLE_CURRICULUM = [
                   "Two different numbers can be the same distance from zero, one on each side.",
                   "Think about which numbers are exactly 5 steps away from zero.",
                   "One is 5 steps right and one is 5 steps left of zero..."
-                ]
+                ],
+                "whyWrong": {
+                  "5 and 0": "|0| = 0, not 5, so 0 doesn't fit. You need both numbers exactly 5 from zero: -5 and 5.",
+                  "5 and 10": "|10| = 10, not 5, so 10 is too far. The pair both 5 steps from zero is -5 and 5.",
+                  "-5 and -10": "|-10| = 10, not 5, so -10 is too far away. The matching pair is -5 and 5, mirror images across zero."
+                }
               },
               {
                 "id": "integer-islands-u1-l3-p6",
@@ -6318,7 +7804,19 @@ window.NUMBLE_CURRICULUM = [
                   "-12 is twelve meters below the surface, so the distance is..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Absolute value asks one thing: how far is this number from zero? Distance is never negative, so the answer is always zero or positive. The two bars |  | just erase the minus sign.",
+              "example": {
+                "prompt": "What is |-8| ?",
+                "steps": [
+                  "Find how many steps -8 is from zero: 8 steps.",
+                  "Distance is always positive, so the bars drop the minus sign.",
+                  "So |-8| = 8."
+                ],
+                "answer": "8"
+              }
+            }
           }
         ]
       },
@@ -6403,7 +7901,12 @@ window.NUMBLE_CURRICULUM = [
                   "You're already at -5. Subtracting moves you further left.",
                   "Both moves push you below zero, so think -5 then 3 more steps down.",
                   "5 below zero plus 3 more steps down equals..."
-                ]
+                ],
+                "whyWrong": {
+                  "2": "That drops the minus sign. Starting at -5 and going 3 more steps left gives -8, not 2.",
+                  "8": "That's the positive version. Going down 3 from -5 means deeper below zero, so it's -8.",
+                  "-2": "Looks like you subtracted toward zero, but -5 - 3 moves 3 steps farther LEFT, landing on -8."
+                }
               },
               {
                 "id": "integer-islands-u2-l1-p5",
@@ -6439,7 +7942,19 @@ window.NUMBLE_CURRICULUM = [
                   "Now compute -6 + 9 by stepping 9 to the right from -6..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Picture a number line: adding moves you right, subtracting moves you left. Two handy tricks: adding a negative is the same as subtracting (8 + (-3) = 8 - 3), and subtracting a negative flips to adding (-6 - (-9) = -6 + 9).",
+              "example": {
+                "prompt": "What is  -2 + (-5) ?",
+                "steps": [
+                  "Adding a negative means moving left, so start at -2 and go 5 more steps left.",
+                  "Both numbers pull left, so they stack: 2 + 5 = 7 worth of leftward steps.",
+                  "You land deeper below zero at -7."
+                ],
+                "answer": "-7"
+              }
+            }
           },
           {
             "id": "integer-islands-u2-l2",
@@ -6518,7 +8033,12 @@ window.NUMBLE_CURRICULUM = [
                   "Divide 20 by 5 first, then check the signs.",
                   "Negative divided by negative gives a positive.",
                   "20 divided by 5 is 4, and same signs keep it..."
-                ]
+                ],
+                "whyWrong": {
+                  "100": "That looks like multiplying 20 by 5. The problem is division: -20 / -5 = 4.",
+                  "-4": "The numbers are right (20 / 5 = 4) but the sign is off. Same signs make a positive, so -20 / -5 = 4.",
+                  "-100": "Looks like you multiplied instead of divided, and kept it negative. Dividing -20 by -5 gives +4."
+                }
               },
               {
                 "id": "integer-islands-u2-l2-p5",
@@ -6551,7 +8071,19 @@ window.NUMBLE_CURRICULUM = [
                   "6 times -1 flips the sign once more, landing on..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "For multiplying and dividing, just watch the signs: SAME signs make a positive, DIFFERENT signs make a negative. Do the regular number math, then stamp on the right sign.",
+              "example": {
+                "prompt": "What is  -6 * 2 ?",
+                "steps": [
+                  "Multiply the numbers as usual: 6 * 2 = 12.",
+                  "Check the signs: one negative and one positive are different signs.",
+                  "Different signs make a negative, so the answer is -12."
+                ],
+                "answer": "-12"
+              }
+            }
           },
           {
             "id": "integer-islands-u2-l3",
@@ -6632,7 +8164,12 @@ window.NUMBLE_CURRICULUM = [
                   "Clean up the signs first: subtracting a negative and adding a negative.",
                   "-8 - (-3) becomes -8 + 3, and + (-2) becomes - 2.",
                   "So you have -8 + 3 - 2... work it left to right."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "Looks like the leading minus on -8 got dropped: 8 - 3 - 2 = 3. But it's -8 to start, so -8 + 3 - 2 = -7.",
+                  "-3": "Careful with the double negative: -8 - (-3) is -8 + 3 = -5, then -5 + (-2) = -7, not -3.",
+                  "-13": "Looks like -8 - 3 - 2. But subtracting -3 ADDS 3, so it's -8 + 3 - 2 = -7."
+                }
               },
               {
                 "id": "integer-islands-u2-l3-p5",
@@ -6663,7 +8200,19 @@ window.NUMBLE_CURRICULUM = [
                   "Starting at -4 and moving 4 steps right lands you exactly on..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "When operations mix, slow down: do multiply and divide before add and subtract, and turn double negatives into a plus (subtracting -3 means adding 3). Then just step through one operation at a time.",
+              "example": {
+                "prompt": "What is  -2 * 3 + 4 ?",
+                "steps": [
+                  "Multiply first: -2 * 3 = -6 (different signs make a negative).",
+                  "Now add: -6 + 4.",
+                  "Moving 4 steps right from -6 lands you at -2."
+                ],
+                "answer": "-2"
+              }
+            }
           }
         ]
       },
@@ -6693,7 +8242,12 @@ window.NUMBLE_CURRICULUM = [
                   "Coordinates are written in a set order: (x, y).",
                   "The very first number in the pair is the x-coordinate.",
                   "Reading (4, 3) left to right, the first number is..."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "There's no zero here. The first number in (4, 3) is the x-coordinate, which is 4.",
+                  "3": "3 is the y-coordinate, the second number. The x-coordinate comes first in (x, y), so it's 4.",
+                  "7": "Looks like you added 4 + 3. Coordinates aren't added; x is simply the first number, 4."
+                }
               },
               {
                 "id": "integer-islands-u3-l1-p2",
@@ -6711,7 +8265,12 @@ window.NUMBLE_CURRICULUM = [
                   "Start with the x-coordinate, which controls left/right.",
                   "A negative x means moving in which direction?",
                   "x is -2, and negatives go left, so you move..."
-                ]
+                ],
+                "whyWrong": {
+                  "Right 2": "Right is for POSITIVE x. Here x = -2, and negative means move LEFT 2.",
+                  "Up 2": "Up and down are the y job. The x-coordinate -2 controls left/right, so first move left 2.",
+                  "Down 2": "Down is also a y move. The x = -2 means go left 2 first, then handle the y."
+                }
               },
               {
                 "id": "integer-islands-u3-l1-p3",
@@ -6729,7 +8288,12 @@ window.NUMBLE_CURRICULUM = [
                   "Negative x is to the left, negative y is downward. Picture that corner.",
                   "Both negative puts the point in the bottom-left region of the grid.",
                   "The bottom-left quadrant, counting counterclockwise from top-right, is the third one..."
-                ]
+                ],
+                "whyWrong": {
+                  "Quadrant I": "Quadrant I (top-right) has BOTH x and y positive. Both-negative points live in Quadrant III.",
+                  "Quadrant II": "Quadrant II (top-left) has x negative but y positive. When BOTH are negative, it's Quadrant III.",
+                  "Quadrant IV": "Quadrant IV (bottom-right) has x positive and y negative. Both-negative points belong to Quadrant III."
+                }
               },
               {
                 "id": "integer-islands-u3-l1-p4",
@@ -6759,7 +8323,12 @@ window.NUMBLE_CURRICULUM = [
                   "Points on the x-axis don't go up or down at all.",
                   "No vertical movement means the y-coordinate is...?",
                   "If you never move up or down, your y value stays at..."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "On the x-axis, y is 0, not 1 — the point sits right on the line with no up/down movement.",
+                  "6": "6 is the x-coordinate. On the x-axis the y-coordinate is always 0, since you haven't moved up or down.",
+                  "-6": "That's just the negative of the x-value. Any point on the x-axis has y = 0."
+                }
               },
               {
                 "id": "integer-islands-u3-l1-p6",
@@ -6780,7 +8349,19 @@ window.NUMBLE_CURRICULUM = [
                   "x is 3 and down means y is -2, so write the pair..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "The coordinate plane is a treasure map. Every point is written (x, y): x first tells you left/right (negative = left), y second tells you up/down (negative = down). The center where the axes cross is (0, 0), the origin.",
+              "example": {
+                "prompt": "Start at the origin. Move left 2, then up 4. Write the point as (x, y).",
+                "steps": [
+                  "Left 2 makes the x-coordinate negative: x = -2.",
+                  "Up 4 makes the y-coordinate positive: y = 4.",
+                  "Write x first, then y: (-2, 4)."
+                ],
+                "answer": "(-2, 4)"
+              }
+            }
           },
           {
             "id": "integer-islands-u3-l2",
@@ -6855,7 +8436,12 @@ window.NUMBLE_CURRICULUM = [
                   "Start inside the parentheses, then handle the multiplication.",
                   "1 + 2 is 3, so it becomes 10 - 2 * 3.",
                   "2 * 3 is 6, and 10 - 6 gives..."
-                ]
+                ],
+                "whyWrong": {
+                  "8": "Looks like 10 - 2 = 8 with the rest dropped. Do the parentheses and multiply first: 2 * 3 = 6, then 10 - 6 = 4.",
+                  "24": "Looks like you did 10 - 2 = 8 first, then 8 * 3. But multiply before subtracting: 2 * 3 = 6, then 10 - 6 = 4.",
+                  "-6": "Looks like you dropped the 10 and just did -2 * 3 = -6. The 10 is still there: 10 - 6 = 4."
+                }
               },
               {
                 "id": "integer-islands-u3-l2-p5",
@@ -6885,7 +8471,19 @@ window.NUMBLE_CURRICULUM = [
                   "Since multiply comes before add, the claim that you add first must be..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "PEMDAS is the order of operations: Parentheses, Exponents, Multiply/Divide, then Add/Subtract. Always handle higher-priority steps first, no matter what order they appear in the problem.",
+              "example": {
+                "prompt": "What is  4 + 2 * (6 - 1) ?",
+                "steps": [
+                  "Parentheses first: 6 - 1 = 5.",
+                  "Then multiply: 2 * 5 = 10.",
+                  "Then add: 4 + 10 = 14."
+                ],
+                "answer": "14"
+              }
+            }
           },
           {
             "id": "integer-islands-u3-l3",
@@ -6943,7 +8541,12 @@ window.NUMBLE_CURRICULUM = [
                   "Do the exponent and the multiplication before subtracting.",
                   "2^3 is 8 and 4 * 2 is 8. Now what's left to do?",
                   "8 - 8 gives..."
-                ]
+                ],
+                "whyWrong": {
+                  "8": "That's just 2^3. You still need to subtract 4 * 2 = 8, giving 8 - 8 = 0.",
+                  "12": "Looks like 2^3 = 8 plus 4, forgetting to multiply 4 by 2 and treating the minus as a plus. It's 8 - (4 * 2) = 8 - 8 = 0.",
+                  "-8": "Looks like the 2^3 got dropped, leaving 0 - 4 * 2 = -8. Keep it: 2^3 = 8, then 8 - 8 = 0."
+                }
               },
               {
                 "id": "integer-islands-u3-l3-p4",
@@ -6978,7 +8581,12 @@ window.NUMBLE_CURRICULUM = [
                   "Start with the exponent. Remember a negative squared becomes positive.",
                   "(-2)^2 is 4, so it becomes -10 + 4 * 4.",
                   "4 * 4 is 16, and -10 + 16 gives..."
-                ]
+                ],
+                "whyWrong": {
+                  "26": "Looks like -10 turned into +10. Keep it negative: -10 + 16 = 6, not 26.",
+                  "-26": "Looks like (-2)^2 was treated as -4. Squaring makes it positive 4, so 4 * 4 = 16, then -10 + 16 = 6.",
+                  "-6": "Looks like you found (-2)^2 = 4 but forgot to multiply by 4, just doing -10 + 4 = -6. It's 4 * 4 = 16, then -10 + 16 = 6."
+                }
               },
               {
                 "id": "integer-islands-u3-l3-p6",
@@ -6999,7 +8607,19 @@ window.NUMBLE_CURRICULUM = [
                   "Now add -6 + 4 to reach your final answer..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "This is the grand finale: combine negatives, absolute value, the grid, and PEMDAS all in one. Work parentheses and exponents first, watch your signs, and take it one careful step at a time.",
+              "example": {
+                "prompt": "What is  -2 * (3 - 7) + |-5| ?",
+                "steps": [
+                  "Parentheses first: 3 - 7 = -4.",
+                  "Multiply: -2 * -4 = 8 (same signs make a positive).",
+                  "Absolute value: |-5| = 5, then add: 8 + 5 = 13."
+                ],
+                "answer": "13"
+              }
+            }
           }
         ]
       }
@@ -7039,7 +8659,12 @@ window.NUMBLE_CURRICULUM = [
                   "A variable is the part that's a letter, not a number.",
                   "Look for the symbol that isn't a plain number or a math sign.",
                   "Scan the expression: 5 is a number, + is an operation... so what's left?"
-                ]
+                ],
+                "whyWrong": {
+                  "5": "5 is a constant, not the variable — the variable is the letter standing in for an unknown, which is x.",
+                  "10": "10 isn't even in this expression — look for the letter, which is x.",
+                  "+": "The + is an operation sign, not a variable. The mystery letter is x."
+                }
               },
               {
                 "id": "algebra-archipelago-u1-l1-p2",
@@ -7069,7 +8694,12 @@ window.NUMBLE_CURRICULUM = [
                   "A constant is a fixed number, not a changeable letter.",
                   "Three of these are letters that could be anything.",
                   "Which choice is a plain number you can count on to stay the same?"
-                ]
+                ],
+                "whyWrong": {
+                  "y": "y is a variable — it can stand for different numbers. A constant never changes, like 7.",
+                  "n": "n is a variable that can take on different values. A constant stays fixed, like 7.",
+                  "a": "a is a variable, so it can change. The one that's locked in is the number 7."
+                }
               },
               {
                 "id": "algebra-archipelago-u1-l1-p4",
@@ -7087,7 +8717,12 @@ window.NUMBLE_CURRICULUM = [
                   "The coefficient is the number sitting right in front of the variable.",
                   "In 3x, the 3 and the x are multiplied together.",
                   "Which part is the number doing the multiplying?"
-                ]
+                ],
+                "whyWrong": {
+                  "1": "1 would be the coefficient of a lone x, but here the number multiplying x is clearly written: 3.",
+                  "x": "x is the variable being multiplied, not the coefficient. The coefficient is the number in front: 3.",
+                  "3x": "3x is the whole term. The coefficient is just the number part of it: 3."
+                }
               },
               {
                 "id": "algebra-archipelago-u1-l1-p5",
@@ -7123,9 +8758,26 @@ window.NUMBLE_CURRICULUM = [
                   "Terms are the chunks separated by + and - signs.",
                   "The + sign splits this expression into pieces — count the pieces.",
                   "One piece is 4x, and on the other side of the + is 7."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "It looks like one chunk, but terms are split by + or - signs — 4x and 7 are separate, so there are 2 terms.",
+                  "3": "There are only two pieces here. Count the parts separated by + or -: 4x and 7 make 2 terms.",
+                  "4": "That's the coefficient, not the term count. Terms are separated by + or -, giving 2: 4x and 7."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A variable is a letter (like x or n) standing in for a number we don't know yet. A constant is a fixed number that never changes, and a coefficient is the number multiplying a variable. Think: letters can shape-shift, numbers stay put.",
+              "example": {
+                "prompt": "In the term 6y, name the coefficient and the variable.",
+                "steps": [
+                  "Find the letter standing in for a number — that's the variable: y.",
+                  "Find the number multiplying that letter — that's the coefficient: 6.",
+                  "So 6y means 'six of the variable y'."
+                ],
+                "answer": "coefficient 6, variable y"
+              }
+            }
           },
           {
             "id": "algebra-archipelago-u1-l2",
@@ -7181,7 +8833,12 @@ window.NUMBLE_CURRICULUM = [
                   "Do the multiplication part (2x) before you add the 1.",
                   "Plug in x = 3 to get 2 * 3 + 1.",
                   "First find 2 * 3, then add 1 to that result."
-                ]
+                ],
+                "whyWrong": {
+                  "5": "Recheck the multiply: 2 times 3 = 6, not 4, then 6 + 1 = 7.",
+                  "6": "You found 2 times 3 = 6 but forgot the + 1. Add it on: 6 + 1 = 7.",
+                  "9": "Looks like you added before multiplying. Multiply first: 2 times 3 = 6, then add 1 to get 7."
+                }
               },
               {
                 "id": "algebra-archipelago-u1-l2-p4",
@@ -7231,9 +8888,26 @@ window.NUMBLE_CURRICULUM = [
                   "Tackle whatever is inside the parentheses first.",
                   "With b = 1, the inside becomes 1 + 2 = 3.",
                   "Now multiply that 3 by the 4 outside."
-                ]
+                ],
+                "whyWrong": {
+                  "6": "You may have just added 4 + 1 + 1. Work inside the parentheses first: 1 + 2 = 3, then 4 times 3 = 12.",
+                  "8": "Looks like you distributed wrong or did 4 times 1 plus 2 times 2. Do the parentheses first: 1 + 2 = 3, then 4 times 3 = 12.",
+                  "9": "Try the parentheses first: 1 + 2 = 3, then multiply by 4 to get 12, not add."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To evaluate an expression, just swap the variable for the number you're given, then do the math. Plug in, then simplify — replace, then calculate.",
+              "example": {
+                "prompt": "Evaluate 2x + 4 when x = 5.",
+                "steps": [
+                  "Replace x with 5: 2(5) + 4.",
+                  "Multiply first: 2 times 5 = 10, giving 10 + 4.",
+                  "Add: 10 + 4 = 14."
+                ],
+                "answer": "14"
+              }
+            }
           },
           {
             "id": "algebra-archipelago-u1-l3",
@@ -7274,7 +8948,12 @@ window.NUMBLE_CURRICULUM = [
                   "Like terms must have the same letter part.",
                   "Look for the pair where both terms use the very same variable.",
                   "Which choice has y in both terms?"
-                ]
+                ],
+                "whyWrong": {
+                  "5y and 2x": "These have different variables (y and x), so they can't combine. Like terms need the same letter — 5y and 2y match.",
+                  "5 and 2x": "5 is a plain number and 2x has a variable, so they're not alike. Look for matching letters: 5y and 2y.",
+                  "5x and 2": "5x has an x but 2 is just a number, so they differ. Like terms share the same variable, like 5y and 2y."
+                }
               },
               {
                 "id": "algebra-archipelago-u1-l3-p3",
@@ -7309,7 +8988,12 @@ window.NUMBLE_CURRICULUM = [
                   "Put the x-terms in one pile and the plain numbers in another.",
                   "Add 3x and 5x together; leave the lonely 2 alone.",
                   "3x + 5x = 8x, then bring along the + 2."
-                ]
+                ],
+                "whyWrong": {
+                  "10x": "You combined the 2 into the x-terms, but 2 has no x. Only the x's combine: 3x + 5x = 8x, leaving 8x + 2.",
+                  "8x": "You combined the x's correctly to 8x but dropped the 2 — it stays, giving 8x + 2.",
+                  "5x + 2": "Looks like you only added one x-term. Combine both x's: 3x + 5x = 8x, so it's 8x + 2."
+                }
               },
               {
                 "id": "algebra-archipelago-u1-l3-p5",
@@ -7344,9 +9028,26 @@ window.NUMBLE_CURRICULUM = [
                   "Sort into two piles: the y-terms and the plain numbers.",
                   "y-terms: 4y - y. Numbers: 3 + 5.",
                   "4y - 1y = 3y, and 3 + 5 = 8 — now combine them."
-                ]
+                ],
+                "whyWrong": {
+                  "5y + 8": "It looks like you added the y's instead of subtracting: 4y - y = 3y, not 5y. The numbers give 8, so it's 3y + 8.",
+                  "3y + 2": "The y's are right (3y), but recheck the numbers: 3 + 5 = 8, so it's 3y + 8.",
+                  "7y": "You combined everything into y's, but the 3 and 5 are plain numbers. Keep them separate: 3y + 8."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Like terms share the exact same variable, so you can add or subtract their coefficients. Plain numbers combine with plain numbers, x's with x's — keep each variable in its own pile.",
+              "example": {
+                "prompt": "Simplify: 5x + 4 + 2x",
+                "steps": [
+                  "Group the like terms: the x-terms are 5x and 2x.",
+                  "Add their coefficients: 5x + 2x = 7x.",
+                  "The 4 has no x to join, so it stays as is: 7x + 4."
+                ],
+                "answer": "7x + 4"
+              }
+            }
           }
         ]
       },
@@ -7376,7 +9077,12 @@ window.NUMBLE_CURRICULUM = [
                   "The 2 outside must multiply BOTH things inside the parentheses.",
                   "Multiply 2 by x, then multiply 2 by 3.",
                   "2 * x = 2x and 2 * 3 = 6 — put them together."
-                ]
+                ],
+                "whyWrong": {
+                  "2x + 3": "You multiplied 2 by x but forgot to also multiply the 3. Distribute to every term: 2 times 3 = 6, so 2x + 6.",
+                  "x + 6": "You multiplied the 3 by 2 but left x alone. The 2 hits both terms: 2 times x = 2x, giving 2x + 6.",
+                  "2x + 5": "Looks like you added 2 + 3 instead of multiplying. Distribute: 2 times 3 = 6, so 2x + 6."
+                }
               },
               {
                 "id": "algebra-archipelago-u2-l1-p2",
@@ -7394,7 +9100,12 @@ window.NUMBLE_CURRICULUM = [
                   "Hand the 5 to both the a and the 2.",
                   "Multiply 5 * a and 5 * 2, keeping the subtraction.",
                   "5 * a = 5a and 5 * 2 = 10, so it's 5a - 10."
-                ]
+                ],
+                "whyWrong": {
+                  "5a - 2": "You multiplied 5 by a but skipped the 2. Distribute to both terms: 5 times 2 = 10, so 5a - 10.",
+                  "5a - 7": "Looks like you added 5 + 2 instead of multiplying. Distribute: 5 times 2 = 10, giving 5a - 10.",
+                  "a - 10": "You multiplied the 2 by 5 but left a without its 5. The 5 hits both: 5 times a = 5a, so 5a - 10."
+                }
               },
               {
                 "id": "algebra-archipelago-u2-l1-p3",
@@ -7429,7 +9140,12 @@ window.NUMBLE_CURRICULUM = [
                   "There are two terms inside — both get multiplied by 4.",
                   "Find 4 * x and 4 * 2y separately.",
                   "4 * x = 4x and 4 * 2y = 8y."
-                ]
+                ],
+                "whyWrong": {
+                  "4x + 2y": "You multiplied 4 by x but forgot to multiply the 2y. Distribute to both: 4 times 2y = 8y, so 4x + 8y.",
+                  "4x + 8": "Almost — 4 times 2y keeps the y, giving 8y, not 8. So it's 4x + 8y.",
+                  "8xy": "You can't merge unlike terms into one. Distribute separately: 4 times x = 4x and 4 times 2y = 8y, so 4x + 8y."
+                }
               },
               {
                 "id": "algebra-archipelago-u2-l1-p5",
@@ -7447,7 +9163,12 @@ window.NUMBLE_CURRICULUM = [
                   "The minus sign out front acts like multiplying by -1.",
                   "Multiplying by -1 flips the sign of every term inside.",
                   "x becomes -x, and +4 becomes -4."
-                ]
+                ],
+                "whyWrong": {
+                  "-x + 4": "The minus must flip BOTH signs inside. The +4 becomes -4, giving -x - 4.",
+                  "x - 4": "The minus also flips the x to -x, not positive x. Flipping both signs gives -x - 4.",
+                  "-x + 4y": "There's no y here, and the +4 should become -4. Flip both signs of (x + 4) to get -x - 4."
+                }
               },
               {
                 "id": "algebra-archipelago-u2-l1-p6",
@@ -7465,9 +9186,26 @@ window.NUMBLE_CURRICULUM = [
                   "Distribute the 2 first, then look for like terms.",
                   "2(x + 1) becomes 2x + 2; now you also have a +3x.",
                   "Combine 2x + 3x = 5x, and keep the +2."
-                ]
+                ],
+                "whyWrong": {
+                  "5x + 1": "The x's are right (5x), but recheck the constant: 2(x+1) gives +2, not +1, so it's 5x + 2.",
+                  "6x + 2": "Looks like you counted an extra x. Distribute first: 2(x+1) = 2x + 2, then 2x + 3x = 5x, giving 5x + 2.",
+                  "2x + 5": "You added the 3 to the constant instead of to the x's. The 3x joins the 2x: 2x + 3x = 5x, leaving 5x + 2."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "The distributive property says the number outside the parentheses multiplies EVERY term inside — nobody gets left out. A minus sign out front acts like multiplying by -1, flipping each inside sign.",
+              "example": {
+                "prompt": "Distribute: 3(x + 5)",
+                "steps": [
+                  "Multiply the outside number by the first term: 3 times x = 3x.",
+                  "Multiply the outside number by the second term: 3 times 5 = 15.",
+                  "Write both results with the same sign between them: 3x + 15."
+                ],
+                "answer": "3x + 15"
+              }
+            }
           },
           {
             "id": "algebra-archipelago-u2-l2",
@@ -7563,7 +9301,12 @@ window.NUMBLE_CURRICULUM = [
                   "Undo the + 9 by subtracting 9 from both sides.",
                   "The right side becomes 9 - 9.",
                   "9 - 9 equals what number?"
-                ]
+                ],
+                "whyWrong": {
+                  "1": "Looks like you divided 9 by 9 to get 1, but you undo +9 by subtracting: 9 - 9 = 0.",
+                  "9": "It looks like you added 9 instead of subtracting. To undo +9, subtract 9: 9 - 9 = 0.",
+                  "18": "You added 9 to 9, but the goal is to undo +9 by subtracting: 9 - 9 = 0."
+                }
               },
               {
                 "id": "algebra-archipelago-u2-l2-p6",
@@ -7583,7 +9326,19 @@ window.NUMBLE_CURRICULUM = [
                   "0 divided by any number is still 0."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "An equation is a balance scale — whatever you do to one side, do to the other. To free the variable, undo what's done to it with the opposite operation (add undoes subtract, divide undoes multiply).",
+              "example": {
+                "prompt": "Solve for x: x - 4 = 9",
+                "steps": [
+                  "The variable has 4 subtracted from it, so do the opposite to both sides: add 4.",
+                  "Left side: x - 4 + 4 = x. Right side: 9 + 4 = 13.",
+                  "So x = 13."
+                ],
+                "answer": "13"
+              }
+            }
           },
           {
             "id": "algebra-archipelago-u2-l3",
@@ -7699,7 +9454,19 @@ window.NUMBLE_CURRICULUM = [
                   "Now subtract 1 from both sides."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Two-step equations need two opposite moves. Undo the adding or subtracting first, then undo the multiplying or dividing — like climbing down a ladder in order.",
+              "example": {
+                "prompt": "Solve for x: 3x + 5 = 20",
+                "steps": [
+                  "Undo the +5 first: subtract 5 from both sides to get 3x = 15.",
+                  "Undo the times-3: divide both sides by 3 to get x = 5.",
+                  "So x = 5."
+                ],
+                "answer": "5"
+              }
+            }
           }
         ]
       },
@@ -7747,7 +9514,12 @@ window.NUMBLE_CURRICULUM = [
                   "The word 'times' tells you the operation.",
                   "Times means multiply.",
                   "3 multiplied by n is written without a sign: 3n."
-                ]
+                ],
+                "whyWrong": {
+                  "n + 3": "'Times' means multiply, not add. Three times n is written 3n.",
+                  "n - 3": "'Times' signals multiply, not subtract. Three times n is 3n.",
+                  "n/3": "'Times' means multiply, not divide. Three times n is 3n."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l1-p3",
@@ -7765,7 +9537,12 @@ window.NUMBLE_CURRICULUM = [
                   "'Less than' means subtraction, but the order matters!",
                   "'5 less than x' means you begin with x and remove 5.",
                   "Write the x first, then subtract 5."
-                ]
+                ],
+                "whyWrong": {
+                  "5 - x": "'5 less than x' means start at x and take away 5, so x - 5. Flipping it to 5 - x reverses the meaning.",
+                  "x + 5": "'Less than' means subtract, not add. '5 less than x' is x - 5.",
+                  "5x": "'Less than' is subtraction, not multiplication. '5 less than x' is x - 5."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l1-p4",
@@ -7783,7 +9560,12 @@ window.NUMBLE_CURRICULUM = [
                   "'Doubled' is a clue about multiplying.",
                   "Doubling a number means multiplying it by 2.",
                   "Write 2 times x, then set it equal to 14."
-                ]
+                ],
+                "whyWrong": {
+                  "x + 2 = 14": "'Doubled' means times 2, not plus 2. Doubling x gives 2x, so 2x = 14.",
+                  "x/2 = 14": "'Doubled' means multiply by 2, not divide. Doubling x is 2x, giving 2x = 14.",
+                  "x - 2 = 14": "'Doubled' means times 2, not minus 2. Doubling x gives 2x = 14."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l1-p5",
@@ -7801,7 +9583,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find the 'sum' part first, then see what happens to the WHOLE sum.",
                   "The sum of n and 4 is (n + 4) — keep it grouped.",
                   "Multiplying the entire group by 2 means putting it in parentheses."
-                ]
+                ],
+                "whyWrong": {
+                  "2n + 4": "Without parentheses, the 2 only hits n. The whole sum gets doubled, so you need 2(n + 4).",
+                  "n + 4 * 2": "Here the 2 only multiplies the 4, not the whole sum. Group the sum first: 2(n + 4).",
+                  "2n + 8 only": "That's the expanded form, but the translation should keep the sum grouped: 2(n + 4)."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l1-p6",
@@ -7821,7 +9608,19 @@ window.NUMBLE_CURRICULUM = [
                   "Subtract 6 from both sides: 15 - 6 = ?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Word problems are secret messages: 'plus/more than' means add, 'times/product' means multiply, and 'less than' flips the order (5 less than x is x - 5). 'Equals' becomes the = sign.",
+              "example": {
+                "prompt": "Translate into an equation: 'a number x tripled equals 21.'",
+                "steps": [
+                  "'Tripled' means times 3, so the number x becomes 3x.",
+                  "'Equals 21' becomes = 21.",
+                  "Put it together: 3x = 21."
+                ],
+                "answer": "3x = 21"
+              }
+            }
           },
           {
             "id": "algebra-archipelago-u3-l2",
@@ -7845,7 +9644,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think about which way the symbol's open side faces.",
                   "The wide-open end points at the larger number.",
                   "Greater than uses the symbol whose open mouth faces left, toward the bigger value."
-                ]
+                ],
+                "whyWrong": {
+                  "<": "The < symbol opens toward the smaller value, so it means 'less than'. 'Greater than' is >.",
+                  "=": "The = sign means 'equals', not 'greater than'. 'Greater than' is >.",
+                  "+": "The + is an addition sign, not a comparison. 'Greater than' is >."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l2-p2",
@@ -7875,7 +9679,12 @@ window.NUMBLE_CURRICULUM = [
                   "Solve it like an equation — subtract 2 from both sides.",
                   "Adding nothing tricky here, so the > sign stays the same.",
                   "5 - 2 = 3, so x > 3."
-                ]
+                ],
+                "whyWrong": {
+                  "x > 7": "Looks like you added 2 instead of subtracting. To undo +2, subtract 2 from both sides: x > 3.",
+                  "x < 3": "The inequality sign shouldn't flip here — you only flip when dividing by a negative. Subtracting 2 keeps it: x > 3.",
+                  "x > 5": "You left the 5 unchanged. Subtract 2 from both sides: 5 - 2 = 3, so x > 3."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l2-p4",
@@ -7893,7 +9702,12 @@ window.NUMBLE_CURRICULUM = [
                   "Divide both sides by 3 to isolate x.",
                   "Dividing by a positive number keeps the < sign facing the same way.",
                   "12 / 3 = 4, so x < 4."
-                ]
+                ],
+                "whyWrong": {
+                  "x < 9": "Looks like you subtracted 3 instead of dividing. Since 3 multiplies x, divide both sides by 3: x < 4.",
+                  "x < 36": "You multiplied by 3 instead of dividing. To undo times-3, divide: 12 / 3 = 4, so x < 4.",
+                  "x > 4": "The sign only flips when dividing by a negative. Dividing by positive 3 keeps it: x < 4."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l2-p5",
@@ -7923,9 +9737,26 @@ window.NUMBLE_CURRICULUM = [
                   "Handle it like a two-step equation: undo the - 1 first.",
                   "Add 1 to both sides to get 2x > 10.",
                   "Divide both sides by 2: 10 / 2 = 5."
-                ]
+                ],
+                "whyWrong": {
+                  "x > 4": "Looks like you skipped adding 1 first. Add 1 to both sides: 2x > 10, then divide by 2: x > 5.",
+                  "x > 10": "You added 1 to get 2x > 10 but forgot to divide by 2. Divide both sides: x > 5.",
+                  "x < 5": "The sign shouldn't flip — you only flip when dividing by a negative. The answer is x > 5."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Inequalities use >, <, or similar instead of =, and you solve them almost exactly like equations. One twist: the > symbol opens toward the bigger value (greater than), and < opens toward the smaller.",
+              "example": {
+                "prompt": "Solve the inequality: x + 4 > 9",
+                "steps": [
+                  "Subtract 4 from both sides, just like an equation: x > 9 - 4.",
+                  "Simplify the right side: 9 - 4 = 5.",
+                  "Keep the same > sign: x > 5."
+                ],
+                "answer": "x > 5"
+              }
+            }
           },
           {
             "id": "algebra-archipelago-u3-l3",
@@ -7949,7 +9780,12 @@ window.NUMBLE_CURRICULUM = [
                   "In the recipe, slope sits right in front of the x.",
                   "One of these letters is famous for meaning 'steepness'.",
                   "It's the letter multiplied by x."
-                ]
+                ],
+                "whyWrong": {
+                  "b": "b is the y-intercept (where the line crosses), not the slope. The slope is m.",
+                  "y": "y is the output value of the line, not the slope. The slope is m.",
+                  "x": "x is the input variable, not the slope. The slope is the m in front of it."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l3-p2",
@@ -7967,7 +9803,12 @@ window.NUMBLE_CURRICULUM = [
                   "b is the part with no x attached to it.",
                   "It tells you where the line meets the vertical axis.",
                   "That crossing point on the y-axis is the y-intercept."
-                ]
+                ],
+                "whyWrong": {
+                  "the slope": "The slope is m, the number in front of x. b is the y-intercept, where the line crosses the y-axis.",
+                  "the x-value": "b isn't the x-value; it's the y-intercept — the y-value where the line crosses (when x = 0).",
+                  "the steepness": "Steepness is the slope (m). b is the y-intercept, where the line crosses the y-axis."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l3-p3",
@@ -7985,7 +9826,12 @@ window.NUMBLE_CURRICULUM = [
                   "Match this to y = mx + b — the slope is m.",
                   "Slope is the coefficient sitting in front of x.",
                   "The number multiplying x here is the one you want."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "The slope isn't a default 1 here — it's the coefficient of x, which is 3.",
+                  "2": "2 is the y-intercept (the b value), not the slope. The slope is the number in front of x: 3.",
+                  "5": "Looks like you added 3 + 2. The slope is just the number in front of x: 3."
+                }
               },
               {
                 "id": "algebra-archipelago-u3-l3-p4",
@@ -8039,9 +9885,26 @@ window.NUMBLE_CURRICULUM = [
                   "Slot the values into y = mx + b: m is slope, b is the y-intercept.",
                   "Slope 2 goes in the m spot, and 3 is the b.",
                   "Build it: y = (2)x + (3)."
-                ]
+                ],
+                "whyWrong": {
+                  "y = 3x + 2": "You swapped slope and intercept. Slope (m) = 2 goes in front of x, and intercept (b) = 3 at the end: y = 2x + 3.",
+                  "y = 2x - 3": "The y-intercept is +3 (it crosses at 3, above the axis), not -3. So y = 2x + 3.",
+                  "y = 3x - 2": "Both values are placed wrong. Slope 2 goes with x and intercept +3 at the end: y = 2x + 3."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Every straight line follows the recipe y = mx + b, where m is the slope (the number in front of x, telling steepness) and b is the y-intercept (where the line crosses the y-axis). Spot m and b, and you know the line.",
+              "example": {
+                "prompt": "For the line y = 5x + 2, find the slope and y-intercept, then find y when x = 1.",
+                "steps": [
+                  "The number in front of x is the slope: m = 5. The lone number is the y-intercept: b = 2.",
+                  "Plug in x = 1: y = 5(1) + 2.",
+                  "Simplify: 5 + 2 = 7, so y = 7."
+                ],
+                "answer": "slope 5, y-intercept 2, y = 7"
+              }
+            }
           }
         ]
       }
@@ -8082,7 +9945,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think about the corner of a book or a window frame.",
                   "Match the degree measure to its special name.",
                   "90 degrees makes a clean square corner. What do we call that corner?"
-                ]
+                ],
+                "whyWrong": {
+                  "Acute angle": "Acute is for angles smaller than 90 degrees, but exactly 90 is the perfect square corner: a right angle.",
+                  "Obtuse angle": "Obtuse is for angles bigger than 90 (up to 180). Exactly 90 degrees is a right angle.",
+                  "Straight angle": "A straight angle is 180 degrees, a flat line. 90 degrees is a right angle, the square corner."
+                }
               },
               {
                 "id": "geometry-gorge-u1-l1-p2",
@@ -8100,7 +9968,12 @@ window.NUMBLE_CURRICULUM = [
                   "Compare 45 to the special value 90.",
                   "Angles smaller than a right angle have their own name.",
                   "45 is less than 90, so the angle is narrow. What's the name for a narrow angle?"
-                ]
+                ],
+                "whyWrong": {
+                  "Right": "A right angle is exactly 90 degrees. Since 45 is less than 90, this angle is acute.",
+                  "Obtuse": "Obtuse means between 90 and 180. 45 is well under 90, so it's acute (small and sharp).",
+                  "Straight": "A straight angle is 180 degrees. 45 degrees is far smaller, so it's acute."
+                }
               },
               {
                 "id": "geometry-gorge-u1-l1-p3",
@@ -8118,7 +9991,12 @@ window.NUMBLE_CURRICULUM = [
                   "Compare 120 to 90 and to 180.",
                   "An angle bigger than a right angle but not yet flat has its own name.",
                   "120 is more than 90 but less than 180. That wide angle is called what?"
-                ]
+                ],
+                "whyWrong": {
+                  "Acute": "Acute angles are under 90 degrees. 120 is bigger than 90, so it's obtuse instead.",
+                  "Right": "A right angle is exactly 90 degrees. 120 is more than 90, which makes it obtuse.",
+                  "Straight": "A straight angle is exactly 180 degrees. 120 is between 90 and 180, so it's obtuse."
+                }
               },
               {
                 "id": "geometry-gorge-u1-l1-p4",
@@ -8167,9 +10045,26 @@ window.NUMBLE_CURRICULUM = [
                   "Acute means smaller than a right angle.",
                   "Which of these is below 90 degrees?",
                   "Scan for the only value under 90. That one is acute."
-                ]
+                ],
+                "whyWrong": {
+                  "90 degrees": "90 degrees is exactly a right angle, not acute. Acute means smaller than 90, like 30 degrees.",
+                  "150 degrees": "150 is between 90 and 180, so it's obtuse, not acute. Acute angles are under 90.",
+                  "180 degrees": "180 degrees is a straight angle (a flat line). Acute angles are the small ones under 90."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Angles are named by how wide they open. Acute is less than 90 degrees (small and sharp), right is exactly 90 (a square corner), obtuse is between 90 and 180 (wide open), and straight is exactly 180 (a flat line). Tip: 'a-cute' little angle is the tiny one.",
+              "example": {
+                "prompt": "What type of angle measures 135 degrees?",
+                "steps": [
+                  "Compare 135 to 90: since 135 is bigger than 90, it is not acute or right.",
+                  "Compare 135 to 180: since 135 is less than 180, it is not straight.",
+                  "Between 90 and 180 means the angle is obtuse."
+                ],
+                "answer": "Obtuse"
+              }
+            }
           },
           {
             "id": "geometry-gorge-u1-l2",
@@ -8241,7 +10136,12 @@ window.NUMBLE_CURRICULUM = [
                   "Supplementary angles add to 180.",
                   "Subtract 90 from 180.",
                   "180 - 90 leaves how many degrees?"
-                ]
+                ],
+                "whyWrong": {
+                  "0 degrees": "Looks like you subtracted 90 from itself the wrong way. The supplement is 180 - 90 = 90.",
+                  "45 degrees": "45 would be half of 90, but supplement means add to 180: 180 - 90 = 90 degrees.",
+                  "180 degrees": "180 is the total for supplementary angles, not the partner. Subtract: 180 - 90 = 90."
+                }
               },
               {
                 "id": "geometry-gorge-u1-l2-p5",
@@ -8278,9 +10178,25 @@ window.NUMBLE_CURRICULUM = [
                   "Supplementary angles total 180.",
                   "Subtract 135 from 180.",
                   "Compute 180 - 135 and pick that choice."
-                ]
+                ],
+                "whyWrong": {
+                  "35 degrees": "Close, but check the subtraction: 180 - 135 = 45, not 35.",
+                  "55 degrees": "Supplementary angles add to 180, so 180 - 135 = 45, not 55.",
+                  "65 degrees": "That would be the complement if it were 90 minus something. Here use 180 - 135 = 45."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Complementary angles are partners that add to 90 degrees; supplementary angles are partners that add to 180. To find a missing partner, subtract from the total. Memory hook: Complementary makes a Corner (90), Supplementary makes a Straight line (180).",
+              "example": {
+                "prompt": "Two angles are complementary. One is 35 degrees. What is the other?",
+                "steps": [
+                  "Complementary angles add to 90 degrees.",
+                  "Subtract the known angle: 90 - 35 = 55."
+                ],
+                "answer": "55 degrees"
+              }
+            }
           },
           {
             "id": "geometry-gorge-u1-l3",
@@ -8352,7 +10268,12 @@ window.NUMBLE_CURRICULUM = [
                   "Corresponding angles sit in the same position at each crossing.",
                   "On parallel lines these matching positions behave the same way.",
                   "Same position on parallel lines means same measure: equal or not?"
-                ]
+                ],
+                "whyWrong": {
+                  "Always supplementary": "Corresponding angles match exactly (equal). Same-side interior angles are the ones that are supplementary.",
+                  "Always 90 degrees": "They're only 90 if the lines happen to be perpendicular. In general corresponding angles are simply equal to each other.",
+                  "Never related": "They are very much related on parallel lines: corresponding angles are always equal."
+                }
               },
               {
                 "id": "geometry-gorge-u1-l3-p5",
@@ -8389,9 +10310,25 @@ window.NUMBLE_CURRICULUM = [
                   "These are the two interior angles on the same side of the transversal.",
                   "They form a supplementary pair.",
                   "Supplementary pairs add to which total?"
-                ]
+                ],
+                "whyWrong": {
+                  "90 degrees": "Same-side interior angles aren't always right angles. They are supplementary, adding to 180 degrees.",
+                  "360 degrees": "360 is a full turn. Co-interior angles only add up to a straight line, 180 degrees.",
+                  "They are equal": "Corresponding and alternate angles are equal; co-interior (same-side) angles instead add to 180."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "When two lines cross, the angles directly across from each other (vertical angles) are equal, and angles side-by-side on a straight line add to 180. When a transversal cuts parallel lines, corresponding angles are equal and same-side interior angles add to 180.",
+              "example": {
+                "prompt": "Two lines cross, making one angle of 50 degrees. What is its vertical (opposite) angle, and the angle right next to it on the line?",
+                "steps": [
+                  "Vertical angles are equal, so the opposite angle is also 50 degrees.",
+                  "Angles next to each other on a straight line are supplementary: 180 - 50 = 130 degrees."
+                ],
+                "answer": "Vertical angle = 50 degrees; neighbor = 130 degrees"
+              }
+            }
           }
         ]
       },
@@ -8490,7 +10427,12 @@ window.NUMBLE_CURRICULUM = [
                   "Area = length x width, so width = area / length.",
                   "Divide the area by the known length.",
                   "Compute 24 / 8."
-                ]
+                ],
+                "whyWrong": {
+                  "2 units": "That comes from dividing the wrong way or by the wrong number. Width = area / length = 24 / 8 = 3.",
+                  "4 units": "24 / 8 = 3, not 4. It may help to remember 8 x 3 = 24.",
+                  "6 units": "6 would give 8 x 6 = 48, too big. The width is 24 / 8 = 3 units."
+                }
               },
               {
                 "id": "geometry-gorge-u2-l1-p6",
@@ -8511,7 +10453,18 @@ window.NUMBLE_CURRICULUM = [
                   "Compute 10 x 4."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "For a rectangle, area is the space inside (length x width) and perimeter is the distance around (add all four sides, or 2 x (length + width)). A square is just a rectangle with all sides equal. Area uses square units; perimeter uses plain units.",
+              "example": {
+                "prompt": "A rectangle is 7 units long and 4 units wide. Find its area and perimeter.",
+                "steps": [
+                  "Area = length x width = 7 x 4 = 28 square units.",
+                  "Perimeter = 2 x (length + width) = 2 x (7 + 4) = 2 x 11 = 22 units."
+                ],
+                "answer": "Area = 28 square units; Perimeter = 22 units"
+              }
+            }
           },
           {
             "id": "geometry-gorge-u2-l2",
@@ -8583,7 +10536,12 @@ window.NUMBLE_CURRICULUM = [
                   "Start from 20 = 1/2 x 8 x h.",
                   "1/2 x 8 = 4, so 20 = 4 x h.",
                   "Divide 20 by 4 to find the height."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "Remember the 1/2: 20 = 1/2 x 8 x h means 20 = 4 x h, so h = 5, not 3.",
+                  "4": "Looks like you used area = base x height without the 1/2. With the half, 20 = 4 x h gives h = 5.",
+                  "6": "Check the arithmetic: 1/2 x 8 = 4, and 20 / 4 = 5, so the height is 5."
+                }
               },
               {
                 "id": "geometry-gorge-u2-l2-p5",
@@ -8621,7 +10579,18 @@ window.NUMBLE_CURRICULUM = [
                   "Half of 42 is your answer."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A triangle is exactly half of a rectangle with the same base and height, so its area is one-half times base times height. In a right triangle, the two legs that form the right angle ARE the base and height.",
+              "example": {
+                "prompt": "A triangle has base 8 and height 5. What is its area?",
+                "steps": [
+                  "Multiply base by height: 8 x 5 = 40.",
+                  "Take half of that: 1/2 x 40 = 20."
+                ],
+                "answer": "20 square units"
+              }
+            }
           },
           {
             "id": "geometry-gorge-u2-l3",
@@ -8661,7 +10630,12 @@ window.NUMBLE_CURRICULUM = [
                   "Circumference is the distance around the circle.",
                   "One formula uses radius squared (that's area), one is linear in r.",
                   "Pick the one that is linear in r, not squared."
-                ]
+                ],
+                "whyWrong": {
+                  "pi x r^2": "That's the formula for area, not the distance around. Circumference is 2 x pi x r.",
+                  "1/2 x b x h": "That's the area of a triangle. A circle's distance around is 2 x pi x r.",
+                  "l x w": "That's the area of a rectangle. For a circle's circumference use 2 x pi x r."
+                }
               },
               {
                 "id": "geometry-gorge-u2-l3-p3",
@@ -8729,7 +10703,18 @@ window.NUMBLE_CURRICULUM = [
                   "Compute 8 / 2."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Every circle has pi (about 3.14) hiding inside it. The diameter is twice the radius. Circumference (the distance around) is 2 x pi x r, and area is pi x r^2. Remember: area squares the radius, so it grows much faster than circumference.",
+              "example": {
+                "prompt": "A circle has radius 4. Find its circumference and area. Use pi = 3.14.",
+                "steps": [
+                  "Circumference = 2 x pi x r = 2 x 3.14 x 4 = 25.12.",
+                  "Area = pi x r^2 = 3.14 x 4^2 = 3.14 x 16 = 50.24."
+                ],
+                "answer": "Circumference = 25.12; Area = 50.24 square units"
+              }
+            }
           }
         ]
       },
@@ -8792,7 +10777,12 @@ window.NUMBLE_CURRICULUM = [
                   "The hypotenuse is special in a right triangle.",
                   "It sits across from the right angle.",
                   "Opposite the 90-degree angle, and it's the longest. Which choice?"
-                ]
+                ],
+                "whyWrong": {
+                  "The shortest side": "The shortest side is one of the legs. The hypotenuse is the longest side, opposite the right angle.",
+                  "Any of the legs": "The legs form the right angle; the hypotenuse is the special longest side across from it.",
+                  "The side touching the right angle": "The two sides touching the right angle are the legs. The hypotenuse is the one opposite the right angle."
+                }
               },
               {
                 "id": "geometry-gorge-u3-l1-p4",
@@ -8838,7 +10828,19 @@ window.NUMBLE_CURRICULUM = [
                   "Take the square root of 289."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "In a right triangle, a^2 + b^2 = c^2, where c is the hypotenuse (the longest side, opposite the right angle). To find the hypotenuse, square the two legs, add, then take the square root. To find a missing leg, subtract instead: c^2 - a^2 = b^2.",
+              "example": {
+                "prompt": "A right triangle has legs 9 and 12. What is the hypotenuse?",
+                "steps": [
+                  "Square each leg: 9^2 = 81 and 12^2 = 144.",
+                  "Add them: 81 + 144 = 225.",
+                  "Take the square root: sqrt(225) = 15."
+                ],
+                "answer": "15"
+              }
+            }
           },
           {
             "id": "geometry-gorge-u3-l2",
@@ -8898,7 +10900,12 @@ window.NUMBLE_CURRICULUM = [
                   "Picture a cereal box or a shoebox.",
                   "Count top and bottom, then the four walls.",
                   "2 + 4 equals how many faces?"
-                ]
+                ],
+                "whyWrong": {
+                  "4": "A flat square has 4 sides, but a 3D box has 6 faces: top, bottom, and four sides.",
+                  "8": "8 is the number of corners (vertices) on a box, not its faces. A box has 6 faces.",
+                  "12": "12 is the number of edges on a box, not faces. A rectangular box has 6 faces."
+                }
               },
               {
                 "id": "geometry-gorge-u3-l2-p4",
@@ -8934,7 +10941,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find the area of each different face: 2x3, 2x4, and 3x4.",
                   "Those areas are 6, 8, and 12, and each appears twice.",
                   "Add 6 + 8 + 12 = 26, then double it."
-                ]
+                ],
+                "whyWrong": {
+                  "24": "24 is the box's volume (2 x 3 x 4), not its surface area. Surface area is 2(6+8+12) = 52.",
+                  "26": "26 is the sum of the three different faces (6 + 8 + 12). Don't forget each comes in a pair: double it to 52.",
+                  "36": "That doesn't match the faces here. Use 2(2x3 + 2x4 + 3x4) = 2(6+8+12) = 52."
+                }
               },
               {
                 "id": "geometry-gorge-u3-l2-p6",
@@ -8954,7 +10966,19 @@ window.NUMBLE_CURRICULUM = [
                   "Compute 6 x 9."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Surface area is the total of every face on a solid's outside skin. A cube has 6 identical square faces, so multiply one face by 6. A rectangular box also has 6 faces in 3 matching pairs: 2(lw + lh + wh).",
+              "example": {
+                "prompt": "A rectangular box is 2 by 3 by 5. What is its total surface area?",
+                "steps": [
+                  "Find the area of each different face: 2x3 = 6, 2x5 = 10, 3x5 = 15.",
+                  "Add the three: 6 + 10 + 15 = 31.",
+                  "Double it because faces come in matching pairs: 2 x 31 = 62."
+                ],
+                "answer": "62 square units"
+              }
+            }
           },
           {
             "id": "geometry-gorge-u3-l3",
@@ -9014,7 +11038,12 @@ window.NUMBLE_CURRICULUM = [
                   "Volume measures 3D space, not a flat area or a line.",
                   "Each dimension contributes one factor of length.",
                   "Three dimensions means the unit is raised to which power?"
-                ]
+                ],
+                "whyWrong": {
+                  "Linear units (like cm)": "Linear units measure length (one dimension). Volume fills 3D space, so it uses cubic units.",
+                  "Square units (like cm^2)": "Square units measure area (flat, two dimensions). Volume is three dimensions, so it's cubic units.",
+                  "Degrees": "Degrees measure angles, not space. Volume is measured in cubic units like cm^3."
+                }
               },
               {
                 "id": "geometry-gorge-u3-l3-p4",
@@ -9063,9 +11092,26 @@ window.NUMBLE_CURRICULUM = [
                   "Start from 60 = 5 x 3 x h.",
                   "5 x 3 = 15, so 60 = 15 x h.",
                   "Divide 60 by 15 to find the height."
-                ]
+                ],
+                "whyWrong": {
+                  "2": "Check the division: 60 / 15 = 4, not 2. The base area is 5 x 3 = 15.",
+                  "3": "Multiply the base first: 5 x 3 = 15, then 60 / 15 = 4, so the height is 4.",
+                  "6": "6 would give 15 x 6 = 90, too big. Since 5 x 3 = 15, height = 60 / 15 = 4."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Volume measures how much space fills a solid, counted in cubic units. For a box it's length x width x height; for a cylinder it's pi x r^2 x h. To find a missing dimension, divide the volume by the dimensions you know.",
+              "example": {
+                "prompt": "A cylinder has radius 3 and height 4. What is its volume? Use pi = 3.14.",
+                "steps": [
+                  "Square the radius: 3^2 = 9.",
+                  "Multiply by pi: 3.14 x 9 = 28.26.",
+                  "Multiply by the height: 28.26 x 4 = 113.04."
+                ],
+                "answer": "113.04 cubic units"
+              }
+            }
           }
         ]
       }
@@ -9105,7 +11151,12 @@ window.NUMBLE_CURRICULUM = [
                   "Same base, and the powers are stacking up by multiplication.",
                   "There's a rule for multiplying matching bases: you combine the exponents with one operation.",
                   "Add the exponents: 3 + 4 = ... then keep the base x."
-                ]
+                ],
+                "whyWrong": {
+                  "x^12": "Looks like you multiplied the exponents (3 x 4) — but multiplying like bases means ADDING them: 3 + 4 = 7.",
+                  "x^1": "Looks like you subtracted the exponents (4 - 3) — that rule is for division. When multiplying, ADD: 3 + 4 = 7.",
+                  "x^34": "You stuck the exponents side by side. Instead, ADD them: 3 + 4 = 7, giving x^7."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l1-p2",
@@ -9139,7 +11190,12 @@ window.NUMBLE_CURRICULUM = [
                   "This is an exponent sitting on top of another exponent.",
                   "Don't add here, a different operation handles power-of-a-power.",
                   "Multiply: 2 * 5 = ..."
-                ]
+                ],
+                "whyWrong": {
+                  "a^7": "Looks like you added the exponents (2 + 5) — but a power raised to a power MULTIPLIES them: 2 * 5 = 10.",
+                  "a^25": "Looks like you stuck 2 and 5 side by side — just multiply the two exponents: 2 * 5 = 10.",
+                  "a^3": "Looks like you subtracted (5 - 2) — power-to-a-power MULTIPLIES the exponents: 2 * 5 = 10."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l1-p4",
@@ -9173,7 +11229,12 @@ window.NUMBLE_CURRICULUM = [
                   "A negative exponent isn't a negative number, it's a location.",
                   "Negative exponents tell you to flip the base to the other side of a fraction.",
                   "Move x^3 to the denominator: 1/x^3."
-                ]
+                ],
+                "whyWrong": {
+                  "x^3": "A negative exponent doesn't just disappear — it means take the reciprocal: x^-3 = 1/x^3.",
+                  "-x^3": "A negative exponent makes a reciprocal, not a negative number — x^-3 = 1/x^3, the term stays positive.",
+                  "3/x": "The -3 is an exponent, not a coefficient you move out front — x^-3 means 1/x^3."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l1-p6",
@@ -9192,7 +11253,18 @@ window.NUMBLE_CURRICULUM = [
                   "3^3 = 27 and x^(2*3) = x^6, so put them together."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Exponents are shorthand for repeated multiplication, and a few rules make them quick. The big ones: when you MULTIPLY like bases, ADD the exponents; when you DIVIDE, SUBTRACT them; a power raised to a power MULTIPLIES; anything (nonzero) to the 0 is 1; and a negative exponent means flip to a reciprocal. Memory hook: 'multiply means add, power means multiply.'",
+              "example": {
+                "prompt": "Simplify: (b^3)^4 * b^2",
+                "steps": [
+                  "A power raised to a power multiplies the exponents: (b^3)^4 = b^(3*4) = b^12.",
+                  "Now multiply like bases by adding exponents: b^12 * b^2 = b^(12+2) = b^14."
+                ],
+                "answer": "b^14"
+              }
+            }
           },
           {
             "id": "quadratic-quarry-u1-l2",
@@ -9216,7 +11288,12 @@ window.NUMBLE_CURRICULUM = [
                   "Degree is about exponents, not the coefficients out front.",
                   "Scan each term and find the biggest power of x.",
                   "Compare exponents 3, 1, and 0 (on the 9) and pick the largest."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "1 is the exponent on the -2x term, but degree is the HIGHEST exponent: 3.",
+                  "4": "4 is just the leading coefficient — the degree is the highest EXPONENT on the variable, which is 3.",
+                  "9": "9 is the constant term, not the degree — degree is the highest exponent, which is 3."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l2-p2",
@@ -9251,7 +11328,12 @@ window.NUMBLE_CURRICULUM = [
                   "Like terms must match in their variable AND its exponent.",
                   "The coefficients can differ, but the x-part has to be identical.",
                   "Look for the pair where both terms are x^2."
-                ]
+                ],
+                "whyWrong": {
+                  "2x^2 and 5x": "These have different powers (x^2 vs x^1). Like terms need the SAME variable AND the same power.",
+                  "3x and 4": "One has an x and the other is a plain number — like terms must share the same variable raised to the same power.",
+                  "x^2 and x^3": "Same variable, but different powers (2 vs 3). Like terms need matching exponents too."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l2-p4",
@@ -9285,7 +11367,12 @@ window.NUMBLE_CURRICULUM = [
                   "The subtraction flips the sign of EVERY term in the second group.",
                   "Rewrite as 5x^2 - 2x - 3x^2 - x first.",
                   "Combine: (5-3)x^2 and (-2-1)x."
-                ]
+                ],
+                "whyWrong": {
+                  "2x^2 - x": "Looks like you didn't flip the +x when subtracting: -2x + x = -x. Distribute the minus to BOTH terms: -2x - x = -3x.",
+                  "8x^2 - 3x": "Looks like you ADDED the x^2 terms (5 + 3) — but it's subtraction: 5x^2 - 3x^2 = 2x^2.",
+                  "2x^2 + 3x": "The sign on the x-term is off — distributing the minus gives -2x - x = -3x, not +3x."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l2-p6",
@@ -9303,7 +11390,19 @@ window.NUMBLE_CURRICULUM = [
                   "Add: -3 + 7 = ..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A polynomial is just a sum of terms like 3x^2, -5x, and 7. Its degree is the highest exponent on the variable. You can only add or subtract 'like terms' — terms with the same variable raised to the same power — by combining their coefficients. Hook: same variable, same power = like.",
+              "example": {
+                "prompt": "Add: (3x^2 + 2x - 1) + (x^2 - 5x + 4)",
+                "steps": [
+                  "Combine the x^2 terms: 3x^2 + x^2 = 4x^2.",
+                  "Combine the x terms: 2x + (-5x) = -3x.",
+                  "Combine the constants: -1 + 4 = 3."
+                ],
+                "answer": "4x^2 - 3x + 3"
+              }
+            }
           },
           {
             "id": "quadratic-quarry-u1-l3",
@@ -9327,7 +11426,12 @@ window.NUMBLE_CURRICULUM = [
                   "The 3x out front must reach BOTH terms inside.",
                   "Multiply 3x by x, then 3x by 4 separately.",
                   "3x*x = 3x^2 and 3x*4 = ..."
-                ]
+                ],
+                "whyWrong": {
+                  "3x^2 + 4": "You distributed 3x to the first term but dropped it on the second — 3x*4 = 12x, not 4.",
+                  "3x + 12x": "3x times x is 3x^2, not 3x — the variables multiply too: x * x = x^2.",
+                  "x^2 + 12x": "The coefficient 3 got dropped from the first term: 3x * x = 3x^2, not x^2."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l3-p2",
@@ -9345,7 +11449,12 @@ window.NUMBLE_CURRICULUM = [
                   "FOIL = First, Outer, Inner, Last, four products in all.",
                   "The two middle products combine into one x-term.",
                   "x^2, then (3x + 2x) = 5x, then 2*3 = 6."
-                ]
+                ],
+                "whyWrong": {
+                  "x^2 + 6x + 5": "Looks like you swapped the middle and the last — Outer+Inner give 3x+2x = 5x (the middle) and 2*3 = 6 (the constant).",
+                  "x^2 + 6": "You forgot the Outer and Inner terms — those give the 5x in the middle: 3x + 2x = 5x.",
+                  "x^2 + 5x + 5": "The Last term is 2*3 = 6, not 5 — multiply the two constants together."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l3-p3",
@@ -9378,7 +11487,12 @@ window.NUMBLE_CURRICULUM = [
                   "A square means multiply the binomial by itself.",
                   "Don't just square each piece, the middle term matters.",
                   "FOIL (x+4)(x+4): the middle is 4x + 4x = 8x."
-                ]
+                ],
+                "whyWrong": {
+                  "x^2 + 16": "(x+4)^2 isn't x^2 + 4^2 — you must FOIL (x+4)(x+4), which adds a middle term: x^2 + 8x + 16.",
+                  "x^2 + 4x + 16": "The middle term comes from BOTH 4x's: 4x + 4x = 8x, not 4x.",
+                  "x^2 + 8x + 8": "The last term is 4*4 = 16, not 8 — square the 4."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l3-p5",
@@ -9396,7 +11510,12 @@ window.NUMBLE_CURRICULUM = [
                   "FOIL still works even when a coefficient isn't 1.",
                   "Outer is 2x*3 and inner is 1*x; add those.",
                   "2x^2, then (6x + x) = 7x, then 1*3 = 3."
-                ]
+                ],
+                "whyWrong": {
+                  "2x^2 + 4x + 3": "The middle term is wrong — add Outer (6x) and Inner (x): 6x + x = 7x, not 4x.",
+                  "2x^2 + 7x + 4": "The Last term is 1*3 = 3, not 4 — multiply the two constants.",
+                  "2x^2 + 3x + 3": "The middle term is short — you need Outer + Inner = 6x + x = 7x, not 3x."
+                }
               },
               {
                 "id": "quadratic-quarry-u1-l3-p6",
@@ -9414,7 +11533,19 @@ window.NUMBLE_CURRICULUM = [
                   "x*(3x) gives 3x^2 and 2*(x^2) gives 2x^2; add them."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To multiply polynomials, every term in one meets every term in the other. For two binomials, use FOIL: First, Outer, Inner, Last. Then combine the Outer and Inner terms — they're usually like terms. Hook: FOIL is just careful distributing.",
+              "example": {
+                "prompt": "Use FOIL: (x + 3)(x + 5)",
+                "steps": [
+                  "First: x * x = x^2.",
+                  "Outer + Inner: x*5 + 3*x = 5x + 3x = 8x.",
+                  "Last: 3 * 5 = 15."
+                ],
+                "answer": "x^2 + 8x + 15"
+              }
+            }
           }
         ]
       },
@@ -9444,7 +11575,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look at the numbers and the variable separately.",
                   "The biggest number dividing 6 and 9, plus any shared x.",
                   "3 divides both 6 and 9, and both have an x."
-                ]
+                ],
+                "whyWrong": {
+                  "3": "You found the number part but missed the shared x — both 6x and 9x also contain an x, so the GCF is 3x.",
+                  "x": "You found the shared x but missed the number — both share a factor of 3 too, so the GCF is 3x.",
+                  "18x": "18x is a common MULTIPLE, not a factor — the GREATEST common FACTOR (the biggest that divides both) is 3x."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l1-p2",
@@ -9462,7 +11598,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find the largest number dividing both 2x and 8.",
                   "Pull a 2 out and ask what's left inside.",
                   "2(__ + __): divide each term by 2."
-                ]
+                ],
+                "whyWrong": {
+                  "2(x + 8)": "Check by distributing: 2*x + 2*8 = 2x + 16, not 2x + 8. You need 2(x + 4).",
+                  "x(2 + 8)": "You can't factor out an x — neither term has an x. The shared factor is the number 2.",
+                  "2x(1 + 4)": "There's no x to pull out, and this multiplies to 2x + 8x. The GCF is just 2, giving 2(x + 4)."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l1-p3",
@@ -9496,7 +11637,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find the biggest number dividing 12 and 8, and the shared variable.",
                   "The GCF should be the LARGEST common factor, so fully simplify.",
                   "Pull out 4x, then divide each term by 4x."
-                ]
+                ],
+                "whyWrong": {
+                  "4(3x^2 - 2x)": "You pulled out 4 but left the x inside — the GCF includes an x too: 4x(3x - 2).",
+                  "2x(6x - 4)": "This isn't fully factored — 6x - 4 still shares a 2. The greatest common factor is 4x: 4x(3x - 2).",
+                  "4x(3x - 8)": "Check the second term: 8x divided by 4x is 2, not 8 — it should be 4x(3x - 2)."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l1-p5",
@@ -9526,7 +11672,19 @@ window.NUMBLE_CURRICULUM = [
                   "3*x + 3*2 = 3x + 6, so the statement holds."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Factoring is multiplying in reverse. The first tool to grab is the GCF — the biggest chunk every term shares (both the number AND any common variables). Pull it out front, and what's left goes in parentheses. Check by distributing back. Hook: GCF first, always.",
+              "example": {
+                "prompt": "Factor out the GCF: 6x^2 + 9x",
+                "steps": [
+                  "Find the largest number dividing 6 and 9: that's 3. Both terms also share an x, so the GCF is 3x.",
+                  "Divide each term by 3x: 6x^2/3x = 2x and 9x/3x = 3.",
+                  "Write the GCF out front with the leftovers inside: 3x(2x + 3)."
+                ],
+                "answer": "3x(2x + 3)"
+              }
+            }
           },
           {
             "id": "quadratic-quarry-u2-l2",
@@ -9550,7 +11708,12 @@ window.NUMBLE_CURRICULUM = [
                   "You need two numbers with a product of 6 and a sum of 5.",
                   "List factor pairs of 6: 1&6, 2&3. Which pair sums to 5?",
                   "2 * 3 = 6 and 2 + 3 = 5, so use those numbers."
-                ]
+                ],
+                "whyWrong": {
+                  "(x + 1)(x + 6)": "1 and 6 multiply to 6 but add to 7, not 5 — you need two numbers that add to 5: that's 2 and 3.",
+                  "(x + 2)(x + 4)": "2 and 4 add to 6, not 5, and multiply to 8, not 6 — try 2 and 3 instead.",
+                  "(x - 2)(x - 3)": "-2 and -3 multiply to +6 but add to -5, not +5 — both should be positive: (x + 2)(x + 3)."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l2-p2",
@@ -9568,7 +11731,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find two numbers multiplying to 12 and adding to 7.",
                   "Factor pairs of 12: 1&12, 2&6, 3&4. Which sums to 7?",
                   "3 * 4 = 12 and 3 + 4 = 7."
-                ]
+                ],
+                "whyWrong": {
+                  "(x + 2)(x + 6)": "2 and 6 multiply to 12 but add to 8, not 7 — you need a pair adding to 7: that's 3 and 4.",
+                  "(x + 1)(x + 12)": "1 and 12 multiply to 12 but add to 13, not 7 — try 3 and 4.",
+                  "(x + 3)(x + 5)": "3 and 5 add to 8 and multiply to 15, not 12 — you need 3 and 4 for a product of 12."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l2-p3",
@@ -9602,7 +11770,12 @@ window.NUMBLE_CURRICULUM = [
                   "Product is +10 (positive) but sum is -7 (negative), so both numbers are negative.",
                   "Negative factor pairs of 10: -1&-10, -2&-5. Which sums to -7?",
                   "-2 * -5 = 10 and -2 + -5 = -7."
-                ]
+                ],
+                "whyWrong": {
+                  "(x + 2)(x + 5)": "These multiply to +10 but add to +7, not -7 — since the middle is negative, both numbers must be negative: (x - 2)(x - 5).",
+                  "(x - 1)(x - 10)": "-1 and -10 multiply to 10 but add to -11, not -7 — you need -2 and -5.",
+                  "(x - 2)(x + 5)": "Opposite signs give a product of -10, but here c is +10 — both numbers must be negative: (x - 2)(x - 5)."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l2-p5",
@@ -9620,7 +11793,12 @@ window.NUMBLE_CURRICULUM = [
                   "Product is -15 (so signs differ) and sum is +2.",
                   "The bigger number should be positive since the sum is positive.",
                   "+5 * -3 = -15 and +5 + (-3) = +2."
-                ]
+                ],
+                "whyWrong": {
+                  "(x - 5)(x + 3)": "This gives a product of -15 but a middle term of -2x, not +2x — swap the signs to (x + 5)(x - 3).",
+                  "(x + 5)(x + 3)": "Both positive multiplies to +15, but you need -15 — one number must be negative: (x + 5)(x - 3).",
+                  "(x + 15)(x - 1)": "15 and -1 multiply to -15 but add to +14, not +2 — you need +5 and -3."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l2-p6",
@@ -9638,7 +11816,19 @@ window.NUMBLE_CURRICULUM = [
                   "4 + (?) = 9, so the partner is 5 (and 4*5 = 20)."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "For a trinomial x^2 + bx + c, find two numbers that MULTIPLY to c and ADD to b. Those two numbers become the binomial pair. Watch the signs: if c is positive both numbers share b's sign; if c is negative the numbers have opposite signs. Hook: multiply to c, add to b.",
+              "example": {
+                "prompt": "Factor: x^2 + 8x + 15",
+                "steps": [
+                  "I need two numbers that multiply to 15 and add to 8.",
+                  "Try 3 and 5: 3 * 5 = 15 and 3 + 5 = 8. That works!",
+                  "Place them in the binomials: (x + 3)(x + 5)."
+                ],
+                "answer": "(x + 3)(x + 5)"
+              }
+            }
           },
           {
             "id": "quadratic-quarry-u2-l3",
@@ -9662,7 +11852,12 @@ window.NUMBLE_CURRICULUM = [
                   "Both x^2 and 9 are perfect squares with a minus between them.",
                   "The pattern is a^2 - b^2 = (a + b)(a - b).",
                   "Here a = x and b = 3, so write (x + 3)(x - 3)."
-                ]
+                ],
+                "whyWrong": {
+                  "(x - 3)(x - 3)": "That multiplies to x^2 - 6x + 9, not x^2 - 9 — difference of squares uses one plus and one minus: (x + 3)(x - 3).",
+                  "(x + 9)(x - 1)": "These multiply to x^2 + 8x - 9, not x^2 - 9 — recognize 9 = 3^2 and use (x + 3)(x - 3).",
+                  "(x + 3)(x + 3)": "Both plus gives x^2 + 6x + 9 — for x^2 - 9 you need the plus-minus pair: (x + 3)(x - 3)."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l3-p2",
@@ -9680,7 +11875,12 @@ window.NUMBLE_CURRICULUM = [
                   "25 is a perfect square; what number squared gives 25?",
                   "Use a^2 - b^2 = (a + b)(a - b).",
                   "a = x, b = 5, so (x + 5)(x - 5)."
-                ]
+                ],
+                "whyWrong": {
+                  "(x - 5)(x - 5)": "That makes x^2 - 10x + 25, not x^2 - 25 — difference of squares needs one plus and one minus: (x + 5)(x - 5).",
+                  "(x + 25)(x - 1)": "These multiply to x^2 + 24x - 25, not x^2 - 25 — recognize 25 = 5^2 and use (x + 5)(x - 5).",
+                  "(x + 5)(x + 5)": "Both plus gives x^2 + 10x + 25 — you need the plus-minus twins: (x + 5)(x - 5)."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l3-p3",
@@ -9710,7 +11910,12 @@ window.NUMBLE_CURRICULUM = [
                   "Both 4x^2 and 1 are perfect squares.",
                   "The square root of 4x^2 is 2x, and the square root of 1 is 1.",
                   "Use a = 2x, b = 1: (2x + 1)(2x - 1)."
-                ]
+                ],
+                "whyWrong": {
+                  "(4x + 1)(x - 1)": "This multiplies to 4x^2 - 3x - 1, not 4x^2 - 1 — the middle doesn't cancel. Use both squares: (2x)^2 - 1^2 = (2x + 1)(2x - 1).",
+                  "(2x - 1)(2x - 1)": "That makes 4x^2 - 4x + 1, not 4x^2 - 1 — difference of squares needs one plus and one minus.",
+                  "(2x + 1)(2x + 1)": "Both plus gives 4x^2 + 4x + 1 — for 4x^2 - 1 use the plus-minus pair: (2x + 1)(2x - 1)."
+                }
               },
               {
                 "id": "quadratic-quarry-u2-l3-p5",
@@ -9744,9 +11949,25 @@ window.NUMBLE_CURRICULUM = [
                   "Both terms share a common factor before any squares appear.",
                   "Pull out the GCF of 2 first: 2(x^2 - 9).",
                   "Now factor x^2 - 9 as a difference of squares."
-                ]
+                ],
+                "whyWrong": {
+                  "(2x + 6)(x - 3)": "This isn't fully factored — pull the GCF of 2 out first: 2x^2 - 18 = 2(x^2 - 9) = 2(x + 3)(x - 3).",
+                  "2(x - 3)(x - 3)": "(x - 3)(x - 3) makes x^2 - 6x + 9, not x^2 - 9 — after factoring out 2 you need (x + 3)(x - 3).",
+                  "(x + 3)(2x - 6)": "This still has a 2 hidden inside (2x - 6 = 2(x - 3)) — factor the GCF out front first: 2(x + 3)(x - 3)."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Difference of squares is a special pattern: a^2 - b^2 always factors into (a + b)(a - b). Spot two perfect squares with a MINUS sign between them. A SUM like a^2 + b^2 does NOT factor this way. Hook: same squares, plus-and-minus twins.",
+              "example": {
+                "prompt": "Factor: 9x^2 - 16",
+                "steps": [
+                  "Check both parts are perfect squares: 9x^2 = (3x)^2 and 16 = 4^2, with a minus between them.",
+                  "Apply a^2 - b^2 = (a + b)(a - b) with a = 3x and b = 4."
+                ],
+                "answer": "(3x + 4)(3x - 4)"
+              }
+            }
           }
         ]
       },
@@ -9776,7 +11997,12 @@ window.NUMBLE_CURRICULUM = [
                   "A product equals 0 only when one of the factors is 0.",
                   "Set each parenthesis equal to 0 separately.",
                   "x - 2 = 0 means x = 2; x + 3 = 0 means x = -3."
-                ]
+                ],
+                "whyWrong": {
+                  "x = -2 or x = 3": "You flipped the signs — set each factor to 0: x - 2 = 0 gives x = +2, and x + 3 = 0 gives x = -3.",
+                  "x = 2 or x = 3": "The second factor is x + 3, so x + 3 = 0 gives x = -3, not +3.",
+                  "x = -2 or x = -3": "The first factor is x - 2, so x - 2 = 0 gives x = +2, not -2."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l1-p2",
@@ -9794,7 +12020,12 @@ window.NUMBLE_CURRICULUM = [
                   "First factor the trinomial: two numbers multiply to 6 and add to -5.",
                   "It factors to (x - 2)(x - 3).",
                   "Set each factor to 0: x = 2 and x = 3."
-                ]
+                ],
+                "whyWrong": {
+                  "x = -2 or x = -3": "It factors to (x - 2)(x - 3), so each factor at 0 gives x = +2 and x = +3 — the roots flip the sign inside.",
+                  "x = 1 or x = 6": "1 and 6 multiply to 6 but add to 7, not 5 — the right factors are (x - 2)(x - 3), giving x = 2 or 3.",
+                  "x = 5 or x = 6": "Those don't come from the factors — factoring gives (x - 2)(x - 3) = 0, so x = 2 or x = 3."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l1-p3",
@@ -9829,7 +12060,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find two numbers that multiply to -8 and add to +2.",
                   "It factors to (x - 2)(x + 4).",
                   "Set each to 0: x = 2 and x = -4."
-                ]
+                ],
+                "whyWrong": {
+                  "x = -2 or x = 4": "You flipped the signs — it factors to (x - 2)(x + 4), so x = +2 and x = -4.",
+                  "x = 2 or x = 4": "The factor x + 4 gives x = -4, not +4 — set x + 4 = 0.",
+                  "x = -2 or x = -4": "The factor x - 2 gives x = +2 — set x - 2 = 0, not -2."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l1-p5",
@@ -9864,9 +12100,26 @@ window.NUMBLE_CURRICULUM = [
                   "A leading coefficient of 2 means try factors like (2x ...)(x ...).",
                   "It factors to (2x - 1)(x + 3).",
                   "2x - 1 = 0 gives x = 1/2; x + 3 = 0 gives x = -3."
-                ]
+                ],
+                "whyWrong": {
+                  "x = -1/2 or x = 3": "You flipped both signs — (2x - 1) = 0 gives x = +1/2, and (x + 3) = 0 gives x = -3.",
+                  "x = 1 or x = -3": "From 2x - 1 = 0 you get x = 1/2, not 1 — divide the 1 by the 2.",
+                  "x = 2 or x = -3": "The factor 2x - 1 = 0 solves to x = 1/2, not 2 — solve 2x = 1."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To solve a quadratic, get one side equal to 0, factor it, then use the Zero Product Property: if A*B = 0, then A = 0 OR B = 0. Set each factor equal to zero and solve — each one hands you a root. Hook: equals zero, factor, split.",
+              "example": {
+                "prompt": "Solve: x^2 + x - 6 = 0",
+                "steps": [
+                  "Factor the trinomial: find numbers multiplying to -6 and adding to 1 — that's +3 and -2, so (x + 3)(x - 2) = 0.",
+                  "Set each factor to 0: x + 3 = 0 gives x = -3.",
+                  "The other factor: x - 2 = 0 gives x = 2."
+                ],
+                "answer": "x = -3 or x = 2"
+              }
+            }
           },
           {
             "id": "quadratic-quarry-u3-l2",
@@ -9905,7 +12158,12 @@ window.NUMBLE_CURRICULUM = [
                   "Plug a=1, b=2, c=-8 into b^2 - 4ac carefully.",
                   "Watch the signs: -4 * 1 * (-8) becomes +32.",
                   "4 + 32 = ..."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "Looks like you computed only b^2 (2^2 = 4) and forgot the -4ac part: 4 - 4(1)(-8) = 4 + 32 = 36.",
+                  "-30": "Watch the signs: -4ac = -4(1)(-8) = +32, not a subtraction — so it's 4 + 32 = 36, not a negative.",
+                  "-28": "You subtracted 32 instead of adding — since c is -8, -4ac becomes +32: 4 + 32 = 36."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l2-p3",
@@ -9923,7 +12181,12 @@ window.NUMBLE_CURRICULUM = [
                   "The discriminant sits under the square root in the formula.",
                   "If that value is 0, the ± adds and subtracts nothing.",
                   "Zero under the root means both formula branches give the same answer."
-                ]
+                ],
+                "whyWrong": {
+                  "Two different real solutions": "Two distinct roots happen when the discriminant is POSITIVE — when it's exactly 0, the ± vanishes and you get one repeated root.",
+                  "No real solutions": "No real roots happen when the discriminant is NEGATIVE — a discriminant of exactly 0 still gives one real (repeated) root.",
+                  "Infinitely many": "A quadratic can have at most two roots — a zero discriminant gives exactly one repeated root, never infinitely many."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l2-p4",
@@ -9953,7 +12216,12 @@ window.NUMBLE_CURRICULUM = [
                   "Find b^2 - 4ac first, then judge by its sign.",
                   "1 - 4 gives a negative number.",
                   "A negative discriminant means zero real solutions."
-                ]
+                ],
+                "whyWrong": {
+                  "One": "One root needs a discriminant of exactly 0 — here it's 1 - 4 = -3, which is negative, so there are NO real solutions.",
+                  "Two": "Two roots need a positive discriminant — here b^2 - 4ac = 1 - 4 = -3 is negative, so none are real.",
+                  "Three": "A quadratic can't have three roots — and with discriminant -3 (negative) it has no real solutions at all."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l2-p6",
@@ -9971,9 +12239,26 @@ window.NUMBLE_CURRICULUM = [
                   "Use a=1, b=-2, c=-1 in x = (-b ± sqrt(b^2-4ac))/(2a).",
                   "The discriminant is 4 + 4 = 8, and sqrt(8) = 2sqrt(2).",
                   "(2 ± 2sqrt(2))/2 simplifies by dividing each part by 2."
-                ]
+                ],
+                "whyWrong": {
+                  "x = 2 ± sqrt(2)": "The -b part is +2, but you must divide everything by 2a = 2: (2 ± 2sqrt(2))/2 = 1 ± sqrt(2).",
+                  "x = -1 ± sqrt(2)": "Since b = -2, -b = +2, so the result starts with +1, not -1: x = 1 ± sqrt(2).",
+                  "x = 1 ± sqrt(8)": "You forgot to simplify and divide — sqrt(8) = 2sqrt(2), and (2 ± 2sqrt(2))/2 = 1 ± sqrt(2)."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "When factoring won't work, the quadratic formula x = (-b ± sqrt(b^2 - 4ac)) / (2a) always solves ax^2 + bx + c = 0. The discriminant b^2 - 4ac is the part under the root: positive means two real roots, zero means one repeated root, negative means no real roots. Hook: the discriminant counts your answers.",
+              "example": {
+                "prompt": "Find the discriminant of 2x^2 + 3x - 2 = 0 and say how many real roots it has.",
+                "steps": [
+                  "Identify a = 2, b = 3, c = -2.",
+                  "Compute b^2 - 4ac = 3^2 - 4(2)(-2) = 9 + 16 = 25.",
+                  "Since 25 is positive, there are two different real solutions."
+                ],
+                "answer": "Discriminant = 25; two real solutions"
+              }
+            }
           },
           {
             "id": "quadratic-quarry-u3-l3",
@@ -9997,7 +12282,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look for a perfect-square factor hiding inside 50.",
                   "50 = 25 * 2, and 25 is a perfect square.",
                   "sqrt(25)*sqrt(2) = 5sqrt(2)."
-                ]
+                ],
+                "whyWrong": {
+                  "2sqrt(5)": "That squares back to 4*5 = 20, not 50 — pull out the perfect square 25: sqrt(50) = sqrt(25*2) = 5sqrt(2).",
+                  "25sqrt(2)": "You took 25 out instead of its square root — sqrt(25) = 5, so sqrt(50) = 5sqrt(2).",
+                  "10sqrt(5)": "That squares to 100*5 = 500, far too big — the right split is 25*2, giving 5sqrt(2)."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l3-p2",
@@ -10032,7 +12322,12 @@ window.NUMBLE_CURRICULUM = [
                   "Search for the biggest perfect square that divides 48.",
                   "48 = 16 * 3, and 16 is a perfect square.",
                   "sqrt(16)*sqrt(3) = 4sqrt(3)."
-                ]
+                ],
+                "whyWrong": {
+                  "3sqrt(4)": "This isn't simplified — sqrt(4) = 2 is still a perfect square, so 3sqrt(4) = 6 and 6^2 = 36, not 48. Pull 16 out of 48: 4sqrt(3).",
+                  "2sqrt(12)": "Not fully simplified — sqrt(12) still has a perfect square (4). Use the biggest one: 48 = 16*3, giving 4sqrt(3).",
+                  "16sqrt(3)": "You took 16 out instead of its square root — sqrt(16) = 4, so sqrt(48) = 4sqrt(3)."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l3-p4",
@@ -10066,7 +12361,12 @@ window.NUMBLE_CURRICULUM = [
                   "g(3) means plug 3 in wherever you see x.",
                   "Square the 3 first, then subtract 1.",
                   "3^2 = 9, then 9 - 1 = ..."
-                ]
+                ],
+                "whyWrong": {
+                  "5": "Looks like you did 3*2 - 1 — but g(3) means 3^2 - 1 = 9 - 1 = 8 (square the 3, don't double it).",
+                  "6": "Looks like you did 3*2 = 6 — but x^2 means 3*3 = 9, so g(3) = 9 - 1 = 8.",
+                  "9": "You squared the 3 but forgot to subtract 1 — g(3) = 3^2 - 1 = 9 - 1 = 8."
+                }
               },
               {
                 "id": "quadratic-quarry-u3-l3-p6",
@@ -10084,7 +12384,18 @@ window.NUMBLE_CURRICULUM = [
                   "9 + 6 = ..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "To simplify a radical, pull out the largest perfect-square factor: sqrt(a*b) = sqrt(a)*sqrt(b). And function notation f(x) just means 'plug a value in for x' — replace every x with the number, then compute. Hook: radicals — find a perfect square; functions — substitute and simplify.",
+              "example": {
+                "prompt": "Simplify sqrt(75), and if f(x) = x^2 + 1 find f(2).",
+                "steps": [
+                  "Find the largest perfect-square factor of 75: 75 = 25 * 3, and sqrt(25) = 5, so sqrt(75) = 5sqrt(3).",
+                  "For f(2), substitute 2 for x: 2^2 + 1 = 4 + 1 = 5."
+                ],
+                "answer": "sqrt(75) = 5sqrt(3); f(2) = 5"
+              }
+            }
           }
         ]
       }
@@ -10124,7 +12435,12 @@ window.NUMBLE_CURRICULUM = [
                   "Look for the side that never touches the right angle's corner.",
                   "It's the longest side, and it has a special name we use all the time in trig.",
                   "Picture a ramp: the slanted long side leaning across from the square corner is the hypo..."
-                ]
+                ],
+                "whyWrong": {
+                  "opposite": "The opposite side is a leg across from a chosen angle, not the side across from the right angle. The longest side, opposite the 90 degree angle, is the hypotenuse.",
+                  "adjacent": "The adjacent side is a leg that touches a chosen angle. The longest side, across from the right angle, is the hypotenuse.",
+                  "altitude": "An altitude is a height drawn inside a triangle, not a named side. The longest side, opposite the right angle, is the hypotenuse."
+                }
               },
               {
                 "id": "trig-tower-u1-l1-p2",
@@ -10154,7 +12470,12 @@ window.NUMBLE_CURRICULUM = [
                   "The word 'adjacent' just means 'next to'.",
                   "Which leg actually touches angle A's corner without being the long slanted side?",
                   "Find the two sides meeting at A, then rule out the hypotenuse."
-                ]
+                ],
+                "whyWrong": {
+                  "opposite side": "The opposite side is across from angle A and doesn't touch it. The side that touches A (and isn't the hypotenuse) is the adjacent side.",
+                  "hypotenuse": "The hypotenuse is the longest side, across from the right angle. The leg touching A is the adjacent side.",
+                  "median": "A median connects a vertex to the midpoint of the opposite side, not a named right triangle side. The leg touching A is the adjacent side."
+                }
               },
               {
                 "id": "trig-tower-u1-l1-p4",
@@ -10172,7 +12493,12 @@ window.NUMBLE_CURRICULUM = [
                   "Which side does NOT touch angle A at all?",
                   "If a side shares a corner with A, it can't be the opposite one.",
                   "Trace away from A across the triangle to the side it stares at."
-                ]
+                ],
+                "whyWrong": {
+                  "adjacent side": "The adjacent side touches angle A. The one across from A, not touching it, is the opposite side.",
+                  "hypotenuse": "The hypotenuse is the longest side, across from the right angle, not from angle A. The side across from A is the opposite side.",
+                  "base": "'Base' isn't one of the three named right triangle sides. The side facing angle A from across is the opposite side."
+                }
               },
               {
                 "id": "trig-tower-u1-l1-p5",
@@ -10205,7 +12531,19 @@ window.NUMBLE_CURRICULUM = [
                   "Pick angle A, name the sides; now pick the other angle and see if they change."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Every right triangle has three named sides. The hypotenuse is the longest side, always across from the 90 degree angle. The other two are legs: the one across from your chosen angle is the opposite, and the one touching it (that isn't the hypotenuse) is the adjacent. Tip: 'opposite' and 'adjacent' depend on which angle you're looking at, so pick your angle first.",
+              "example": {
+                "prompt": "In a right triangle, look at angle A. Name the three sides relative to A.",
+                "steps": [
+                  "Find the longest side, across from the 90 degree angle. That is the hypotenuse.",
+                  "Find the leg directly across from angle A (not touching it). That is the opposite side.",
+                  "The remaining leg touches angle A and isn't the hypotenuse. That is the adjacent side."
+                ],
+                "answer": "hypotenuse (longest), opposite (across from A), adjacent (touching A)"
+              }
+            }
           },
           {
             "id": "trig-tower-u1-l2",
@@ -10229,7 +12567,12 @@ window.NUMBLE_CURRICULUM = [
                   "Spell out S-O-H and match each letter to a side name.",
                   "The middle letter O stands for the top of the fraction.",
                   "Sine = O... / Hypotenuse, and O is short for one of our side words."
-                ]
+                ],
+                "whyWrong": {
+                  "adjacent": "That's the CAH ratio. SOH tells us Sine = Opposite / Hypotenuse, so the top is opposite.",
+                  "hypotenuse": "The hypotenuse is already the bottom of this ratio. SOH says Sine = Opposite / Hypotenuse, so the top is opposite.",
+                  "tangent": "Tangent is a different ratio entirely, not a side. SOH says Sine = Opposite / Hypotenuse."
+                }
               },
               {
                 "id": "trig-tower-u1-l2-p2",
@@ -10247,7 +12590,12 @@ window.NUMBLE_CURRICULUM = [
                   "Read C-A-H left to right as cosine, top, bottom.",
                   "The last letter H is the denominator.",
                   "Cosine = Adjacent / H..., and H is our longest side."
-                ]
+                ],
+                "whyWrong": {
+                  "opposite": "Opposite goes with sine and tangent. CAH says Cosine = Adjacent / Hypotenuse, so the bottom is hypotenuse.",
+                  "adjacent": "Adjacent is already the top of this ratio. CAH says Cosine = Adjacent / Hypotenuse, so the bottom is hypotenuse.",
+                  "leg": "'Leg' is a general name for a short side, not the specific bottom here. CAH says Cosine = Adjacent / Hypotenuse."
+                }
               },
               {
                 "id": "trig-tower-u1-l2-p3",
@@ -10265,7 +12613,12 @@ window.NUMBLE_CURRICULUM = [
                   "Spell T-O-A: tangent, top, bottom.",
                   "The last letter A is the denominator here.",
                   "Tangent = Opposite / A..., and A is the leg touching the angle."
-                ]
+                ],
+                "whyWrong": {
+                  "hypotenuse": "Tangent is the one ratio that skips the hypotenuse. TOA says Tangent = Opposite / Adjacent, so the bottom is adjacent.",
+                  "opposite": "Opposite is already the top of this ratio. TOA says Tangent = Opposite / Adjacent, so the bottom is adjacent.",
+                  "sine": "Sine is a different ratio, not a side. TOA says Tangent = Opposite / Adjacent."
+                }
               },
               {
                 "id": "trig-tower-u1-l2-p4",
@@ -10324,7 +12677,19 @@ window.NUMBLE_CURRICULUM = [
                   "Put 3 over 4 and you can leave it as 3/4 or divide to 0.75."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "SOH-CAH-TOA is your memory key for the three trig ratios. SOH: Sine = Opposite / Hypotenuse. CAH: Cosine = Adjacent / Hypotenuse. TOA: Tangent = Opposite / Adjacent. Just match the letters in order and you'll never mix them up.",
+              "example": {
+                "prompt": "For angle A, opposite = 6, adjacent = 8, hypotenuse = 10. Find sin(A), cos(A), and tan(A).",
+                "steps": [
+                  "SOH: sin(A) = opposite / hypotenuse = 6/10 = 0.6",
+                  "CAH: cos(A) = adjacent / hypotenuse = 8/10 = 0.8",
+                  "TOA: tan(A) = opposite / adjacent = 6/8 = 0.75"
+                ],
+                "answer": "sin(A) = 0.6, cos(A) = 0.8, tan(A) = 0.75"
+              }
+            }
           },
           {
             "id": "trig-tower-u1-l3",
@@ -10411,7 +12776,12 @@ window.NUMBLE_CURRICULUM = [
                   "Add the squares of the two equal legs.",
                   "1^2 + 1^2 gives you c^2.",
                   "c^2 = 2, so c = the square root of 2."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "That's just one leg, not the hypotenuse. Use 1^2 + 1^2 = 2, so c = sqrt(2).",
+                  "2": "Looks like you added the legs (1 + 1) instead of using the theorem. Do 1^2 + 1^2 = 2, then take the square root: c = sqrt(2).",
+                  "sqrt(3)": "sqrt(3) comes from a 30-60-90 triangle. Here both legs are 1, so 1^2 + 1^2 = 2 and c = sqrt(2)."
+                }
               },
               {
                 "id": "trig-tower-u1-l3-p6",
@@ -10434,7 +12804,19 @@ window.NUMBLE_CURRICULUM = [
                   "4 - 1 = 3, so b = sqrt(3)."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "The Pythagorean theorem locks in right triangle sides: a^2 + b^2 = c^2, where c is always the hypotenuse. To find a missing leg, subtract; to find the hypotenuse, add, then take the square root. Watch for famous triples like 3-4-5 and 5-12-13.",
+              "example": {
+                "prompt": "A right triangle has legs 9 and 12. Find the hypotenuse c.",
+                "steps": [
+                  "Square the legs: 9^2 = 81 and 12^2 = 144",
+                  "Add them: 81 + 144 = 225 (this is c^2)",
+                  "Take the square root: c = sqrt(225) = 15"
+                ],
+                "answer": "15"
+              }
+            }
           }
         ]
       },
@@ -10482,7 +12864,12 @@ window.NUMBLE_CURRICULUM = [
                   "Radians measure the arc length around a radius-1 circle.",
                   "The whole circumference of a unit circle is 2 times pi.",
                   "It's pi multiplied by 2."
-                ]
+                ],
+                "whyWrong": {
+                  "pi": "pi radians is only half a circle (180 degrees). A full circle is twice that: 2pi radians.",
+                  "pi/2": "pi/2 radians is a quarter circle (90 degrees). A full circle is 2pi radians.",
+                  "4pi": "4pi radians would be two full circles. One full circle is 2pi radians."
+                }
               },
               {
                 "id": "trig-tower-u2-l1-p3",
@@ -10500,7 +12887,12 @@ window.NUMBLE_CURRICULUM = [
                   "180 degrees is half of a full circle.",
                   "If 360 degrees = 2pi, what's half of 2pi?",
                   "Half of 2pi is just pi."
-                ]
+                ],
+                "whyWrong": {
+                  "2pi": "2pi radians is a whole circle (360 degrees). Half a circle, 180 degrees, is pi radians.",
+                  "pi/2": "pi/2 radians is a quarter circle (90 degrees). 180 degrees is a half circle, which is pi radians.",
+                  "pi/3": "pi/3 radians is 60 degrees. 180 degrees equals pi radians."
+                }
               },
               {
                 "id": "trig-tower-u2-l1-p4",
@@ -10518,7 +12910,12 @@ window.NUMBLE_CURRICULUM = [
                   "90 degrees is a quarter of a full turn.",
                   "A quarter of 2pi radians is 2pi divided by 4.",
                   "2pi/4 simplifies to pi/2."
-                ]
+                ],
+                "whyWrong": {
+                  "pi": "pi radians is a half circle (180 degrees). 90 degrees is a quarter circle, which is pi/2 radians.",
+                  "pi/4": "pi/4 radians is 45 degrees. 90 degrees is twice that: pi/2 radians.",
+                  "2pi": "2pi radians is a full circle (360 degrees). 90 degrees is a quarter of that: pi/2 radians."
+                }
               },
               {
                 "id": "trig-tower-u2-l1-p5",
@@ -10558,7 +12955,19 @@ window.NUMBLE_CURRICULUM = [
                   "180 divided by 3 is..."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Angles can be measured in degrees or radians. A full circle is 360 degrees, which equals 2pi radians, so 180 degrees = pi radians. To go degrees to radians multiply by pi/180; to go radians to degrees multiply by 180/pi.",
+              "example": {
+                "prompt": "Convert 90 degrees to radians.",
+                "steps": [
+                  "Use the rule: multiply degrees by pi/180.",
+                  "Set it up: 90 * pi/180 = 90pi/180",
+                  "Simplify the fraction 90/180 = 1/2, giving pi/2"
+                ],
+                "answer": "pi/2"
+              }
+            }
           },
           {
             "id": "trig-tower-u2-l2",
@@ -10616,7 +13025,12 @@ window.NUMBLE_CURRICULUM = [
                   "The special sines climb: 1/2, then sqrt(2)/2, then sqrt(3)/2 as the angle grows.",
                   "30 degrees is the smallest of 30/45/60, so it gets the smallest sine.",
                   "The smallest value in that list is one half."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "sine reaches 1 only at 90 degrees. At 30 degrees, sin = 1/2.",
+                  "sqrt(2)/2": "That's sin(45 degrees). For the smaller angle 30 degrees, sine is the smallest special value: 1/2.",
+                  "sqrt(3)/2": "That's sin(60 degrees). At the smaller angle 30 degrees, sine is 1/2."
+                }
               },
               {
                 "id": "trig-tower-u2-l2-p4",
@@ -10634,7 +13048,12 @@ window.NUMBLE_CURRICULUM = [
                   "Cosine shrinks as the angle grows from 0 to 90.",
                   "Try the identity cos(60) = sin(30).",
                   "sin(30) is 1/2, so cos(60) matches it."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "cosine reaches 0 only at 90 degrees. At 60 degrees, cos = 1/2.",
+                  "sqrt(3)/2": "That's cos(30 degrees). For the bigger angle 60 degrees, cosine shrinks to 1/2.",
+                  "sqrt(2)/2": "That's cos(45 degrees). At 60 degrees, cosine is 1/2."
+                }
               },
               {
                 "id": "trig-tower-u2-l2-p5",
@@ -10652,7 +13071,12 @@ window.NUMBLE_CURRICULUM = [
                   "45 degrees is right in the middle of the special trio.",
                   "It comes from the 45-45-90 triangle with legs 1 and hypotenuse sqrt(2).",
                   "Opposite/hypotenuse = 1/sqrt(2) = sqrt(2)/2."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "sine hits 1 only at 90 degrees. At 45 degrees, sin = sqrt(2)/2.",
+                  "1/2": "1/2 is sin(30 degrees). At 45 degrees sine is bigger: sqrt(2)/2 (about 0.707).",
+                  "sqrt(3)/2": "sqrt(3)/2 is sin(60 degrees). At 45 degrees, sine equals cosine: sqrt(2)/2."
+                }
               },
               {
                 "id": "trig-tower-u2-l2-p6",
@@ -10670,9 +13094,26 @@ window.NUMBLE_CURRICULUM = [
                   "Tangent equals sine divided by cosine.",
                   "At 45 degrees, sine and cosine are the same value.",
                   "Any number divided by itself is 1."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "tan is 0 at 0 degrees, where sine is 0. At 45 degrees sine and cosine are equal, so tan = 1.",
+                  "sqrt(3)": "sqrt(3) is tan(60 degrees). At 45 degrees, equal sine and cosine give tan = 1.",
+                  "1/2": "That mixes up the values. tan(45) = sin(45)/cos(45) = (sqrt(2)/2)/(sqrt(2)/2) = 1."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A handful of special angles appear constantly on the unit circle. Cosine is the x-coordinate and sine is the y-coordinate of the point. The key sine values for 30, 45, 60 are 1/2, sqrt(2)/2, sqrt(3)/2, and cosine runs the same list backward. Memory hook: as the angle grows, sine grows and cosine shrinks.",
+              "example": {
+                "prompt": "Find sin(60 degrees) and cos(30 degrees).",
+                "steps": [
+                  "For 60 degrees, take the largest special sine value: sin(60) = sqrt(3)/2",
+                  "For 30 degrees, cosine is the x-coordinate and equals the largest value: cos(30) = sqrt(3)/2",
+                  "Notice they match because 30 and 60 are complementary: sin of one equals cos of the other"
+                ],
+                "answer": "sin(60) = sqrt(3)/2 and cos(30) = sqrt(3)/2"
+              }
+            }
           },
           {
             "id": "trig-tower-u2-l3",
@@ -10696,7 +13137,12 @@ window.NUMBLE_CURRICULUM = [
                   "It mirrors a^2 + b^2 = c^2 with c = 1.",
                   "Both terms are squared and they ADD to something simple.",
                   "The squares of sine and cosine add up to 1."
-                ]
+                ],
+                "whyWrong": {
+                  "sin(x) + cos(x) = 1": "This version is missing the squares. The real identity squares each term: sin^2(x) + cos^2(x) = 1.",
+                  "sin^2(x) - cos^2(x) = 1": "The identity adds the squares, not subtracts them: sin^2(x) + cos^2(x) = 1.",
+                  "sin(x) * cos(x) = 1": "The identity adds squared terms, it doesn't multiply: sin^2(x) + cos^2(x) = 1."
+                }
               },
               {
                 "id": "trig-tower-u2-l3-p2",
@@ -10774,7 +13220,19 @@ window.NUMBLE_CURRICULUM = [
                   "0.81 + 0.81 = 1.62, which is too big."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "The Pythagorean identity says sin^2(x) + cos^2(x) = 1 for every single angle. It comes from a^2 + b^2 = c^2 on the unit circle, where c = 1. If you know one of sine or cosine, you can find the other: just subtract its square from 1 and take the square root.",
+              "example": {
+                "prompt": "If sin(x) = 4/5 and cos(x) is positive, find cos(x).",
+                "steps": [
+                  "Start from the identity: cos^2(x) = 1 - sin^2(x)",
+                  "Substitute: 1 - (4/5)^2 = 1 - 16/25 = 9/25",
+                  "Take the positive square root: cos(x) = sqrt(9/25) = 3/5"
+                ],
+                "answer": "3/5"
+              }
+            }
           }
         ]
       },
@@ -10838,7 +13296,12 @@ window.NUMBLE_CURRICULUM = [
                   "A negative exponent means 'take the reciprocal'.",
                   "2^(-1) = 1 / 2^1.",
                   "1 divided by 2 is one half."
-                ]
+                ],
+                "whyWrong": {
+                  "2": "That's 2^1. The negative exponent flips it to a reciprocal: 2^(-1) = 1/2.",
+                  "-2": "A negative exponent doesn't make the answer negative; it makes a reciprocal. 2^(-1) = 1/2.",
+                  "-1/2": "The reciprocal part is right, but the sign isn't. 2^(-1) = 1/2, a positive number."
+                }
               },
               {
                 "id": "trig-tower-u3-l1-p4",
@@ -10885,9 +13348,26 @@ window.NUMBLE_CURRICULUM = [
                   "Think about 3^(-1), 3^(-2), 3^(-3)... what happens to the size?",
                   "Those equal 1/3, 1/9, 1/27 — getting tiny but always positive.",
                   "They keep shrinking toward zero but never actually become 0."
-                ]
+                ],
+                "whyWrong": {
+                  "becomes negative": "An exponential like 3^x is always positive. As x goes very negative it shrinks toward 0 but stays above it.",
+                  "stays at 1": "3^x equals 1 only at x = 0. As x gets more negative, 3^x keeps shrinking toward 0.",
+                  "grows large": "3^x grows large when x increases, not decreases. As x goes negative it approaches 0."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "An exponential like b^x means multiply the base b by itself x times. Two rules unlock most problems: any nonzero number to the 0 power is 1, and a negative exponent means take the reciprocal (b^(-1) = 1/b). Exponentials grow faster and faster as x increases.",
+              "example": {
+                "prompt": "Evaluate 2^4 and 2^(-2).",
+                "steps": [
+                  "2^4 means 2 * 2 * 2 * 2 = 16",
+                  "A negative exponent flips to a reciprocal: 2^(-2) = 1/2^2",
+                  "Compute the bottom: 2^2 = 4, so 2^(-2) = 1/4"
+                ],
+                "answer": "2^4 = 16 and 2^(-2) = 1/4"
+              }
+            }
           },
           {
             "id": "trig-tower-u3-l2",
@@ -10945,7 +13425,12 @@ window.NUMBLE_CURRICULUM = [
                   "What power of 5 gives exactly 1?",
                   "Remember any base to the 0 power equals 1.",
                   "Since 5^0 = 1, the log is 0."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "That would be log base 5 of 5. Since 5^0 = 1, log base 5 of 1 = 0.",
+                  "5": "5 is the base, not the answer. Because 5^0 = 1, log base 5 of 1 = 0.",
+                  "undefined": "log of 1 is perfectly defined: any base to the 0 power is 1, so the answer is 0."
+                }
               },
               {
                 "id": "trig-tower-u3-l2-p4",
@@ -10992,9 +13477,26 @@ window.NUMBLE_CURRICULUM = [
                   "Notice that 6 = 2 * 3.",
                   "The product rule says log(2*3) = log(2) + log(3).",
                   "Add 0.30 + 0.48."
-                ]
+                ],
+                "whyWrong": {
+                  "0.18": "Looks like you subtracted instead of adding. The product rule adds: log(6) = 0.30 + 0.48 = 0.78.",
+                  "1.44": "That's log(2) * log(3), but the rule turns a product into a sum: 0.30 + 0.48 = 0.78.",
+                  "0.30": "That's just log(2). log(6) = log(2) + log(3) = 0.30 + 0.48 = 0.78."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A logarithm asks 'what power do I raise the base to?' So log base b of x is the exponent that turns b into x. Logs and exponentials undo each other. Handy facts: log base b of 1 is always 0, and the product rule log(a*b) = log(a) + log(b) turns multiplying into adding.",
+              "example": {
+                "prompt": "Find log base 2 of 16.",
+                "steps": [
+                  "Ask: what power of 2 gives 16?",
+                  "Test powers: 2^4 = 16, so the exponent is 4",
+                  "Therefore log base 2 of 16 = 4"
+                ],
+                "answer": "4"
+              }
+            }
           },
           {
             "id": "trig-tower-u3-l3",
@@ -11018,7 +13520,12 @@ window.NUMBLE_CURRICULUM = [
                   "The +3 is added to the whole output, not inside with x.",
                   "Changes outside f move the graph vertically.",
                   "Adding to the output lifts the graph upward."
-                ]
+                ],
+                "whyWrong": {
+                  "down 3": "Adding 3 raises outputs, it doesn't lower them. f(x) + 3 shifts the graph up 3.",
+                  "right 3": "Left/right shifts come from changes inside the function. A +3 outside shifts up 3.",
+                  "left 3": "Left/right shifts come from changes inside the parentheses. A +3 outside shifts up 3."
+                }
               },
               {
                 "id": "trig-tower-u3-l3-p2",
@@ -11036,7 +13543,12 @@ window.NUMBLE_CURRICULUM = [
                   "The -2 is inside, attached to x, so it moves things horizontally.",
                   "Inside shifts do the OPPOSITE of what the sign suggests.",
                   "x minus 2 (a subtraction) pushes the graph to the right."
-                ]
+                ],
+                "whyWrong": {
+                  "left 2": "Inside changes act oppositely to their sign. x - 2 shifts the graph right 2, not left.",
+                  "up 2": "Up/down shifts come from changes outside the function. x - 2 is inside, so it shifts right 2.",
+                  "down 2": "Up/down shifts come from changes outside the function. x - 2 is inside, so it shifts right 2."
+                }
               },
               {
                 "id": "trig-tower-u3-l3-p3",
@@ -11054,7 +13566,12 @@ window.NUMBLE_CURRICULUM = [
                   "The negative is outside, multiplying the whole output.",
                   "Outside negatives flip up-down (over the horizontal axis).",
                   "Every y becomes -y, which is a reflection over the x-axis."
-                ]
+                ],
+                "whyWrong": {
+                  "flipped over the y-axis": "A y-axis flip comes from f(-x), changing the input. The negative outside, -f(x), flips over the x-axis.",
+                  "shifted up": "A negative sign reflects, it doesn't shift. -f(x) flips the graph over the x-axis.",
+                  "stretched": "Stretching comes from multiplying by a number bigger than 1. The negative in -f(x) reflects over the x-axis."
+                }
               },
               {
                 "id": "trig-tower-u3-l3-p4",
@@ -11072,7 +13589,12 @@ window.NUMBLE_CURRICULUM = [
                   "The 2 multiplies the entire output of f.",
                   "Multiplying outputs changes their height, not their position left/right.",
                   "Doubling each y stretches the graph taller."
-                ]
+                ],
+                "whyWrong": {
+                  "shifted up 2": "Adding 2 outside would shift up, but here we multiply by 2. 2*f(x) stretches the graph vertically by 2.",
+                  "compressed by 2": "Multiplying by 2 makes heights bigger, not smaller. 2*f(x) stretches vertically by 2.",
+                  "flipped": "There's no negative sign, so nothing flips. Multiplying by 2 stretches the graph vertically by 2."
+                }
               },
               {
                 "id": "trig-tower-u3-l3-p5",
@@ -11103,7 +13625,19 @@ window.NUMBLE_CURRICULUM = [
                   "Swapping x for -x mirrors the graph left-right over the y-axis."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Transformations slide, flip, and stretch a graph. Outside changes act normally: f(x) + k moves up, and a negative outside flips over the x-axis, while multiplying outside stretches vertically. Inside changes act oppositely: f(x - h) moves right (not left), and f(-x) flips over the y-axis.",
+              "example": {
+                "prompt": "Describe how y = -f(x) + 2 changes the graph of f, then find the new value at a point where f = 5.",
+                "steps": [
+                  "The negative outside flips the graph over the x-axis: f(x) becomes -f(x)",
+                  "The + 2 outside shifts the whole graph up 2",
+                  "At a point where f = 5: -(5) + 2 = -3"
+                ],
+                "answer": "Flip over the x-axis, then shift up 2; the value becomes -3"
+              }
+            }
           }
         ]
       }
@@ -11175,7 +13709,12 @@ window.NUMBLE_CURRICULUM = [
                   "Picture the line 2x + 7 as x creeps to 0.",
                   "It's continuous, so substitute x = 0 right in.",
                   "2(0) + 7 leaves just the 7."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "Looks like you used the 2x term and got 0 — but at x = 0 the 2x vanishes and the +7 stays: 2(0) + 7 = 7.",
+                  "2": "The 2 is the coefficient of x, not the answer. Plug in x = 0: 2(0) + 7 = 7.",
+                  "9": "Looks like you added 2 + 7 = 9 — but the 2 multiplies x, and 2(0) = 0, so you're left with just 7."
+                }
               },
               {
                 "id": "calculus-canyon-u1-l1-p4",
@@ -11223,9 +13762,26 @@ window.NUMBLE_CURRICULUM = [
                   "Polynomials never have breaks, so where is 3x^2 - 1 headed at x = 1?",
                   "You can substitute x = 1 straight in.",
                   "Compute 3(1)^2 = 3, then subtract 1."
-                ]
+                ],
+                "whyWrong": {
+                  "1": "Looks like you got 3 - 1 - 1 or forgot a term — substitute fully: 3(1)^2 - 1 = 3 - 1 = 2.",
+                  "3": "That's just the 3x^2 part (3 at x=1) without subtracting the 1. Finish it: 3 - 1 = 2.",
+                  "4": "Looks like you added instead of subtracting: 3 + 1 = 4. The problem has a minus, so 3 - 1 = 2."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A limit asks where a function is HEADED as x sneaks up on a number. When the function is smooth (no holes or jumps) right there, you just plug the number in. Easy peek over the edge!",
+              "example": {
+                "prompt": "Evaluate the limit as x approaches 3 of (2x + 1).",
+                "steps": [
+                  "2x + 1 is a smooth line with no holes, so we can substitute directly.",
+                  "Plug in x = 3: 2(3) + 1 = 6 + 1.",
+                  "Add to get 7."
+                ],
+                "answer": "7"
+              }
+            }
           },
           {
             "id": "calculus-canyon-u1-l2",
@@ -11281,7 +13837,12 @@ window.NUMBLE_CURRICULUM = [
                   "Plugging in -1 gives 0/0, so we factor.",
                   "x^2 - 1 = (x-1)(x+1) — a difference of squares.",
                   "Cancel (x+1), leaving x-1, then substitute x = -1."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "Plugging straight in gives 0/0, but that's a hole to factor through, not the answer. After cancelling you get x - 1 = -2.",
+                  "2": "That's x + 1 at x = -1 done with a sign flip, or +1 instead of -1. The cancelled form is x - 1, so -1 - 1 = -2.",
+                  "-1": "Looks like you just plugged x = -1 into the bottom or top alone. Factor and cancel first: (x-1)(x+1)/(x+1) = x - 1, then -1 - 1 = -2."
+                }
               },
               {
                 "id": "calculus-canyon-u1-l2-p4",
@@ -11327,9 +13888,26 @@ window.NUMBLE_CURRICULUM = [
                   "Direct plug-in gives 0/0, so factor the numerator.",
                   "x^2 - 16 = (x-4)(x+4).",
                   "Cancel (x-4) to get x+4, then substitute x = 4."
-                ]
+                ],
+                "whyWrong": {
+                  "4": "That's just plugging x = 4 into the leftover x without the +4. After cancelling you get x + 4, so 4 + 4 = 8.",
+                  "6": "Looks like you used x + 2 instead of x + 4. The top factors as (x-4)(x+4), so cancelling leaves x + 4: 4 + 4 = 8.",
+                  "16": "That's the constant 16 from x^2 - 16, not the limit. Factor and cancel to get x + 4, then 4 + 4 = 8."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Sometimes plugging in gives 0/0 — that's a tiny hole, not a dead end. Factor the top and bottom, cancel the matching piece, then plug in to the simpler function. The hole tells you where to dig, not to stop.",
+              "example": {
+                "prompt": "Evaluate the limit as x approaches 5 of (x^2 - 25)/(x - 5).",
+                "steps": [
+                  "Plugging in 5 gives 0/0, so factor the top: x^2 - 25 = (x - 5)(x + 5).",
+                  "Cancel the (x - 5) on top and bottom, leaving just x + 5.",
+                  "Plug in x = 5: 5 + 5 = 10."
+                ],
+                "answer": "10"
+              }
+            }
           },
           {
             "id": "calculus-canyon-u1-l3",
@@ -11369,7 +13947,12 @@ window.NUMBLE_CURRICULUM = [
                   "The bottom, x^2, grows even faster than x.",
                   "A constant 5 divided by something enormous shrinks fast.",
                   "Where does a fixed number over a huge denominator land?"
-                ]
+                ],
+                "whyWrong": {
+                  "1": "A fraction with a fixed top over a growing bottom doesn't settle at 1 — as x^2 explodes, 5/x^2 shrinks toward 0.",
+                  "5": "The 5 is just the top; it doesn't survive being divided by an ever-growing x^2. The whole thing goes to 0.",
+                  "infinity": "The bottom x^2 grows, not the fraction — dividing 5 by a huge number makes it tiny, so the limit is 0, not infinity."
+                }
               },
               {
                 "id": "calculus-canyon-u1-l3-p3",
@@ -11387,7 +13970,12 @@ window.NUMBLE_CURRICULUM = [
                   "Compare the highest powers on top and bottom — both are x^2.",
                   "When the top and bottom degrees match, only the leading coefficients matter.",
                   "Take 3 (from 3x^2) over 1 (from x^2)."
-                ]
+                ],
+                "whyWrong": {
+                  "0": "The bottom doesn't outgrow the top here — both are x^2, a tie. With equal degrees, take the ratio of leading coefficients: 3/1 = 3.",
+                  "1": "Equal degrees don't give 1 — they give the ratio of the leading coefficients, which is 3/1 = 3, not 1/1.",
+                  "infinity": "The top isn't a higher degree than the bottom; both are x^2. A tie gives the coefficient ratio 3/1 = 3."
+                }
               },
               {
                 "id": "calculus-canyon-u1-l3-p4",
@@ -11433,9 +14021,26 @@ window.NUMBLE_CURRICULUM = [
                   "The denominator's degree (2) is bigger than the numerator's (0).",
                   "A fixed top over a forever-growing bottom shrinks.",
                   "Where does 7 over an enormous number go?"
-                ]
+                ],
+                "whyWrong": {
+                  "7": "The 7 is just the top; divided by an ever-growing 2x^2 + 3 it shrinks to 0, not stays at 7.",
+                  "7/2": "That ratio would apply only if top and bottom had the same degree. Here the bottom (x^2) outgrows the constant top, so the limit is 0.",
+                  "infinity": "The bottom grows to infinity while the top is stuck at 7, so the fraction collapses to 0, not blows up."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Way out where x grows forever, the highest powers run the show. Same top and bottom degree? The limit is the ratio of the leading coefficients. Bigger power on the bottom? It collapses to 0. Bigger on top? It races off to infinity.",
+              "example": {
+                "prompt": "Evaluate the limit as x approaches infinity of (6x^2 + 4)/(2x^2 + 1).",
+                "steps": [
+                  "Find the highest power on top and bottom: both are x^2, so they tie.",
+                  "Since the degrees match, take the ratio of the leading coefficients: 6/2.",
+                  "Simplify 6/2 to 3."
+                ],
+                "answer": "3"
+              }
+            }
           }
         ]
       },
@@ -11497,7 +14102,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think about what we measure when we zoom way in on a curve.",
                   "It tells us the instantaneous rate of change.",
                   "Rate of change at one spot = the ... at that point."
-                ]
+                ],
+                "whyWrong": {
+                  "The area under the curve": "That's what an integral gives, not a derivative. The derivative measures the slope — steepness — at a point.",
+                  "The y-intercept": "The y-intercept is just where the curve crosses the y-axis. The derivative is about steepness, the slope at a point.",
+                  "The maximum value": "The maximum is a high point of the curve, not its steepness. The derivative gives the slope at a point."
+                }
               },
               {
                 "id": "calculus-canyon-u2-l1-p4",
@@ -11545,9 +14155,26 @@ window.NUMBLE_CURRICULUM = [
                   "The derivative is the slope. What does a positive slope look like?",
                   "Positive slope means y increases as x increases.",
                   "Rising as you move right = heading ..."
-                ]
+                ],
+                "whyWrong": {
+                  "going downhill": "Downhill is a NEGATIVE slope. A positive derivative means the curve is rising — going uphill.",
+                  "flat": "Flat means a slope of 0. A positive slope is more than 0, so the curve is climbing uphill.",
+                  "undefined": "A positive number is a perfectly defined slope. Positive slope just means the curve is heading uphill."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A derivative measures the slope — how steep the trail is at one exact spot. A straight line y = mx has constant slope m everywhere, and a flat (constant) line has slope 0. Positive slope means climbing uphill; negative means heading down.",
+              "example": {
+                "prompt": "What is the derivative of f(x) = 4x?",
+                "steps": [
+                  "The graph of y = 4x is a straight line, so its slope is the same at every point.",
+                  "Read the slope straight off: the number multiplying x is 4.",
+                  "So f'(x) = 4 everywhere."
+                ],
+                "answer": "4"
+              }
+            }
           },
           {
             "id": "calculus-canyon-u2-l2",
@@ -11608,7 +14235,12 @@ window.NUMBLE_CURRICULUM = [
                   "Use the power rule: n*x^(n-1).",
                   "n = 5, so the 5 jumps to the front.",
                   "New exponent is 5 - 1 = 4."
-                ]
+                ],
+                "whyWrong": {
+                  "5x^6": "You raised the exponent instead of lowering it. The power rule DROPS the exponent by one: x^5 gives 5x^4.",
+                  "x^4": "You lowered the exponent but forgot to bring the 5 down front. The power rule gives 5*x^4 = 5x^4.",
+                  "4x^5": "You dropped the wrong number — bring the exponent 5 down and lower it: 5x^4, not 4x^5."
+                }
               },
               {
                 "id": "calculus-canyon-u2-l2-p4",
@@ -11660,9 +14292,26 @@ window.NUMBLE_CURRICULUM = [
                   "Apply the power rule to x^4 first, keeping the 6 out front.",
                   "Derivative of x^4 is 4x^3.",
                   "Multiply the coefficients: 6 * 4 = 24."
-                ]
+                ],
+                "whyWrong": {
+                  "6x^3": "You lowered the exponent but forgot to multiply the exponent into the coefficient: 6 * 4x^3 = 24x^3.",
+                  "10x^3": "Looks like you added 6 + 4 = 10. The power rule multiplies them: 6 * 4 = 24, giving 24x^3.",
+                  "24x^4": "You multiplied the coefficients correctly but didn't lower the exponent: x^4 becomes x^3, so 24x^3."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "The power rule is your fastest tool: for x^n, bring the exponent down front and drop it by one, giving n*x^(n-1). A coefficient out front just rides along and multiplies the result.",
+              "example": {
+                "prompt": "Using the power rule, find the derivative of 3x^4.",
+                "steps": [
+                  "Apply the power rule to x^4: bring down the 4 and lower the exponent to get 4x^3.",
+                  "Multiply by the coefficient out front: 3 * 4x^3.",
+                  "Combine the numbers: 3 * 4 = 12, so the derivative is 12x^3."
+                ],
+                "answer": "12x^3"
+              }
+            }
           },
           {
             "id": "calculus-canyon-u2-l3",
@@ -11725,7 +14374,12 @@ window.NUMBLE_CURRICULUM = [
                   "Differentiate term by term and drop the constant.",
                   "3x^2 to 6x, -4x to -4, +7 to 0.",
                   "Combine the nonzero results."
-                ]
+                ],
+                "whyWrong": {
+                  "6x + 7": "The +7 is a constant, so its derivative is 0, not 7. And -4x gives -4: f'(x) = 6x - 4.",
+                  "3x - 4": "3x^2 differentiates to 6x (bring the 2 down: 3*2 = 6), not 3x. So f'(x) = 6x - 4.",
+                  "6x - 4 + 7": "The +7 should vanish, not stick around — a constant's derivative is 0. So just f'(x) = 6x - 4."
+                }
               },
               {
                 "id": "calculus-canyon-u2-l3-p4",
@@ -11774,9 +14428,26 @@ window.NUMBLE_CURRICULUM = [
                   "First find f'(x), then substitute x = 1.",
                   "The derivative is 2x + 2.",
                   "Now evaluate: 2(1) + 2."
-                ]
+                ],
+                "whyWrong": {
+                  "2": "That's f(1) using f(x) = x^2 + 2x... or a partial step. First find f'(x) = 2x + 2, then f'(1) = 2(1) + 2 = 4.",
+                  "3": "Looks like you computed 2x + 2 but used x = 0.5, or slipped a step. With x = 1: 2(1) + 2 = 4.",
+                  "5": "Close, but recheck: f'(x) = 2x + 2, and 2(1) + 2 = 4, not 5."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A polynomial is just a sum of power terms, so differentiate each piece separately and add the results. Any plain constant term washes away to 0, since a constant has no slope.",
+              "example": {
+                "prompt": "Find the derivative of f(x) = 2x^3 + 4x - 9.",
+                "steps": [
+                  "Differentiate 2x^3 with the power rule: 2 * 3x^2 = 6x^2.",
+                  "Differentiate 4x: a line of slope 4, so it gives 4.",
+                  "The constant -9 has slope 0 and drops out. Add the pieces: 6x^2 + 4."
+                ],
+                "answer": "6x^2 + 4"
+              }
+            }
           }
         ]
       },
@@ -11806,7 +14477,12 @@ window.NUMBLE_CURRICULUM = [
                   "Tangent-line slope and derivative are the same idea.",
                   "We need the slope AT x = 3, not the function's value.",
                   "That's the derivative evaluated at 3."
-                ]
+                ],
+                "whyWrong": {
+                  "f(3)": "f(3) is the function's VALUE (height) at x = 3, not its slope. The tangent's slope is the derivative f'(3).",
+                  "f''(3)": "f''(3) is the second derivative (how the slope is changing). The tangent line's slope is the FIRST derivative, f'(3).",
+                  "f(3)/3": "That mixes the height with x and isn't a slope. The tangent's slope is exactly the derivative f'(3)."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l1-p2",
@@ -11840,7 +14516,12 @@ window.NUMBLE_CURRICULUM = [
                   "Chain rule: differentiate the outer power, then multiply by the inner derivative.",
                   "Treat (x^2 + 1) as a blob: the outside power^3 gives 3*blob^2.",
                   "Now multiply by the derivative of the inside, which is 2x."
-                ]
+                ],
+                "whyWrong": {
+                  "3(x^2 + 1)^2": "That's only the outside derivative — the chain rule says multiply by the inside's derivative too: 3(x^2+1)^2 * 2x.",
+                  "2x": "That's just the inside's derivative by itself. The chain rule multiplies it by the outside derivative: 3(x^2+1)^2 * 2x.",
+                  "6x^2": "Looks like you multiplied 3 * 2x or skipped the chain structure. Keep the outside intact: 3(x^2+1)^2 * 2x."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l1-p4",
@@ -11858,7 +14539,12 @@ window.NUMBLE_CURRICULUM = [
                   "The product rule is NOT just multiplying the two derivatives.",
                   "Differentiate one factor at a time, keeping the other fixed, then add.",
                   "First: f'*g. Second: f*g'. Add them."
-                ]
+                ],
+                "whyWrong": {
+                  "f'(x)g'(x)": "You can't just multiply the two derivatives — that's a common trap. The product rule is f'(x)g(x) + f(x)g'(x).",
+                  "f'(x) + g'(x)": "That's the rule for a SUM, not a product. For a product use f'(x)g(x) + f(x)g'(x).",
+                  "f(x)g'(x) - f'(x)g(x)": "That has a minus sign and looks like a garbled quotient rule. The product rule ADDS: f'(x)g(x) + f(x)g'(x)."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l1-p5",
@@ -11890,7 +14576,19 @@ window.NUMBLE_CURRICULUM = [
                   "Check the order: is it f'g MINUS fg' on top?"
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A few power tools: the tangent line's slope at a point IS the derivative there, f'(a). The product rule is f'g + fg' (derivative of first times second, plus first times derivative of second). The chain rule is outside-derivative times inside-derivative.",
+              "example": {
+                "prompt": "Using the chain rule, find the derivative of (x^3 + 2)^2.",
+                "steps": [
+                  "Differentiate the outside (something)^2, keeping the inside the same: 2(x^3 + 2).",
+                  "Multiply by the derivative of the inside (x^3 + 2), which is 3x^2.",
+                  "Combine: 2(x^3 + 2) * 3x^2."
+                ],
+                "answer": "2(x^3 + 2) * 3x^2"
+              }
+            }
           },
           {
             "id": "calculus-canyon-u3-l2",
@@ -11914,7 +14612,12 @@ window.NUMBLE_CURRICULUM = [
                   "Integration of x^n: raise the power by 1, then divide by the new power.",
                   "x is x^1, so the new exponent is 2.",
                   "Divide x^2 by 2 — and never forget the + C."
-                ]
+                ],
+                "whyWrong": {
+                  "x^2": "You raised the exponent right but forgot to divide by the new power AND add C. The integral of x is x^2/2 + C.",
+                  "2x + C": "That's the DERIVATIVE direction (you multiplied), not the integral. Integrating x adds to the exponent: x^2/2 + C.",
+                  "1 + C": "That's the derivative of x, not its integral. Integration raises the power: x becomes x^2/2 + C."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l2-p2",
@@ -11932,7 +14635,12 @@ window.NUMBLE_CURRICULUM = [
                   "Use the reverse power rule: bump the exponent up by 1.",
                   "x^2 becomes x^3, and you divide by the new exponent.",
                   "Divide by 3 and add C."
-                ]
+                ],
+                "whyWrong": {
+                  "2x + C": "That's the derivative of x^2, not its integral. Integrating goes the other way: x^2 becomes x^3/3 + C.",
+                  "x^3 + C": "You raised the exponent to 3 but forgot to divide by the new power 3. The integral is x^3/3 + C.",
+                  "3x^2 + C": "That's the derivative of x^3. To integrate x^2, add to the exponent and divide: x^3/3 + C."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l2-p3",
@@ -11950,7 +14658,12 @@ window.NUMBLE_CURRICULUM = [
                   "What function has a derivative of 5?",
                   "Think backward: derivative of 5x is 5.",
                   "So the antiderivative of 5 is 5x, plus C."
-                ]
+                ],
+                "whyWrong": {
+                  "5 + C": "A constant doesn't just stay put when integrated — you pick up an x. The integral of 5 is 5x + C.",
+                  "0 + C": "That's like differentiating the constant. Integrating 5 gives 5x + C, not 0.",
+                  "x/5 + C": "You divided by 5 instead of multiplying x by it. The integral of the constant 5 is 5x + C."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l2-p4",
@@ -11980,7 +14693,12 @@ window.NUMBLE_CURRICULUM = [
                   "Keep the coefficient and integrate the x part.",
                   "The integral of x is x^2/2.",
                   "Multiply by 6: 6 * x^2/2 = ?, then add C."
-                ]
+                ],
+                "whyWrong": {
+                  "6x^2 + C": "You forgot to divide by the new power. Integrating x gives x^2/2, so 6 * x^2/2 = 3x^2 + C, not 6x^2.",
+                  "6 + C": "That's like differentiating 6x down to 6. Integrating 6x raises the power: 3x^2 + C.",
+                  "3x + C": "You divided the coefficient but didn't raise x's exponent. Integrating 6x gives 3x^2 + C."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l2-p6",
@@ -11998,9 +14716,26 @@ window.NUMBLE_CURRICULUM = [
                   "Integrate term by term, then add one +C at the end.",
                   "2x integrates to x^2; the constant 3 integrates to 3x.",
                   "Combine: x^2 + 3x + C."
-                ]
+                ],
+                "whyWrong": {
+                  "2x^2 + 3x + C": "The 2x integrates to x^2 (2 * x^2/2 = x^2), not 2x^2 — you skipped dividing by 2. Answer: x^2 + 3x + C.",
+                  "x^2 + 3 + C": "The constant 3 integrates to 3x, not stay as 3. So it's x^2 + 3x + C.",
+                  "2 + C": "That looks like a derivative of part of it. Integrate each term: 2x gives x^2, 3 gives 3x, so x^2 + 3x + C."
+                }
               }
-            ]
+            ],
+            "teach": {
+              "concept": "Integration runs the derivative backward. For x^n, add one to the exponent and divide by the new power, giving x^(n+1)/(n+1). A constant k integrates to kx. Always add + C, since any constant vanishes when you differentiate.",
+              "example": {
+                "prompt": "Find the integral of 4x with respect to x.",
+                "steps": [
+                  "Integrate x by raising its exponent to 2 and dividing by 2: x^2/2.",
+                  "Multiply by the coefficient 4: 4 * x^2/2 = 2x^2.",
+                  "Add the constant of integration: 2x^2 + C."
+                ],
+                "answer": "2x^2 + C"
+              }
+            }
           },
           {
             "id": "calculus-canyon-u3-l3",
@@ -12024,7 +14759,12 @@ window.NUMBLE_CURRICULUM = [
                   "Think about what integration accumulates, the opposite of slope.",
                   "It's a total amount built up across an interval.",
                   "Geometrically, that total is the ... under the curve."
-                ]
+                ],
+                "whyWrong": {
+                  "the slope at b": "Slope is what a derivative gives. A definite integral accumulates AREA between the curve and the x-axis from a to b.",
+                  "the value of f at a": "That's just one height of the function. A definite integral gives the total area under the curve over [a, b].",
+                  "the maximum of f": "The maximum is a peak height, not an accumulation. A definite integral measures the area from a to b."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l3-p2",
@@ -12090,7 +14830,12 @@ window.NUMBLE_CURRICULUM = [
                   "The antiderivative of x^2 is x^3/3.",
                   "Plug in 3 then 0: (3^3)/3 - (0^3)/3.",
                   "27/3 = ?"
-                ]
+                ],
+                "whyWrong": {
+                  "3": "Looks like you used antiderivative x^2 instead of x^3/3, or stopped early. Correct: x^3/3 at 3 is 27/3 = 9.",
+                  "6": "Close, but the antiderivative of x^2 is x^3/3, and 3^3/3 = 27/3 = 9, not 6.",
+                  "27": "That's 3^3 — you forgot to divide by 3. The antiderivative is x^3/3, so 27/3 = 9."
+                }
               },
               {
                 "id": "calculus-canyon-u3-l3-p6",
@@ -12108,7 +14853,19 @@ window.NUMBLE_CURRICULUM = [
                   "Compute 2^3 - 0^3 = 8 - 0."
                 ]
               }
-            ]
+            ],
+            "teach": {
+              "concept": "A definite integral measures the exact area between a curve and the x-axis over [a, b]. Use the Fundamental Theorem: find the antiderivative, plug in the top limit, then subtract the antiderivative at the bottom limit.",
+              "example": {
+                "prompt": "Evaluate the definite integral from 0 to 2 of (x) dx.",
+                "steps": [
+                  "Find the antiderivative of x: x^2/2.",
+                  "Plug in the top limit: 2^2/2 = 4/2 = 2.",
+                  "Subtract the bottom limit: 0^2/2 = 0, so 2 - 0 = 2."
+                ],
+                "answer": "2"
+              }
+            }
           }
         ]
       }
