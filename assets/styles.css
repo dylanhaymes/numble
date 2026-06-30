@@ -30,6 +30,10 @@
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+/* The [hidden] attribute must always win over class display rules
+   (.modal-overlay/.hud/.tabbar set display, which would otherwise keep
+   a hidden overlay on screen and block all clicks). */
+[hidden] { display: none !important; }
 html, body { margin: 0; height: 100%; }
 body {
   font-family: var(--fbody);
