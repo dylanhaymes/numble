@@ -169,6 +169,7 @@
 
   /* ---------- routing / shell ---------- */
   var route = 'home';
+  var pickerExpanded = null;
 
   function renderShell() {
     var lv = levelInfo(state.xp);
@@ -216,7 +217,10 @@
       '<div class="hero-text">' +
         '<div class="hero-title">' + (state.xp ? 'Welcome back!' : 'Hi, I\'m Pip!') + '</div>' +
         '<div class="hero-sub">' + (cur ? 'Up next: <b>' + esc(cur.lesson.title) + '</b> · ' + esc(cur.world.title) : 'You finished everything — legend!') + '</div>' +
-        (cur ? '<button class="btn btn-primary btn-3d" data-action="start" data-lesson="' + cur.lesson.id + '">Continue ▶</button>' : '') +
+        '<div class="hero-actions">' +
+          (cur ? '<button class="btn btn-primary btn-3d" data-action="start" data-lesson="' + cur.lesson.id + '">Continue ▶</button>' : '') +
+          '<button class="btn btn-ghost hero-jump" data-action="open-picker">🧭 Pick a topic</button>' +
+        '</div>' +
       '</div>' +
     '</section>';
 
@@ -720,6 +724,51 @@
     })();
   }
 
+  /* ---------- "choose where to start" picker ---------- */
+  function openStartPicker() {
+    var rows = CURR.map(function (world) {
+      var first = world.units[0].lessons[0];
+      var expanded = pickerExpanded === world.id;
+      var wp = worldProgress(world);
+      var units = '';
+      if (expanded) {
+        units = '<div class="pick-units">' + world.units.map(function (u) {
+          var ul = u.lessons[0];
+          return '<div class="pick-unit"><span class="pick-unit-name">' + esc(u.title) + '</span>' +
+            '<button class="pick-unit-go" data-action="pick-start" data-lesson="' + ul.id + '">Start ▶</button></div>';
+        }).join('') + '</div>';
+      }
+      return '<div class="pick-world' + (expanded ? ' open' : '') + '" style="--world:' + world.color + '">' +
+        '<div class="pick-world-head" data-action="expand-world" data-world="' + world.id + '">' +
+          '<span class="pick-emoji">' + world.icon + '</span>' +
+          '<span class="pick-meta"><span class="pick-name">' + esc(world.title) + '</span>' +
+            '<span class="pick-sub">' + esc(world.subtitle) + (wp.done ? ' · ' + wp.done + '/' + wp.total + ' done' : '') + '</span></span>' +
+          '<span class="pick-caret">' + (expanded ? '▾' : '▸') + '</span>' +
+          '<button class="pick-go" data-action="pick-start" data-lesson="' + first.id + '">Start ▶</button>' +
+        '</div>' + units +
+      '</div>';
+    }).join('');
+    openModal(
+      '<div class="modal-head"><h2>Where to start? 🚀</h2><button class="icon-btn" data-action="close-modal">✕</button></div>' +
+      '<p class="muted picker-sub">Jump in anywhere — Pip meets you there. Tap a world to begin, or expand it (▸) to pick a specific topic. You can always go back to earlier worlds.</p>' +
+      '<div class="picker-list">' + rows + '</div>'
+    );
+  }
+
+  function pickStart(lessonId) {
+    var ref = LESSON_BY_ID[lessonId];
+    if (!ref) return;
+    state.onboarded = true;
+    state.jumpUnlocks[lessonId] = true;
+    save();
+    closeModal();
+    Sfx.unlock();
+    route = 'home';
+    render();
+    toast('Starting in ' + ref.world.title + '! 🚀');
+    startLesson(lessonId);
+  }
+
   /* ---------- settings & modals ---------- */
   function openSettings() {
     var voices = Voice.listVoices();
@@ -778,6 +827,13 @@
       state.jumpUnlocks[lid] = true; save(); Sfx.play('select');
       toast('Jumped ahead — good luck! 🚀'); startLesson(lid);
     }
+    else if (a === 'open-picker') { Sfx.play('tap'); openStartPicker(); }
+    else if (a === 'expand-world') {
+      var wid = t.getAttribute('data-world');
+      pickerExpanded = (pickerExpanded === wid) ? null : wid;
+      Sfx.play('tap'); openStartPicker();
+    }
+    else if (a === 'pick-start') { pickStart(t.getAttribute('data-lesson')); }
     else if (a === 'choose') { onChoose(t.getAttribute('data-val'), t); }
     else if (a === 'key') { onKey(t.getAttribute('data-key')); }
     else if (a === 'check') { doCheck(); }
@@ -883,8 +939,8 @@
         '<h1 class="brand-word">Numble</h1>' +
         '<p class="brand-tag">Level up your math — from counting to calculus.</p>' +
         '<p class="welcome-lead">Hi, I\'m <b>Pip</b>! I\'ll guide you, cheer you on, and whisper hints when you\'re stuck. We\'ll start with the basics and climb all the way up together.</p>' +
-        '<button class="btn btn-primary btn-3d big" data-action="begin">Start learning ✨</button>' +
-        '<button class="btn btn-ghost" data-action="begin-quiet">I\'ll explore on my own</button>' +
+        '<button class="btn btn-primary btn-3d big" data-action="begin">Start from the beginning ✨</button>' +
+        '<button class="btn btn-ghost" data-action="open-picker">🧭 Choose where to start →</button>' +
       '</div>'
     );
   }

@@ -148,6 +148,8 @@ h1, h2, h3, .hero-title, .brand-word, .cel-title { font-family: var(--fdisplay);
 .hero-title { font-size: 20px; }
 .hero-sub { color: var(--muted); font-size: 14px; margin: 3px 0 12px; }
 .hero-sub b { color: var(--text); }
+.hero-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.hero-jump { font-size: 13px; padding: 9px 13px; }
 
 /* ---------- WORLD + winding path ---------- */
 .world { margin: 6px 0 30px; }
@@ -381,6 +383,25 @@ h1, h2, h3, .hero-title, .brand-word, .cel-title { font-family: var(--fdisplay);
 .switch.on .knob { left: 25px; }
 .slider { width: 180px; accent-color: var(--brand); }
 .select { background: var(--surface-2); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font-family: var(--fbody); font-weight: 700; max-width: 200px; }
+
+/* ---------- start picker ---------- */
+.picker-sub { font-size: 13px; margin: 0 0 12px; line-height: 1.45; }
+.picker-list { max-height: 62vh; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; padding-right: 4px; margin: 0 -4px 0 0; }
+.pick-world { background: var(--surface-2); border: 1px solid var(--line); border-left: 4px solid var(--world); border-radius: 14px; overflow: hidden; }
+.pick-world.open { background: color-mix(in srgb, var(--world) 12%, var(--surface-2)); }
+.pick-world-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px; cursor: pointer; }
+.pick-emoji { font-size: 24px; flex: 0 0 auto; }
+.pick-meta { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.pick-name { font-family: var(--fdisplay); font-size: 15px; }
+.pick-sub { color: var(--muted); font-size: 12px; }
+.pick-caret { color: var(--muted); font-size: 12px; width: 14px; text-align: center; }
+.pick-go { background: var(--world); color: #10142F; font-family: var(--fdisplay); font-size: 13px; border: none; border-radius: 10px; padding: 8px 14px; cursor: pointer; box-shadow: 0 3px 0 rgba(0,0,0,.32); flex: 0 0 auto; }
+.pick-go:active { transform: translateY(3px); box-shadow: none; }
+.pick-units { padding: 2px 12px 12px 46px; display: flex; flex-direction: column; gap: 7px; }
+.pick-unit { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.pick-unit-name { font-size: 13px; color: var(--text); }
+.pick-unit-go { background: rgba(255,255,255,.07); border: 1px solid var(--line); color: var(--cyan); border-radius: 999px; padding: 5px 13px; font-size: 12px; font-weight: 800; cursor: pointer; flex: 0 0 auto; }
+.pick-unit-go:active { transform: translateY(1px); }
 
 /* ---------- TOAST + CONFETTI ---------- */
 .toast {
