@@ -1330,12 +1330,12 @@ window.NUMBLE_CURRICULUM = [
             "id": "addition-atoll-u1-l1",
             "title": "Adding On the Sand",
             "icon": "🐚",
-            "intro": "Hi friend, I'm Pip! Let's start by adding little piles of seashells together. Counting on is our first beach trick!",
+            "intro": "Hi friend, I'm Pip! Let's start by adding little piles of coconuts together. Counting on is our first island trick!",
             "problems": [
               {
                 "id": "addition-atoll-u1-l1-p1",
                 "type": "mc",
-                "prompt": "🐚🐚🐚 + 🐚🐚 = ? How many shells in all?",
+                "prompt": "🥥🥥🥥 + 🥥🥥 = ? How many coconuts in all?",
                 "choices": [
                   "4",
                   "5",
@@ -1343,15 +1343,15 @@ window.NUMBLE_CURRICULUM = [
                   "3"
                 ],
                 "answer": "5",
-                "explain": "Three shells and two more makes five shells. Counting on from 3: 4, 5!",
+                "explain": "Three coconuts and two more makes five coconuts. Counting on from 3: 4, 5!",
                 "hints": [
                   "We have a pile of 3 shells and a pile of 2 shells. How many is that together?",
                   "Start at the bigger pile and count up. Say '3' then count the extra shells one at a time.",
                   "Begin at 3, then count: 4... now one more shell to go!"
                 ],
                 "whyWrong": {
-                  "3": "That's just the first pile. Don't forget to add the 2 more shells: 3 + 2 = 5.",
-                  "4": "So close! You counted on just one from 3 instead of two. Add both extra shells: 3, then 4, 5.",
+                  "3": "That's just the first pile. Don't forget to add the 2 more coconuts: 3 + 2 = 5.",
+                  "4": "So close! You counted on just one from 3 instead of two. Add both extra coconuts: 3, then 4, 5.",
                   "6": "That's one too many. Count on exactly 2 from 3: 4, 5 lands on 5, not 6."
                 }
               },
@@ -1421,7 +1421,7 @@ window.NUMBLE_CURRICULUM = [
                   "8"
                 ],
                 "answer": "10",
-                "explain": "7 and 3 make a perfect 10! That's a special beach pair.",
+                "explain": "7 and 3 make a perfect 10! That's a special island pair.",
                 "hints": [
                   "What number do you reach when you count 3 past 7?",
                   "Counting on from 7, take exactly three steps.",
@@ -1467,12 +1467,12 @@ window.NUMBLE_CURRICULUM = [
             "id": "addition-atoll-u1-l2",
             "title": "Starfish Take-Aways",
             "icon": "⭐",
-            "intro": "Sometimes shells float away! Subtracting means taking some away and counting what's left. Let's try it together.",
+            "intro": "Sometimes coconuts roll away! Subtracting means taking some away and counting what's left. Let's try it together.",
             "problems": [
               {
                 "id": "addition-atoll-u1-l2-p1",
                 "type": "mc",
-                "prompt": "⭐⭐⭐⭐⭐ take away ⭐⭐ = ? How many stars are left?",
+                "prompt": "⭐⭐⭐⭐⭐ take away ⭐⭐ = ? How many parrots are left?",
                 "choices": [
                   "2",
                   "3",
@@ -1480,15 +1480,15 @@ window.NUMBLE_CURRICULUM = [
                   "7"
                 ],
                 "answer": "3",
-                "explain": "Five starfish, two drift away, and three stay behind. 5 - 2 = 3!",
+                "explain": "Five parrots, two fly away, and three stay behind. 5 - 2 = 3!",
                 "hints": [
                   "We started with 5 stars and 2 floated off. Count the ones that stayed.",
                   "Take away the 2 and count what's left on the sand.",
                   "Cross off 2 of the 5 stars, then count the rest."
                 ],
                 "whyWrong": {
-                  "2": "You took away one too many. 5 stars, 2 drift off, count what stays: 3 remain.",
-                  "4": "You only took away one. Two stars float off, so count back twice: 4, 3.",
+                  "2": "You took away one too many. 5 parrots, 2 fly off, count what stays: 3 remain.",
+                  "4": "You only took away one. Two parrots fly off, so count back twice: 4, 3.",
                   "7": "Looks like you added instead of taking away. 'Take away' means count back: 5 - 2 = 3."
                 }
               },
@@ -1588,7 +1588,7 @@ window.NUMBLE_CURRICULUM = [
               }
             ],
             "teach": {
-              "concept": "Subtracting means some float away, and you count what's left. Start at the big number and count BACKWARD by how many you take away.",
+              "concept": "Subtracting means some roll away, and you count what's left. Start at the big number and count BACKWARD by how many you take away.",
               "example": {
                 "prompt": "7 - 3 = ?",
                 "steps": [
@@ -1604,7 +1604,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "addition-atoll-u1-l3",
             "title": "Two-Way Shell Trade",
             "icon": "🔁",
-            "intro": "Here's a cool secret: adding and subtracting are like a tide that flows both ways. Let's see how they connect!",
+            "intro": "Here's a cool secret: adding and subtracting are like a drumbeat that swings both ways. Let's see how they connect!",
             "problems": [
               {
                 "id": "addition-atoll-u1-l3-p1",
@@ -1710,7 +1710,7 @@ window.NUMBLE_CURRICULUM = [
               }
             ],
             "teach": {
-              "concept": "Adding and subtracting are tide-buddies that undo each other! If you know 3 + 4 = 7, then 7 - 4 = 3. Addition can flip order, but subtraction can't.",
+              "concept": "Adding and subtracting are drum-buddies that undo each other! If you know 3 + 4 = 7, then 7 - 4 = 3. Addition can flip order, but subtraction can't.",
               "example": {
                 "prompt": "If 6 + 5 = 11, what is 11 - 5?",
                 "steps": [
@@ -2000,13 +2000,13 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "addition-atoll-u2-l3-p1",
                 "type": "input",
-                "prompt": "Mia found 6 seashells, then found 7 more. How many shells does she have now?",
+                "prompt": "Mia found 6 coconuts, then found 7 more. How many coconuts does she have now?",
                 "answer": "13",
                 "accept": [
                   "13",
                   "thirteen"
                 ],
-                "explain": "She kept finding MORE, so we add: 6 + 7 = 13 shells!",
+                "explain": "She kept finding MORE, so we add: 6 + 7 = 13 coconuts!",
                 "hints": [
                   "She found shells and then found more. Does that grow or shrink her pile?",
                   "Finding more means we add the two numbers together.",
@@ -2016,13 +2016,13 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "addition-atoll-u2-l3-p2",
                 "type": "input",
-                "prompt": "There were 12 crabs on the beach. 5 scuttled into the water. How many crabs are left?",
+                "prompt": "There were 12 parrots on the island. 5 flew off into the trees. How many parrots are left?",
                 "answer": "7",
                 "accept": [
                   "7",
                   "seven"
                 ],
-                "explain": "Some crabs left, so we subtract: 12 - 5 = 7 crabs remain!",
+                "explain": "Some parrots left, so we subtract: 12 - 5 = 7 parrots remain!",
                 "hints": [
                   "Crabs went away. Does the beach have more or fewer crabs now?",
                   "When some leave, we take away, or subtract.",
@@ -2032,7 +2032,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "addition-atoll-u2-l3-p3",
                 "type": "mc",
-                "prompt": "Leo built 8 sandcastles. The waves knocked down 3. How many still stand?",
+                "prompt": "Leo stacked 8 crates. A gust of wind knocked down 3. How many still stand?",
                 "choices": [
                   "4",
                   "5",
@@ -2040,28 +2040,28 @@ window.NUMBLE_CURRICULUM = [
                   "11"
                 ],
                 "answer": "5",
-                "explain": "Three got knocked down, so we subtract: 8 - 3 = 5 castles left!",
+                "explain": "Three got knocked down, so we subtract: 8 - 3 = 5 crates left!",
                 "hints": [
                   "The waves destroyed some castles. Did the number go up or down?",
                   "Knocking down means take away.",
                   "Count back 3 from 8."
                 ],
                 "whyWrong": {
-                  "4": "You took one too many away. 8 castles minus 3 knocked down leaves 5.",
-                  "6": "That's one short on the take-away. 8 - 3 = 5 castles still standing.",
-                  "11": "Looks like you added instead. The waves KNOCKED DOWN 3, so subtract: 8 - 3 = 5."
+                  "4": "You took one too many away. 8 crates minus 3 knocked down leaves 5.",
+                  "6": "That's one short on the take-away. 8 - 3 = 5 crates still standing.",
+                  "11": "Looks like you added instead. The wind KNOCKED DOWN 3, so subtract: 8 - 3 = 5."
                 }
               },
               {
                 "id": "addition-atoll-u2-l3-p4",
                 "type": "input",
-                "prompt": "A bucket holds 9 starfish. You add 6 more. How many starfish in the bucket?",
+                "prompt": "A backpack holds 9 mangoes. You add 6 more. How many mangoes in the backpack?",
                 "answer": "15",
                 "accept": [
                   "15",
                   "fifteen"
                 ],
-                "explain": "Adding more means we add: 9 + 6 = 15 starfish!",
+                "explain": "Adding more means we add: 9 + 6 = 15 mangoes!",
                 "hints": [
                   "You put MORE starfish in. Does the bucket get fuller or emptier?",
                   "Adding more means we add the numbers.",
@@ -2071,7 +2071,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "addition-atoll-u2-l3-p5",
                 "type": "mc",
-                "prompt": "There are 14 birds on the dock. 6 fly away. How many birds stay?",
+                "prompt": "There are 14 parrots on the boat. 6 fly away. How many parrots stay?",
                 "choices": [
                   "7",
                   "8",
@@ -2079,28 +2079,28 @@ window.NUMBLE_CURRICULUM = [
                   "20"
                 ],
                 "answer": "8",
-                "explain": "Birds flew away, so we subtract: 14 - 6 = 8 birds remain!",
+                "explain": "Parrots flew away, so we subtract: 14 - 6 = 8 parrots remain!",
                 "hints": [
                   "Birds left the dock. More or fewer now?",
                   "Flying away means take away.",
                   "Count back 6 from 14, or think: 6 + what = 14?"
                 ],
                 "whyWrong": {
-                  "7": "One too many flew off. 14 birds minus 6 leaves 8 staying.",
+                  "7": "One too many flew off. 14 parrots minus 6 leaves 8 staying.",
                   "9": "One short. Take away all 6 that flew: 14 - 6 = 8 stay.",
-                  "20": "Looks like you added. Birds FLEW AWAY, so subtract: 14 - 6 = 8."
+                  "20": "Looks like you added. Parrots FLEW AWAY, so subtract: 14 - 6 = 8."
                 }
               },
               {
                 "id": "addition-atoll-u2-l3-p6",
                 "type": "input",
-                "prompt": "Sam had 7 shells. He gave 4 to Pip and 2 to a friend. How many shells does Sam have left?",
+                "prompt": "Sam had 7 treasure coins. He gave 4 to Pip and 2 to a friend. How many coins does Sam have left?",
                 "answer": "1",
                 "accept": [
                   "1",
                   "one"
                 ],
-                "explain": "He gave away 4 and 2, that's 6 total gone. 7 - 6 = 1 shell left!",
+                "explain": "He gave away 4 and 2, that's 6 total gone. 7 - 6 = 1 coin left!",
                 "hints": [
                   "Sam gave shells to TWO people. First add up everything he gave away.",
                   "4 given plus 2 given is 6 shells gone. Then subtract from 7.",
@@ -2111,11 +2111,11 @@ window.NUMBLE_CURRICULUM = [
             "teach": {
               "concept": "Story problems hide the math in words. Read carefully: words like 'more', 'found', or 'add' mean add; words like 'left', 'away', or 'gave' mean subtract.",
               "example": {
-                "prompt": "Tia had 8 shells, then found 5 more. How many now?",
+                "prompt": "Tia had 8 bananas, then found 5 more. How many now?",
                 "steps": [
-                  "Spot the numbers: 8 shells and 5 more.",
+                  "Spot the numbers: 8 bananas and 5 more.",
                   "'Found more' means we ADD.",
-                  "8 + 5 = 13 shells."
+                  "8 + 5 = 13 bananas."
                 ],
                 "answer": "13"
               }
@@ -2259,7 +2259,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "addition-atoll-u3-l2",
             "title": "Skip Across the Reef",
             "icon": "🐠",
-            "intro": "Skip counting lets us hop over numbers in groups, like a fish darting along the reef! Let's count by 2s, 5s, and 10s.",
+            "intro": "Skip counting lets us hop over numbers in groups, like a parrot hopping branch to branch! Let's count by 2s, 5s, and 10s.",
             "problems": [
               {
                 "id": "addition-atoll-u3-l2-p1",
@@ -2358,7 +2358,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "addition-atoll-u3-l2-p6",
                 "type": "mc",
-                "prompt": "Pip has 4 bags with 5 shells each. Skip count by 5s to find the total.",
+                "prompt": "Pip has 4 backpacks with 5 coconuts each. Skip count by 5s to find the total.",
                 "choices": [
                   "15",
                   "20",
@@ -2366,16 +2366,16 @@ window.NUMBLE_CURRICULUM = [
                   "9"
                 ],
                 "answer": "20",
-                "explain": "5, 10, 15, 20! Four hops of 5 gives 20 shells.",
+                "explain": "5, 10, 15, 20! Four hops of 5 gives 20 coconuts.",
                 "hints": [
                   "Count by 5 once for each bag, and there are 4 bags.",
                   "Say: 5, 10, 15... one more bag.",
                   "After the fourth hop of 5 you land on the answer."
                 ],
                 "whyWrong": {
-                  "9": "Looks like you added 4 + 5. Each bag has 5 shells, so skip count: 5, 10, 15, 20.",
-                  "15": "That's only 3 bags counted. There are 4 bags of 5: 5, 10, 15, 20.",
-                  "25": "That's 5 bags. Pip has only 4: 5, 10, 15, 20 makes 20."
+                  "9": "Looks like you added 4 + 5. Each backpack has 5 coconuts, so skip count: 5, 10, 15, 20.",
+                  "15": "That's only 3 backpacks counted. There are 4 backpacks of 5: 5, 10, 15, 20.",
+                  "25": "That's 5 backpacks. Pip has only 4: 5, 10, 15, 20 makes 20."
                 }
               }
             ],
@@ -2540,12 +2540,12 @@ window.NUMBLE_CURRICULUM = [
             "id": "times-table-temple-u1-l1",
             "title": "Groups of Apples",
             "icon": "🍎",
-            "intro": "Hi, I'm Pip! Multiplication is just a speedy way to add equal groups. Let's count some snacks together!",
+            "intro": "Hi, I'm Pip! Multiplication is just a speedy way to add equal groups. Let's count some temple treasures together!",
             "problems": [
               {
                 "id": "times-table-temple-u1-l1-p1",
                 "type": "mc",
-                "prompt": "🍎🍎  🍎🍎  🍎🍎  How many apples? (3 groups of 2)",
+                "prompt": "💎💎  💎💎  💎💎  How many gems? (3 groups of 2)",
                 "choices": [
                   "5",
                   "6",
@@ -2568,7 +2568,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "times-table-temple-u1-l1-p2",
                 "type": "mc",
-                "prompt": "🐶🐶🐶  🐶🐶🐶  How many puppies? (2 groups of 3)",
+                "prompt": "🔥🔥🔥  🔥🔥🔥  How many torches? (2 groups of 3)",
                 "choices": [
                   "4",
                   "5",
@@ -2591,7 +2591,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "times-table-temple-u1-l1-p3",
                 "type": "input",
-                "prompt": "4 groups of 2 stars. How many stars in all? ⭐",
+                "prompt": "4 groups of 2 gems. How many gems in all? 💎",
                 "answer": "8",
                 "accept": [
                   "8",
@@ -2630,7 +2630,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "times-table-temple-u1-l1-p5",
                 "type": "input",
-                "prompt": "5 groups of 2 cookies. How many cookies? 🍪",
+                "prompt": "5 groups of 2 gold coins. How many coins? 🪙",
                 "answer": "10",
                 "accept": [
                   "10",
@@ -2659,7 +2659,7 @@ window.NUMBLE_CURRICULUM = [
             "teach": {
               "concept": "Multiplication is just a speedy way to add equal groups. When you see 3 x 2, it means 3 groups of 2 added up. Say it as 'groups of' and you'll always know what to do!",
               "example": {
-                "prompt": "How many stars are in 3 groups of 4? ⭐",
+                "prompt": "How many gems are in 3 groups of 4? 💎",
                 "steps": [
                   "Read it as 3 groups of 4, so write 4 + 4 + 4.",
                   "Add the groups: 4 + 4 = 8, then 8 + 4 = 12.",
@@ -2806,12 +2806,12 @@ window.NUMBLE_CURRICULUM = [
             "id": "times-table-temple-u1-l3",
             "title": "Building Arrays",
             "icon": "🟦",
-            "intro": "An array is a neat grid of rows and columns. Count the rows, count each row's items, and multiply!",
+            "intro": "An array is a neat grid of floor tiles in rows and columns. Count the rows, count each row's tiles, and multiply!",
             "problems": [
               {
                 "id": "times-table-temple-u1-l3-p1",
                 "type": "mc",
-                "prompt": "An array has 3 rows with 4 dots in each row. How many dots? (3 x 4)",
+                "prompt": "A floor has 3 rows with 4 tiles in each row. How many tiles? (3 x 4)",
                 "choices": [
                   "7",
                   "10",
@@ -2834,7 +2834,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "times-table-temple-u1-l3-p2",
                 "type": "input",
-                "prompt": "An egg carton has 2 rows of 6 eggs. How many eggs? 🥚",
+                "prompt": "A treasure tray has 2 rows of 6 gold coins. How many coins? 🪙",
                 "answer": "12",
                 "accept": [
                   "12",
@@ -2850,7 +2850,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "times-table-temple-u1-l3-p3",
                 "type": "mc",
-                "prompt": "Which multiplication matches an array of 5 rows and 2 columns?",
+                "prompt": "Which multiplication matches a floor of 5 rows and 2 columns of tiles?",
                 "choices": [
                   "5 + 2",
                   "5 x 2",
@@ -2865,15 +2865,15 @@ window.NUMBLE_CURRICULUM = [
                   "5 rows and 2 columns becomes 5 x 2."
                 ],
                 "whyWrong": {
-                  "5 + 2": "Arrays multiply, not add. 5 rows and 2 columns means 5 x 2.",
+                  "5 + 2": "Tile floors multiply, not add. 5 rows and 2 columns means 5 x 2.",
                   "5 x 5": "The second number is the columns, which is 2, not 5. It's 5 x 2.",
-                  "2 + 2": "That only counts two rows by adding. An array of 5 rows and 2 columns is 5 x 2."
+                  "2 + 2": "That only counts two rows by adding. A floor of 5 rows and 2 columns is 5 x 2."
                 }
               },
               {
                 "id": "times-table-temple-u1-l3-p4",
                 "type": "input",
-                "prompt": "A chocolate bar has 4 rows of 3 squares. How many squares? 🍫",
+                "prompt": "A carved stone slab has 4 rows of 3 tiles. How many tiles? 🧱",
                 "answer": "12",
                 "accept": [
                   "12",
@@ -3338,13 +3338,13 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "times-table-temple-u3-l1-p1",
                 "type": "input",
-                "prompt": "12 cookies shared equally among 3 friends. How many each? 🍪",
+                "prompt": "12 gold coins shared equally among 3 explorers. How many each? 🪙",
                 "answer": "4",
                 "accept": [
                   "4",
                   "four"
                 ],
-                "explain": "12 / 3 = 4. Each friend gets 4 because 3 x 4 = 12!",
+                "explain": "12 / 3 = 4. Each explorer gets 4 because 3 x 4 = 12!",
                 "hints": [
                   "You're splitting 12 into 3 equal piles.",
                   "Ask: 3 times WHAT equals 12?",
@@ -3416,7 +3416,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "times-table-temple-u3-l1-p5",
                 "type": "input",
-                "prompt": "24 marbles split into 4 equal bags. How many per bag?",
+                "prompt": "24 gems split into 4 equal chests. How many per chest?",
                 "answer": "6",
                 "accept": [
                   "6",
@@ -4968,7 +4968,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u1-l1",
             "title": "Meet the Decimal Point",
             "icon": "🔹",
-            "intro": "Hi, I'm Pip! That little dot is the decimal point, and it splits the whole numbers from the pieces. Let's get to know it!",
+            "intro": "Hi, I'm Pip! That little dot is the decimal point, and it splits the whole numbers from the pieces. Let's get to know it at the market!",
             "problems": [
               {
                 "id": "decimal-delta-u1-l1-p1",
@@ -4981,7 +4981,7 @@ window.NUMBLE_CURRICULUM = [
                   "47"
                 ],
                 "answer": "7",
-                "explain": "The tenths place is the first spot right after the decimal point, and that's the 7. Nice!",
+                "explain": "The tenths place is the first spot right after the decimal point, and that's the 7. Nice ring-up!",
                 "hints": [
                   "Look at the digit just to the right of the dot.",
                   "The places after the dot go: tenths, then hundredths.",
@@ -5016,7 +5016,7 @@ window.NUMBLE_CURRICULUM = [
                   "9"
                 ],
                 "answer": "5.6",
-                "explain": "Only 5.6 has a dot followed by a piece, so it's the one with a decimal part. Splash!",
+                "explain": "Only 5.6 has a dot followed by a piece, so it's the one with a decimal part. Rung up right!",
                 "hints": [
                   "A decimal part means there's a dot with digits after it.",
                   "Scan each number for a decimal point.",
@@ -5055,7 +5055,7 @@ window.NUMBLE_CURRICULUM = [
                   "59"
                 ],
                 "answer": "9",
-                "explain": "The hundredths place is the SECOND spot after the dot, so it's the 9. You're flowing now!",
+                "explain": "The hundredths place is the SECOND spot after the dot, so it's the 9. You're tallying now!",
                 "hints": [
                   "Count the places after the dot: first is tenths, second is hundredths.",
                   "You want the second digit past the decimal point.",
@@ -5097,7 +5097,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u1-l2",
             "title": "Place Value Power",
             "icon": "🏗️",
-            "intro": "Every place has a value, Pip-promise! Tenths, hundredths, thousandths, each one ten times smaller. Let's measure their worth.",
+            "intro": "Every place has a value, Pip-promise! Tenths, hundredths, thousandths, each one ten times smaller. Let's weigh their worth on the market scale.",
             "problems": [
               {
                 "id": "decimal-delta-u1-l2-p1",
@@ -5110,7 +5110,7 @@ window.NUMBLE_CURRICULUM = [
                   "6 wholes"
                 ],
                 "answer": "6 tenths",
-                "explain": "The 6 sits in the tenths place, so its value is 6 tenths. That's 6/10!",
+                "explain": "The 6 sits in the tenths place, so its value is 6 tenths. That's 6/10 on the scale!",
                 "hints": [
                   "The 6 is the first digit after the dot.",
                   "The first place after the dot names the value.",
@@ -5170,7 +5170,7 @@ window.NUMBLE_CURRICULUM = [
                   "8",
                   "eight"
                 ],
-                "explain": "Thousandths is the THIRD place after the dot, and that's the 8. Deep in the delta!",
+                "explain": "Thousandths is the THIRD place after the dot, and that's the 8. Deep in the ledger!",
                 "hints": [
                   "Count places after the dot: tenths, hundredths, thousandths.",
                   "You want the third digit past the decimal point.",
@@ -5230,7 +5230,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u1-l3",
             "title": "Reading & Writing Decimals",
             "icon": "✍️",
-            "intro": "Time to say decimals out loud and write them down, Pip-style. We read the dot as 'and' and use place names. Let's go!",
+            "intro": "Time to say decimals out loud and write them on the receipt, Pip-style. We read the dot as 'and' and use place names. Let's go!",
             "problems": [
               {
                 "id": "decimal-delta-u1-l3-p1",
@@ -5243,7 +5243,7 @@ window.NUMBLE_CURRICULUM = [
                   "thirty"
                 ],
                 "answer": "three tenths",
-                "explain": "The 3 is in the tenths place, so 0.3 is 'three tenths.' Perfectly read!",
+                "explain": "The 3 is in the tenths place, so 0.3 is 'three tenths.' Perfectly read off the receipt!",
                 "hints": [
                   "The last digit's place name is the unit you say.",
                   "The 3 is in the tenths place.",
@@ -5264,7 +5264,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.56",
                   ".56"
                 ],
-                "explain": "Hundredths means two places after the dot, so fifty-six hundredths is 0.56. Nicely written!",
+                "explain": "Hundredths means two places after the dot, so fifty-six hundredths is 0.56. Neatly written on the tag!",
                 "hints": [
                   "Hundredths means two digits after the decimal point.",
                   "The number fifty-six fills those two places.",
@@ -5282,7 +5282,7 @@ window.NUMBLE_CURRICULUM = [
                   "four and two"
                 ],
                 "answer": "four and two tenths",
-                "explain": "The dot is read as 'and,' so 4.2 is 'four and two tenths.' You said it right!",
+                "explain": "The dot is read as 'and,' so 4.2 is 'four and two tenths.' You called it right!",
                 "hints": [
                   "The dot is read as the word 'and'.",
                   "Say the whole part, then 'and', then the decimal part.",
@@ -5302,7 +5302,7 @@ window.NUMBLE_CURRICULUM = [
                 "accept": [
                   "7.5"
                 ],
-                "explain": "Seven is the whole part and five tenths goes after the dot, giving 7.5. Splashing success!",
+                "explain": "Seven is the whole part and five tenths goes after the dot, giving 7.5. Written up on the receipt!",
                 "hints": [
                   "The word 'and' is where the decimal point goes.",
                   "Seven is whole, five tenths comes after.",
@@ -5320,7 +5320,7 @@ window.NUMBLE_CURRICULUM = [
                   "9.00"
                 ],
                 "answer": "0.09",
-                "explain": "Nine hundredths needs the 9 in the second place after the dot, so it's 0.09. Tiny but mighty!",
+                "explain": "Nine hundredths needs the 9 in the second place after the dot, so it's 0.09. Tiny but it still counts!",
                 "hints": [
                   "Hundredths is the second place after the dot.",
                   "The 9 must land in that second spot.",
@@ -5368,7 +5368,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u2-l1",
             "title": "Bigger or Smaller?",
             "icon": "⚖️",
-            "intro": "Which drop is heavier? To compare decimals we line up the dots and check place by place. Let's weigh them, Pip-style!",
+            "intro": "Which crate is heavier? To compare decimals we line up the dots and check place by place. Let's put them on the scale, Pip-style!",
             "problems": [
               {
                 "id": "decimal-delta-u2-l1-p1",
@@ -5381,7 +5381,7 @@ window.NUMBLE_CURRICULUM = [
                   "+"
                 ],
                 "answer": ">",
-                "explain": "7 tenths is more than 5 tenths, so 0.7 > 0.5. Greater than wins!",
+                "explain": "7 tenths is more than 5 tenths, so 0.7 > 0.5. The heavier crate wins!",
                 "hints": [
                   "Compare the tenths digits first.",
                   "Is 7 tenths more or less than 5 tenths?",
@@ -5398,7 +5398,7 @@ window.NUMBLE_CURRICULUM = [
                 "type": "truefalse",
                 "prompt": "0.30 is equal to 0.3.",
                 "answer": "true",
-                "explain": "Adding a zero at the end doesn't change the value, so 0.30 = 0.3. Equal drops!",
+                "explain": "Adding a zero at the end doesn't change the value, so 0.30 = 0.3. Same weight on the scale!",
                 "hints": [
                   "A zero on the far right of a decimal is a trailing zero.",
                   "Does a trailing zero add any value?",
@@ -5439,7 +5439,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.75"
                 ],
                 "answer": "0.8",
-                "explain": "Comparing tenths, 0.8 has 8 tenths which beats them all. Biggest splash!",
+                "explain": "Comparing tenths, 0.8 has 8 tenths which beats them all. Heaviest crate!",
                 "hints": [
                   "Compare the tenths digit of each number first.",
                   "Which one has the most tenths?",
@@ -5498,7 +5498,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u2-l2",
             "title": "Line Them Up",
             "icon": "📊",
-            "intro": "Let's put decimals in order from small to big, like ducks in a row! Compare place by place and they'll fall in line. Ready, Pip-pal?",
+            "intro": "Let's line decimals up in order from small to big, like crates on a market shelf! Compare place by place and they'll fall in line. Ready, Pip-pal?",
             "problems": [
               {
                 "id": "decimal-delta-u2-l2-p1",
@@ -5511,7 +5511,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.1, 0.7, 0.4"
                 ],
                 "answer": "0.1, 0.4, 0.7",
-                "explain": "Comparing tenths, 1 < 4 < 7, so the order is 0.1, 0.4, 0.7. Lined up perfectly!",
+                "explain": "Comparing tenths, 1 < 4 < 7, so the order is 0.1, 0.4, 0.7. Shelved perfectly!",
                 "hints": [
                   "These all have just tenths, so compare the tenths digits.",
                   "Find the smallest tenths digit to go first.",
@@ -5561,7 +5561,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.3 and 0.30",
                   "0.30 and 0.3"
                 ],
-                "explain": "Here 0.3 and 0.30 are equal (both 3 tenths) and both are smaller than 0.33. Sneaky tie!",
+                "explain": "Here 0.3 and 0.30 are equal (both 3 tenths) and both are smaller than 0.33. Sneaky tie on the scale!",
                 "hints": [
                   "Compare them as hundredths: 0.30, 0.30, and 0.33.",
                   "Two of these are actually the same value.",
@@ -5602,7 +5602,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.9"
                 ],
                 "answer": "0.5",
-                "explain": "0.5 is right in the middle of 0.4 and 0.6, so it fits between them. Perfect spot!",
+                "explain": "0.5 is right in the middle of 0.4 and 0.6, so it fits between them. Perfect spot on the shelf!",
                 "hints": [
                   "You need a number bigger than 0.4 but smaller than 0.6.",
                   "What's right in the middle of 4 tenths and 6 tenths?",
@@ -5644,7 +5644,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u2-l3",
             "title": "Rounding the Rapids",
             "icon": "🎯",
-            "intro": "Rounding helps us estimate fast! Find the rounding place, then peek at the digit to its right. 5 or more rounds up, less stays put. Let's ride the rapids!",
+            "intro": "Rounding helps us estimate prices fast! Find the rounding place, then peek at the digit to its right. 5 or more rounds up, less stays put. Let's ring it up at the stall!",
             "problems": [
               {
                 "id": "decimal-delta-u2-l3-p1",
@@ -5783,7 +5783,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u3-l1",
             "title": "Add & Subtract Decimals",
             "icon": "➕",
-            "intro": "When we add or subtract decimals, the secret is lining up the dots! Keep the place values stacked and you can't go wrong. Let's flow, Pip-pal!",
+            "intro": "When we add or subtract decimals, the secret is lining up the dots! Keep the place values stacked like coins in a till and you can't go wrong. Let's tally it up, Pip-pal!",
             "problems": [
               {
                 "id": "decimal-delta-u3-l1-p1",
@@ -5794,7 +5794,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.8",
                   ".8"
                 ],
-                "explain": "5 tenths plus 3 tenths is 8 tenths, which is 0.8. Easy flowing!",
+                "explain": "5 tenths plus 3 tenths is 8 tenths, which is 0.8. Easy tally!",
                 "hints": [
                   "Add the tenths digits together.",
                   "Think of it as 5 tenths plus 3 tenths.",
@@ -5901,7 +5901,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u3-l2",
             "title": "Multiply & Divide Decimals",
             "icon": "✖️",
-            "intro": "Multiplying and dividing decimals is just like whole numbers, then we place the dot. Count those decimal places! Let's dive deeper, Pip-style.",
+            "intro": "Multiplying and dividing decimals is just like whole numbers, then we place the dot. Count those decimal places! Let's restock the crates, Pip-style.",
             "problems": [
               {
                 "id": "decimal-delta-u3-l2-p1",
@@ -5912,7 +5912,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.6",
                   ".6"
                 ],
-                "explain": "2 tenths taken 3 times is 6 tenths, which is 0.6. Multiplying made easy!",
+                "explain": "2 tenths taken 3 times is 6 tenths, which is 0.6. Restocking made easy!",
                 "hints": [
                   "Think of 0.2 as 2 tenths.",
                   "Add 2 tenths three times, or multiply 2 x 3.",
@@ -5951,7 +5951,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.4",
                   ".4"
                 ],
-                "explain": "8 tenths split into 2 equal groups is 4 tenths each, which is 0.4. Divided fairly!",
+                "explain": "8 tenths split into 2 equal crates is 4 tenths each, which is 0.4. Divided fairly!",
                 "hints": [
                   "Think of 0.8 as 8 tenths.",
                   "Split 8 tenths into 2 equal parts.",
@@ -5990,7 +5990,7 @@ window.NUMBLE_CURRICULUM = [
                   "0.6",
                   ".6"
                 ],
-                "explain": "Think 24 tenths divided by 4 is 6 tenths, which is 0.6. Smooth division!",
+                "explain": "Think 24 tenths divided by 4 is 6 tenths, which is 0.6. Smooth split!",
                 "hints": [
                   "Rewrite 2.4 as 24 tenths.",
                   "Divide 24 by 4 first.",
@@ -6027,7 +6027,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "decimal-delta-u3-l3",
             "title": "Fractions, Decimals & Money",
             "icon": "💰",
-            "intro": "Decimals and fractions are two ways to say the same thing, and money is decimals in action! Let's convert and count coins, Pip-pal!",
+            "intro": "Decimals and fractions are two ways to say the same price, and money is decimals in action! Let's convert and count coins at the stall, Pip-pal!",
             "problems": [
               {
                 "id": "decimal-delta-u3-l3-p1",
@@ -6040,7 +6040,7 @@ window.NUMBLE_CURRICULUM = [
                   "1.2"
                 ],
                 "answer": "0.5",
-                "explain": "1 divided by 2 is 0.5, which is five tenths or half. Half a drop!",
+                "explain": "1 divided by 2 is 0.5, which is five tenths or half. Half a loaf!",
                 "hints": [
                   "A fraction means top divided by bottom.",
                   "Divide 1 by 2.",
@@ -6178,12 +6178,12 @@ window.NUMBLE_CURRICULUM = [
             "id": "ratio-ridge-u1-l1",
             "title": "What's a Ratio?",
             "icon": "🍎",
-            "intro": "Hi, I'm Pip! A ratio is just a way to compare two amounts. Let's start counting and comparing together!",
+            "intro": "Hi, I'm Pip! A ratio is just a way to compare two amounts. Let's start counting and comparing gear on the trail together!",
             "problems": [
               {
                 "id": "ratio-ridge-u1-l1-p1",
                 "type": "mc",
-                "prompt": "There are 3 🍎 and 5 🍊. What is the ratio of apples to oranges?",
+                "prompt": "There are 3 🍎 and 5 🍊 in a climber's pack. What is the ratio of apples to oranges?",
                 "choices": [
                   "3 to 5",
                   "5 to 3",
@@ -6206,7 +6206,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "ratio-ridge-u1-l1-p2",
                 "type": "input",
-                "prompt": "A team has 4 dogs 🐶 and 2 cats 🐱. Write the ratio of cats to dogs as a:b (like 2:4).",
+                "prompt": "A trail crew has 4 sled dogs 🐶 and 2 camp cats 🐱. Write the ratio of cats to dogs as a:b (like 2:4).",
                 "answer": "2:4",
                 "accept": [
                   "2:4",
@@ -6297,12 +6297,12 @@ window.NUMBLE_CURRICULUM = [
               }
             ],
             "teach": {
-              "concept": "A ratio compares two amounts. The trick is to write the numbers in the SAME order the question names them. \"Apples to oranges\" means apples first, oranges second.",
+              "concept": "A ratio compares two amounts. The trick is to write the numbers in the SAME order the question names them. \"Flags to tents\" means flags first, tents second.",
               "example": {
-                "prompt": "There are 2 stars and 7 moons. What is the ratio of stars to moons?",
+                "prompt": "There are 2 flags and 7 tents at the campsite. What is the ratio of flags to tents?",
                 "steps": [
-                  "The question says \"stars to moons,\" so stars come first: 2.",
-                  "Moons come second: 7.",
+                  "The question says \"flags to tents,\" so flags come first: 2.",
+                  "Tents come second: 7.",
                   "Put them in that order to get the ratio."
                 ],
                 "answer": "2 to 7"
@@ -6313,7 +6313,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "ratio-ridge-u1-l2",
             "title": "Equivalent Ratios",
             "icon": "⚖️",
-            "intro": "Just like fractions, ratios can be equal even when the numbers look different. Let's find ratio twins!",
+            "intro": "Just like fractions, ratios can be equal even when the numbers look different. Let's find ratio twins along the switchbacks!",
             "problems": [
               {
                 "id": "ratio-ridge-u1-l2-p1",
@@ -6447,19 +6447,19 @@ window.NUMBLE_CURRICULUM = [
             "id": "ratio-ridge-u1-l3",
             "title": "Ratio Tables",
             "icon": "📋",
-            "intro": "Ratio tables let us scale up step by step. Let's fill in the rungs of the ladder together!",
+            "intro": "Ratio tables let us scale up step by step. Let's fill in the rungs of the rope ladder together!",
             "problems": [
               {
                 "id": "ratio-ridge-u1-l3-p1",
                 "type": "input",
-                "prompt": "A table shows 2 tickets cost $6. How much do 4 tickets cost? (just the number)",
+                "prompt": "A table shows 2 trail passes cost $6. How much do 4 trail passes cost? (just the number)",
                 "answer": "12",
                 "accept": [
                   "12",
                   "$12",
                   "twelve"
                 ],
-                "explain": "Doubling the tickets from 2 to 4 means doubling the cost from $6 to $12.",
+                "explain": "Doubling the passes from 2 to 4 means doubling the cost from $6 to $12.",
                 "hints": [
                   "How many times bigger is 4 than 2?",
                   "Whatever you multiply tickets by, multiply the cost by too.",
@@ -6531,14 +6531,14 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "ratio-ridge-u1-l3-p5",
                 "type": "input",
-                "prompt": "Pencils come 5 for $2. How many dollars for 15 pencils? (just the number)",
+                "prompt": "Carabiners come 5 for $2. How many dollars for 15 carabiners? (just the number)",
                 "answer": "6",
                 "accept": [
                   "6",
                   "$6",
                   "six"
                 ],
-                "explain": "15 pencils is 3 times 5 pencils, so the cost is 3 times $2, which is $6.",
+                "explain": "15 carabiners is 3 times 5 carabiners, so the cost is 3 times $2, which is $6.",
                 "hints": [
                   "How many groups of 5 pencils make 15?",
                   "Scale the price up by the same factor as the pencils.",
@@ -6548,7 +6548,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "ratio-ridge-u1-l3-p6",
                 "type": "mc",
-                "prompt": "A table shows 6 students : 1 teacher. How many teachers are needed for 24 students?",
+                "prompt": "A table shows 6 hikers : 1 guide. How many guides are needed for 24 hikers?",
                 "choices": [
                   "4",
                   "6",
@@ -6556,25 +6556,25 @@ window.NUMBLE_CURRICULUM = [
                   "24"
                 ],
                 "answer": "4",
-                "explain": "24 students is 4 times 6 students, so you need 4 times 1 teacher, which is 4 teachers.",
+                "explain": "24 hikers is 4 times 6 hikers, so you need 4 times 1 guide, which is 4 guides.",
                 "hints": [
                   "How many groups of 6 students are in 24?",
                   "Scale the teachers by the same factor as the students.",
                   "24 divided by 6 is 4, so teachers = 1 times 4."
                 ],
                 "whyWrong": {
-                  "3": "Close, but 24 / 6 = 4, not 3 -- you need 4 teachers for 24 students.",
-                  "6": "It looks like you used the 6 from \"6 students,\" but you need to scale: 24 is 4 times 6, so 4 teachers.",
-                  "24": "That's the number of students, not teachers. Each teacher covers 6 students, so 24 / 6 = 4 teachers."
+                  "3": "Close, but 24 / 6 = 4, not 3 -- you need 4 guides for 24 hikers.",
+                  "6": "It looks like you used the 6 from \"6 hikers,\" but you need to scale: 24 is 4 times 6, so 4 guides.",
+                  "24": "That's the number of hikers, not guides. Each guide covers 6 hikers, so 24 / 6 = 4 guides."
                 }
               }
             ],
             "teach": {
               "concept": "A ratio table scales a ratio up or down. Whatever you multiply one column by, multiply the other column by the SAME number to keep the comparison fair.",
               "example": {
-                "prompt": "If 2 muffins cost $3, how much do 8 muffins cost?",
+                "prompt": "If 2 trail bars cost $3, how much do 8 trail bars cost?",
                 "steps": [
-                  "Compare the muffins: 8 is 4 times 2 (8 / 2 = 4).",
+                  "Compare the bars: 8 is 4 times 2 (8 / 2 = 4).",
                   "Multiply the cost by that same 4: 3 x 4 = 12."
                 ],
                 "answer": "$12"
@@ -7413,7 +7413,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "integer-islands-u1-l1",
             "title": "Meet the Negatives",
             "icon": "🌡️",
-            "intro": "Ahoy! Below zero is a whole hidden world. Numbers can dive beneath the waterline, and today we learn to read them. Let's wade in!",
+            "intro": "Ready to explore? Below zero is a whole hidden world. Numbers can drop beneath ground level, and today we learn to read them. Let's dig in!",
             "problems": [
               {
                 "id": "integer-islands-u1-l1-p1",
@@ -7426,7 +7426,7 @@ window.NUMBLE_CURRICULUM = [
                   "30"
                 ],
                 "answer": "-3",
-                "explain": "Below zero means a negative number, so 3 below zero is written -3. The little dash tells us we dove under the waterline!",
+                "explain": "Below zero means a negative number, so 3 below zero is written -3. The little dash tells us we dropped underground!",
                 "hints": [
                   "The word 'below' is doing a lot of work here. What direction is that on the number line?",
                   "A number to the left of zero gets a minus sign in front of it.",
@@ -7536,11 +7536,11 @@ window.NUMBLE_CURRICULUM = [
               }
             ],
             "teach": {
-              "concept": "A negative number is any number below zero, written with a little minus sign in front, like -3. Think of it as diving under the waterline: temperatures below zero, money you owe, or steps below sea level all get a minus sign.",
+              "concept": "A negative number is any number below zero, written with a little minus sign in front, like -3. Think of it as going underground: temperatures below zero, money you owe, or floors below ground level all get a minus sign.",
               "example": {
-                "prompt": "A treasure chest rests 4 meters below sea level. Write its height as an integer (sea level = 0).",
+                "prompt": "A basement vault rests 4 meters below ground level. Write its height as an integer (ground level = 0).",
                 "steps": [
-                  "Notice 'below sea level' means below zero, so the number will be negative.",
+                  "Notice 'below ground level' means below zero, so the number will be negative.",
                   "Take the size of the drop, which is 4 meters.",
                   "Put a minus sign in front to show it's below zero: -4."
                 ],
@@ -7694,7 +7694,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "integer-islands-u1-l3",
             "title": "Absolute Value Lagoon",
             "icon": "📏",
-            "intro": "Absolute value asks: how far from zero are you, no matter the direction? It's all about distance, so the answer is never negative. Dive in!",
+            "intro": "Absolute value asks: how far from zero are you, no matter the direction? It's all about distance, so the answer is never negative. Let's climb in!",
             "problems": [
               {
                 "id": "integer-islands-u1-l3-p1",
@@ -7789,7 +7789,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "integer-islands-u1-l3-p6",
                 "type": "input",
-                "prompt": "A diver is at -12 meters. How far is she from sea level (0)? Give a positive number.",
+                "prompt": "A submarine is at -12 meters. How far is it from sea level (0)? Give a positive number.",
                 "answer": "12",
                 "accept": [
                   "12",
@@ -7797,7 +7797,7 @@ window.NUMBLE_CURRICULUM = [
                   "12m",
                   "twelve"
                 ],
-                "explain": "Distance from zero is the absolute value: |-12| = 12 meters. She's 12 meters from the surface, no minus needed!",
+                "explain": "Distance from zero is the absolute value: |-12| = 12 meters. It's 12 meters from the surface, no minus needed!",
                 "hints": [
                   "Distance doesn't care about direction. How far is -12 from 0?",
                   "This is just |-12| in disguise.",
@@ -7828,7 +7828,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "integer-islands-u2-l1",
             "title": "Adding & Subtracting",
             "icon": "➕",
-            "intro": "Time to combine integers! Adding a negative is like sailing left; subtracting is like turning around. Let's chart the moves.",
+            "intro": "Time to combine integers! Adding a negative is like heading left; subtracting is like turning around. Let's chart the moves.",
             "problems": [
               {
                 "id": "integer-islands-u2-l1-p1",
@@ -8089,7 +8089,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "integer-islands-u2-l3",
             "title": "Mixed Integer Voyage",
             "icon": "🧭",
-            "intro": "Now we mix every operation together! Read carefully, watch the signs, and take it one step at a time. You've got this, sailor!",
+            "intro": "Now we mix every operation together! Read carefully, watch the signs, and take it one step at a time. You've got this, explorer!",
             "problems": [
               {
                 "id": "integer-islands-u2-l3-p1",
@@ -8224,7 +8224,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "integer-islands-u3-l1",
             "title": "Plotting the Coordinate Plane",
             "icon": "🗺️",
-            "intro": "The coordinate plane is a treasure map! Points are written (x, y): x is how far right or left, y is how far up or down. Let's map the reef!",
+            "intro": "The coordinate plane is a trail map! Points are written (x, y): x is how far right or left, y is how far up or down. Let's map the canyon!",
             "problems": [
               {
                 "id": "integer-islands-u3-l1-p1",
@@ -8351,7 +8351,7 @@ window.NUMBLE_CURRICULUM = [
               }
             ],
             "teach": {
-              "concept": "The coordinate plane is a treasure map. Every point is written (x, y): x first tells you left/right (negative = left), y second tells you up/down (negative = down). The center where the axes cross is (0, 0), the origin.",
+              "concept": "The coordinate plane is a trail map. Every point is written (x, y): x first tells you left/right (negative = left), y second tells you up/down (negative = down). The center where the axes cross is (0, 0), the origin.",
               "example": {
                 "prompt": "Start at the origin. Move left 2, then up 4. Write the point as (x, y).",
                 "steps": [
@@ -8367,7 +8367,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "integer-islands-u3-l2",
             "title": "Order of Operations (PEMDAS)",
             "icon": "🔢",
-            "intro": "PEMDAS is the captain's rulebook: Parentheses, Exponents, Multiply/Divide, Add/Subtract. Follow the order and every answer falls into place!",
+            "intro": "PEMDAS is the guide's rulebook: Parentheses, Exponents, Multiply/Divide, Add/Subtract. Follow the order and every answer falls into place!",
             "problems": [
               {
                 "id": "integer-islands-u3-l2-p1",
@@ -8489,7 +8489,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "integer-islands-u3-l3",
             "title": "The Captain's Final Challenge",
             "icon": "🏆",
-            "intro": "Everything you've learned, all in one voyage! Negatives, absolute value, the grid, and PEMDAS. Show me your skills, Captain!",
+            "intro": "Everything you've learned, all in one expedition! Negatives, absolute value, the grid, and PEMDAS. Show me your skills, Explorer!",
             "problems": [
               {
                 "id": "integer-islands-u3-l3-p1",
@@ -8913,7 +8913,7 @@ window.NUMBLE_CURRICULUM = [
             "id": "algebra-archipelago-u1-l3",
             "title": "Gather Your Like Terms",
             "icon": "🧺",
-            "intro": "On this beach we sort our treasure! Terms that share the same letter are 'like terms' and can be combined — but x's and y's stay in separate piles.",
+            "intro": "At this outpost we sort our treasure! Terms that share the same letter are 'like terms' and can be combined into the same chest — but x's and y's stay in separate chests.",
             "problems": [
               {
                 "id": "algebra-archipelago-u1-l3-p1",
@@ -10437,7 +10437,7 @@ window.NUMBLE_CURRICULUM = [
               {
                 "id": "geometry-gorge-u2-l1-p6",
                 "type": "input",
-                "prompt": "A rectangular garden is 10 m by 4 m. How many square meters of soil cover it?",
+                "prompt": "A rectangular ledge on the cliff is 10 m by 4 m. How many square meters of gravel cover it?",
                 "answer": "40",
                 "accept": [
                   "40",
@@ -10446,7 +10446,7 @@ window.NUMBLE_CURRICULUM = [
                   "40 sq m",
                   "40 square metres"
                 ],
-                "explain": "Great! Area = 10 x 4 = 40 square meters of soil.",
+                "explain": "Great! Area = 10 x 4 = 40 square meters of gravel.",
                 "hints": [
                   "Soil covers the inside, so you need area.",
                   "Multiply the two dimensions.",

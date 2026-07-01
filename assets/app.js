@@ -38,7 +38,7 @@
     jumpUnlocks: {},        // lessonId -> true
     mistakes: [],           // recent missed problems [{lessonId, problemId}]
     stats: { answered: 0, correct: 0 },
-    settings: { voice: true, voiceName: null, rate: 1.0, pitch: 1.06, sfx: true, motion: true },
+    settings: { voice: true, voiceName: null, rate: 1.0, pitch: 1.06, sfx: true, motion: true, premium: false, openaiKey: '', openaiVoice: 'nova' },
     onboarded: false
   };
 
@@ -556,7 +556,7 @@
         '<button class="tf-btn" data-action="choose" data-val="false">✗ False</button></div>';
     } else {
       answers = '<div class="input-wrap"><input id="answerInput" class="num-input" autocomplete="off" autocapitalize="off" ' +
-        'spellcheck="false" placeholder="Type your answer" /></div>' + keypad();
+        'spellcheck="false" placeholder="Type your answer" /></div>' + keypad(p);
     }
 
     setHTML($lesson,
@@ -591,12 +591,28 @@
     if (retry && (p.hints || []).length) { showHint(Math.min(1, p.hints.length - 1), true); }
   }
 
-  function keypad() {
-    var keys = ['7', '8', '9', '4', '5', '6', '1', '2', '3', '-', '0', '.', '/', 'x', '⌫'];
-    return '<div class="keypad">' + keys.map(function (k) {
-      var v = k === '⌫' ? 'back' : (k === 'x' ? '×' : k);
-      return '<button class="key' + (k === '⌫' ? ' key-wide' : '') + '" data-action="key" data-key="' + v + '">' + k + '</button>';
+  // Keypad adapts to the answer: algebra/trig answers surface the letters
+  // (x, y…) and symbols (=, +, ^…) they need, so mobile users can type them.
+  function keypad(p) {
+    var extras = [], seen = {};
+    var ans = String((p && p.answer) || '');
+    for (var i = 0; i < ans.length; i++) {
+      var ch = ans[i], add = null;
+      if (/[a-zA-Z]/.test(ch)) add = ch.toLowerCase();
+      else if ('=+*()^<>'.indexOf(ch) !== -1) add = ch;
+      if (add && !seen[add]) { seen[add] = 1; extras.push(add); }
+    }
+    if (/pi|π/i.test(ans) && !seen['π']) { seen['π'] = 1; extras.push('π'); }
+    extras = extras.slice(0, 10);
+    var extraRow = extras.length ? '<div class="keypad-extra">' + extras.map(function (k) {
+      return '<button class="key key-var" data-action="key" data-key="' + esc(k) + '">' + esc(k) + '</button>';
+    }).join('') + '</div>' : '';
+    var keys = ['7', '8', '9', '4', '5', '6', '1', '2', '3', '-', '0', '.', '/', '⌫'];
+    var grid = '<div class="keypad">' + keys.map(function (k) {
+      var v = k === '⌫' ? 'back' : k;
+      return '<button class="key' + (k === '⌫' ? ' key-wide' : '') + '" data-action="key" data-key="' + esc(v) + '">' + k + '</button>';
     }).join('') + '</div>';
+    return extraRow + grid;
   }
 
   function toggleCheck(on) { var b = $lesson.querySelector('.check-btn'); if (b) b.disabled = !on; }
@@ -622,11 +638,12 @@
   function isCorrect(p, val) {
     if (val == null) return false;
     if (p.type === 'mc' || p.type === 'truefalse') return norm(val) === norm(p.answer);
-    var n = norm(val).replace(/×/g, '*');
-    if (n === norm(p.answer)) return true;
+    function ni(s) { return norm(s).replace(/×/g, '*').replace(/π/g, 'pi'); }
+    var n = ni(val);
+    if (n === ni(p.answer)) return true;
     var acc = p.accept || [];
-    for (var i = 0; i < acc.length; i++) if (n === norm(acc[i])) return true;
-    var a = parseFloat(n), b = parseFloat(norm(p.answer));
+    for (var i = 0; i < acc.length; i++) if (n === ni(acc[i])) return true;
+    var a = parseFloat(n), b = parseFloat(ni(p.answer));
     if (!isNaN(a) && !isNaN(b) && Math.abs(a - b) < 1e-9) return true;
     return false;
   }
@@ -911,14 +928,22 @@
     var goals = [1, 2, 3, 5, 8].map(function (g) {
       return '<option value="' + g + '"' + (state.dailyGoal === g ? ' selected' : '') + '>' + g + ' / day</option>';
     }).join('');
+    var ovoices = ['nova', 'shimmer', 'coral', 'alloy', 'echo', 'fable', 'onyx', 'sage'];
+    var voiceOpts = ovoices.map(function (v) {
+      return '<option value="' + v + '"' + (state.settings.openaiVoice === v ? ' selected' : '') + '>' + v.charAt(0).toUpperCase() + v.slice(1) + '</option>';
+    }).join('');
     openModal(
       '<div class="modal-head"><h2>Settings</h2><button class="icon-btn" data-action="close-modal">✕</button></div>' +
       '<div class="setting-row"><label>Daily goal</label><select class="select" data-setting="dailyGoal">' + goals + '</select></div>' +
       '<hr class="sep">' +
       toggle('voice', 'Pip\'s voice', state.settings.voice) +
-      '<div class="setting-row"><label>Voice</label><select class="select" data-setting="voiceName">' + opts + '</select></div>' +
+      '<div class="setting-note">✨ <b>Premium voice</b> makes Pip sound human (ChatGPT-style, via OpenAI). It needs your own OpenAI API key — stored only on this device, never uploaded anywhere.</div>' +
+      toggle('premium', 'Use premium voice', state.settings.premium) +
+      '<div class="setting-row"><label>OpenAI key</label><input type="password" class="key-input" data-setting="openaiKey" placeholder="sk-..." autocomplete="off" spellcheck="false" value="' + esc(state.settings.openaiKey || '') + '"></div>' +
+      '<div class="setting-row"><label>Premium voice</label><select class="select" data-setting="openaiVoice">' + voiceOpts + '</select></div>' +
+      '<div class="setting-row"><label>Standard voice</label><select class="select" data-setting="voiceName">' + opts + '</select></div>' +
       slider('rate', 'Speaking speed', state.settings.rate, 0.6, 1.4, 0.05) +
-      slider('pitch', 'Voice pitch', state.settings.pitch, 0.6, 1.6, 0.05) +
+      slider('pitch', 'Standard pitch', state.settings.pitch, 0.6, 1.6, 0.05) +
       '<div class="setting-row"><span></span><button class="btn btn-3d" data-action="test-voice">▶ Test Pip\'s voice</button></div>' +
       '<hr class="sep">' +
       toggle('sfx', 'Sound effects', state.settings.sfx) +
@@ -936,7 +961,11 @@
   function openModal(html) { setHTML($modal, '<div class="modal">' + html + '</div>'); $modal.hidden = false; }
   function closeModal() { $modal.hidden = true; setHTML($modal, ''); }
   function applyVoiceSettings() {
-    Voice.configure({ enabled: state.settings.voice, voiceName: state.settings.voiceName, rate: state.settings.rate, pitch: state.settings.pitch });
+    Voice.configure({
+      enabled: state.settings.voice, voiceName: state.settings.voiceName,
+      rate: state.settings.rate, pitch: state.settings.pitch,
+      premium: state.settings.premium, openaiKey: state.settings.openaiKey, openaiVoice: state.settings.openaiVoice
+    });
     Sfx.setEnabled(state.settings.sfx);
   }
 
@@ -999,7 +1028,13 @@
     else if (a === 'review') { runReview(); }
     else if (a === 'settings') { openSettings(); }
     else if (a === 'close-modal') { closeModal(); }
-    else if (a === 'test-voice') { Voice.configure({ enabled: true }); Voice.speak('Hi! I\'m Pip. Let\'s solve some math together!'); }
+    else if (a === 'test-voice') {
+      applyVoiceSettings();
+      if (state.settings.premium && state.settings.openaiKey) {
+        toast('Loading premium voice…');
+        Voice.testPremium().catch(function (err) { toast('Voice error: ' + ((err && err.message) || 'check your key')); });
+      } else { Voice.configure({ enabled: true }); Voice.speak('Hi! I\'m Pip. Let\'s solve some math together!'); }
+    }
     else if (a === 'toggle') { toggleSetting(t.getAttribute('data-key'), t); }
     else if (a === 'hearts') { tapHearts(); }
     else if (a === 'reset') { confirmReset(); }
