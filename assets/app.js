@@ -205,7 +205,7 @@
     return h;
   }
 
-  function norm(s) { return String(s).trim().toLowerCase().replace(/\s+/g, '').replace(/^=+/, ''); }
+  function norm(s) { return String(s).trim().toLowerCase().replace(/\s+/g, ' ').replace(/^=+\s*/, '').trim(); }
   function shuffle(a) {
     a = a.slice();
     for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
@@ -230,7 +230,8 @@
   var $toast = document.getElementById('toast');
 
   function setHTML(node, html) { node.innerHTML = html; }
-  function applyMotion() { document.body.classList.toggle('no-motion', !state.settings.motion); }
+  function motionOff() { return !state.settings.motion || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
+  function applyMotion() { document.body.classList.toggle('no-motion', motionOff()); }
 
   /* ---------- routing / shell ---------- */
   var route = 'home';
@@ -556,7 +557,7 @@
         '<button class="tf-btn" data-action="choose" data-val="false">✗ False</button></div>';
     } else {
       answers = '<div class="input-wrap"><input id="answerInput" class="num-input" autocomplete="off" autocapitalize="off" ' +
-        'spellcheck="false" placeholder="Type your answer" /></div>' + keypad(p);
+        'inputmode="none" spellcheck="false" placeholder="Tap the keys below" /></div>' + keypad(p);
     }
 
     setHTML($lesson,
@@ -594,6 +595,7 @@
   // Keypad adapts to the answer: algebra/trig answers surface the letters
   // (x, y…) and symbols (=, +, ^…) they need, so mobile users can type them.
   function keypad(p) {
+    var forms = [String((p && p.answer) || '')].concat((p && p.accept) || []).join(' ');
     var extras = [], seen = {};
     var ans = String((p && p.answer) || '');
     for (var i = 0; i < ans.length; i++) {
@@ -607,7 +609,13 @@
     var extraRow = extras.length ? '<div class="keypad-extra">' + extras.map(function (k) {
       return '<button class="key key-var" data-action="key" data-key="' + esc(k) + '">' + esc(k) + '</button>';
     }).join('') + '</div>' : '';
-    var keys = ['7', '8', '9', '4', '5', '6', '1', '2', '3', '-', '0', '.', '/', '⌫'];
+    // base numeric keys; only surface -, ., / when an accepted answer actually uses them
+    var keys = ['7', '8', '9', '4', '5', '6', '1', '2', '3'];
+    if (/-|−/.test(forms)) keys.push('-');
+    keys.push('0');
+    if (/\./.test(forms)) keys.push('.');
+    if (/\//.test(forms)) keys.push('/');
+    keys.push('⌫');
     var grid = '<div class="keypad">' + keys.map(function (k) {
       var v = k === '⌫' ? 'back' : k;
       return '<button class="key' + (k === '⌫' ? ' key-wide' : '') + '" data-action="key" data-key="' + esc(v) + '">' + k + '</button>';
@@ -629,22 +637,29 @@
   function onKey(k) {
     var input = document.getElementById('answerInput');
     if (!input) return;
-    if (k === 'back') input.value = input.value.slice(0, -1); else input.value += k;
+    if (k === 'back') input.value = input.value.slice(0, -1);
+    else if ((k === '.' || k === '/') && input.value.indexOf(k) !== -1) { /* allow only one dot / slash */ }
+    else input.value += k;
     session.selected = input.value;
     toggleCheck(!!input.value.trim());
     input.focus();
   }
 
+  var SCALAR = /^-?\d*\.?\d+$/; // a single plain number
   function isCorrect(p, val) {
     if (val == null) return false;
     if (p.type === 'mc' || p.type === 'truefalse') return norm(val) === norm(p.answer);
     function ni(s) { return norm(s).replace(/×/g, '*').replace(/π/g, 'pi'); }
-    var n = ni(val);
-    if (n === ni(p.answer)) return true;
+    var n = ni(val), ans = ni(p.answer);
+    if (n === ans) return true;
     var acc = p.accept || [];
     for (var i = 0; i < acc.length; i++) if (n === ni(acc[i])) return true;
-    var a = parseFloat(n), b = parseFloat(ni(p.answer));
-    if (!isNaN(a) && !isNaN(b) && Math.abs(a - b) < 1e-9) return true;
+    // numeric tolerance ONLY between plain scalar numbers — never for "5/8", "2:4",
+    // "1, 2, 3", or expressions (parseFloat there would over-credit wrong answers).
+    if (SCALAR.test(n)) {
+      if (SCALAR.test(ans) && Math.abs(parseFloat(n) - parseFloat(ans)) < 1e-9) return true;
+      for (var j = 0; j < acc.length; j++) { var af = ni(acc[j]); if (SCALAR.test(af) && Math.abs(parseFloat(n) - parseFloat(af)) < 1e-9) return true; }
+    }
     return false;
   }
 
@@ -659,7 +674,9 @@
     return '';
   }
   function diagnoseInput(p, val) {
-    var a = parseFloat(norm(val).replace(/×/g, '*')), b = parseFloat(norm(p.answer));
+    var nv = norm(val).replace(/×/g, '*'), na = norm(p.answer);
+    if (!SCALAR.test(nv) || !SCALAR.test(na)) return ''; // only coach on plain numbers, never fractions/lists
+    var a = parseFloat(nv), b = parseFloat(na);
     if (isNaN(a) || isNaN(b)) return '';
     if (a === -b && b !== 0) return 'Right number, wrong sign — keep an eye on that negative.';
     if (Math.abs(a - b) === 1) return 'So close — you\'re just one off. Recount the last step.';
@@ -857,7 +874,7 @@
 
   /* ---------- confetti ---------- */
   function burstConfetti() {
-    if (!state.settings.motion) return;
+    if (motionOff()) return;
     var cv = document.getElementById('confetti'); cv.hidden = false;
     var ctx = cv.getContext('2d');
     cv.width = window.innerWidth; cv.height = window.innerHeight;
@@ -952,7 +969,7 @@
   }
   function toggle(key, label, on) {
     return '<div class="setting-row"><label>' + label + '</label>' +
-      '<button class="switch' + (on ? ' on' : '') + '" data-action="toggle" data-key="' + key + '"><span class="knob"></span></button></div>';
+      '<button class="switch' + (on ? ' on' : '') + '" role="switch" aria-checked="' + (on ? 'true' : 'false') + '" aria-label="' + esc(label) + '" data-action="toggle" data-key="' + key + '"><span class="knob"></span></button></div>';
   }
   function slider(key, label, val, min, max, step) {
     return '<div class="setting-row"><label>' + label + '</label>' +
@@ -1022,7 +1039,7 @@
     else if (a === 'continue') { onContinue(); }
     else if (a === 'quit-lesson') { quitLesson(); }
     else if (a === 'finish-lesson') { closePlayer(); route = 'home'; render(); }
-    else if (a === 'replay-lesson') { var r = session.lessonRef; closePlayer(); startLesson(r.lesson.id); }
+    else if (a === 'replay-lesson') { if (!session || !session.lessonRef) return; var r = session.lessonRef; closePlayer(); startLesson(r.lesson.id); }
     else if (a === 'review-due') { runReviewDue(); }
     else if (a === 'daily') { runDaily(); }
     else if (a === 'review') { runReview(); }
@@ -1054,6 +1071,7 @@
     if (!s) return;
     var v = e.target.value;
     if (s === 'dailyGoal') { state.dailyGoal = parseInt(v, 10) || 3; save(); return; }
+    if (s === 'openaiKey') v = String(v).trim();
     if (s === 'rate' || s === 'pitch') v = parseFloat(v);
     state.settings[s] = v; applyVoiceSettings(); save();
   });
@@ -1065,6 +1083,7 @@
   function toggleSetting(key, btn) {
     state.settings[key] = !state.settings[key];
     btn.classList.toggle('on', state.settings[key]);
+    btn.setAttribute('aria-checked', String(state.settings[key]));
     applyVoiceSettings(); applyMotion(); save();
     if (key === 'voice' && state.settings.voice) Voice.speak('Voice on!');
   }

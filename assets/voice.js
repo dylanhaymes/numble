@@ -68,8 +68,10 @@
 
   var currentAudio = null;   // premium <audio>
   var audioCache = {};       // key -> objectURL
+  var speakGen = 0;          // bumped on every stop() so stale premium fetches don't play
 
   function stop() {
+    speakGen++;
     try { if (synth) synth.cancel(); } catch (e) {}
     if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
   }
@@ -78,16 +80,19 @@
     var key = settings.openaiKey;
     if (!key) return Promise.reject(new Error('no key'));
     var cacheKey = settings.openaiVoice + '|' + settings.openaiModel + '|' + text;
+    var gen = speakGen;
 
+    function evict() { if (audioCache[cacheKey]) { try { URL.revokeObjectURL(audioCache[cacheKey]); } catch (e) {} delete audioCache[cacheKey]; } }
     function play(url) {
-      return new Promise(function (resolve) {
+      if (gen !== speakGen) return Promise.resolve(); // a newer line already interrupted us
+      return new Promise(function (resolve, reject) {
         var audio = new Audio(url);
         audio.volume = settings.volume;
         audio.playbackRate = Math.max(0.75, Math.min(1.4, settings.rate));
         currentAudio = audio;
         audio.onended = function () { if (currentAudio === audio) currentAudio = null; resolve(); };
-        audio.onerror = function () { resolve(); };
-        audio.play().catch(function () { resolve(); });
+        audio.onerror = function () { evict(); reject(new Error('playback')); };
+        audio.play().catch(function () { reject(new Error('play')); });
       });
     }
 

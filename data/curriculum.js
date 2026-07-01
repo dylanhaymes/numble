@@ -4502,7 +4502,8 @@ window.NUMBLE_CURRICULUM = [
                 "answer": "3 2/3",
                 "accept": [
                   "3 2/3",
-                  "3 2 / 3"
+                  "3 2 / 3",
+                  "11/3"
                 ],
                 "explain": "You got it! 11 divided by 3 is 3 with 2 left over, so 11/3 = 3 2/3.",
                 "hints": [
